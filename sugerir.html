@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Proponha um software ou base de dados de química computacional para o catálogo. A sugestão é enviada ao administrador e só entra no site após a revisão.">
+    <title>Sugerir um software - CompMol</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', sans-serif; background: #ffffff; color: #1a2a6c; min-height: 100vh; line-height: 1.6; }
+        [hidden] { display: none !important; }
+        header { background: linear-gradient(135deg, #1a2a6c 0%, #3b5998 100%); color: white; padding: 2.5rem 0 1.75rem; text-align: center; box-shadow: 0 4px 20px rgba(0,0,0,0.15); }
+        header h1 { font-size: 2.2rem; margin-bottom: 0.5rem; }
+        header p { font-size: 1.05rem; opacity: 0.95; max-width: 780px; margin: 0 auto; }
+        .container { max-width: 900px; margin: 0 auto; padding: 2rem; }
+        .nav-back { margin-bottom: 1.5rem; }
+        .nav-back a { color: #1a2a6c; text-decoration: none; font-weight: 600; }
+        .nav-back a:hover { text-decoration: underline; }
+        .card { background: white; border-radius: 14px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); padding: 2rem; margin-bottom: 1.5rem; border: 1px solid #e9ecef; }
+        .card > h2 { color: #1a2a6c; font-size: 1.2rem; margin-bottom: 0.35rem; }
+        .card > .hint { color: #666; font-size: 0.9rem; margin-bottom: 1.25rem; }
+        label { display: block; font-weight: 600; color: #1a2a6c; font-size: 0.9rem; margin: 1.1rem 0 0.35rem; }
+        label .obrigatorio { color: #1a2a6c; }
+        label .rotulo-nota { display: block; font-weight: 400; color: #666; font-size: 0.8rem; margin-top: 0.15rem; }
+        input[type=text], input[type=email], input[type=url], select, textarea {
+            width: 100%; padding: 0.7rem 0.8rem; font: inherit; font-size: 0.95rem; color: #333;
+            border: 2px solid #ddd; border-radius: 8px; background: #fff; outline: none; transition: border-color 0.2s, box-shadow 0.2s; }
+        input:focus, select:focus, textarea:focus { border-color: #1a2a6c; box-shadow: 0 0 0 3px rgba(26,42,108,0.12); }
+        input[aria-invalid=true], textarea[aria-invalid=true] { border-color: #1a2a6c; }
+        textarea { min-height: 90px; resize: vertical; }
+        .linha { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 0 1.25rem; }
+        .checagens { display: flex; flex-wrap: wrap; gap: 0.5rem 1.25rem; margin-top: 0.35rem; }
+        .checagem { display: flex; align-items: center; gap: 0.4rem; font-weight: 400; color: #555; font-size: 0.9rem; }
+        .checagem input { width: auto; }
+        fieldset { border: none; }
+        legend { font-weight: 600; color: #1a2a6c; font-size: 0.9rem; margin: 1.1rem 0 0.35rem; }
+        .erro { color: #1a2a6c; font-size: 0.85rem; margin-top: 0.3rem; min-height: 1.1rem; }
+        .aviso { border-radius: 10px; padding: 1rem 1.15rem; font-size: 0.9rem; margin-bottom: 1.5rem; border: 1px solid; }
+        .aviso-alerta { background: #fff8e1; border-color: #ffe082; color: #8d6e00; }
+        .aviso-duplicado { background: #ffebee; border-color: #ef9a9a; color: #b71c1c; }
+        .aviso-duplicado a { color: #b71c1c; font-weight: 700; }
+        .aviso-ok { background: #e8f5e9; border-color: #a5d6a7; color: #1b5e20; }
+        .aviso strong { display: block; margin-bottom: 0.25rem; }
+        .aviso ul { margin: 0.4rem 0 0 1.2rem; }
+        .acoes { display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center; }
+        .btn { border: none; border-radius: 8px; padding: 0.85rem 1.4rem; font-size: 0.95rem; font-weight: 700; cursor: pointer; transition: transform 0.15s, box-shadow 0.15s; }
+        .btn-primario { background: linear-gradient(135deg, #1a2a6c 0%, #1a2a6c 100%); color: #fff; }
+        .btn-primario:hover { transform: scale(1.03); box-shadow: 0 4px 14px rgba(26,42,108,0.35); }
+        .btn-fantasma { background: #fff; color: #1a2a6c; border: 2px solid #1a2a6c; }
+        .btn-fantasma:hover { background: #f0f4ff; }
+        .btn-suave { background: #eef1f7; color: #1a2a6c; }
+        .btn:focus-visible { outline: 3px solid #1a2a6c; outline-offset: 2px; }
+        pre { background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 8px; padding: 1rem; font-size: 0.8rem; white-space: pre-wrap; word-break: break-all; max-height: 260px; overflow: auto; }
+        .rodape { font-size: 0.85rem; color: #666; text-align: center; padding: 1rem 0 2rem; }
+        .rodape a { color: #1a2a6c; }
+        @media (max-width: 768px) { .container { padding: 1rem; } .card { padding: 1.25rem; } header h1 { font-size: 1.7rem; } }
+        .site-footer { width: 100%; margin: 0 auto; padding: 0 clamp(1rem, 2.5vw, 3rem) 2.5rem; display: flex; flex-direction: column; align-items: center; gap: 0.5rem; font-size: 0.85rem; color: #1a2a6c; text-align: center; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><img src="assets/Designer.png" alt="CompMol" style="height: 3rem; width: auto; vertical-align: middle; margin-right: 1rem;">CompMol</h1>
+        <p>Portal de Aplicações Computacionais Moleculares</p>
+    </header>
+
+    <div class="container">
+        <div class="nav-back"><a href="index.html">← Voltar ao catálogo</a></div>
+
+        <div class="aviso aviso-alerta" id="avisoEmail">
+            <strong>Configuração pendente do destino</strong>
+            <p>Edite a constante <code>EMAIL_ADMIN</code> no início do script desta página para o endereço que recebe as sugestões. Enquanto ela não estiver configurada, use <em>Copiar sugestão</em> ou <em>Baixar .json</em> e anexe o arquivo ao e-mail para o administrador.</p>
+        </div>
+
+        <div class="aviso aviso-duplicado" id="avisoDuplicado" hidden>
+            <strong>Este software parece já estar no catálogo</strong>
+            <p id="duplicadoTexto"></p>
+        </div>
+
+        <form id="formSugestao" novalidate>
+            <div class="card">
+                <h2>1. Identificação</h2>
+                <p class="hint">Nome oficial e site oficial. Links de blog, repositório de terceiros ou página de download agregador não contam como fonte.</p>
+
+                <label for="name">Nome do software ou portal <span class="obrigatorio">*</span></label>
+                <input type="text" id="name" name="name" placeholder="Ex.: FPIT" autocomplete="off" required>
+                <p class="erro" id="erro-name"></p>
+
+                <label for="website">Site oficial <span class="obrigatorio">*</span>
+                    <span class="rotulo-nota">Endereço completo, com https://</span>
+                </label>
+                <input type="url" id="website" name="website" placeholder="https://exemplo.org/ferramenta" autocomplete="off" required>
+                <p class="erro" id="erro-website"></p>
+
+                <label for="description">Descrição em uma frase <span class="obrigatorio">*</span>
+                    <span class="rotulo-nota">Aparece no card da lista inicial — seja direto (até ~120 caracteres).</span>
+                </label>
+                <input type="text" id="description" name="description" placeholder="Ex.: Código semiempírico para sistemas orgânicos em GPU." required>
+                <p class="erro" id="erro-description"></p>
+
+                <label for="tags">Tags <span class="rotulo-nota">Separe por vírgula. Ex.: DFT, GPU, Open Source</span></label>
+                <input type="text" id="tags" name="tags" placeholder="DFT, GPU, Open Source">
+            </div>
+
+            <div class="card">
+                <h2>2. Classificação</h2>
+                <p class="hint">Os mesmos rótulos usados pelos filtros do catálogo.</p>
+
+                <div class="linha">
+                    <div>
+                        <label for="area">Área de estudo <span class="obrigatorio">*</span></label>
+                        <select id="area" name="area" required>
+                            <option value="">Selecione…</option>
+                            <option value="quimica-quantica">Química Quântica</option>
+                            <option value="dft-solidos">DFT e Sólidos</option>
+                            <option value="dinamica-molecular">Dinâmica Molecular</option>
+                            <option value="quimioinformatica">Quimioinformática</option>
+                            <option value="bioquimica">Bioquímica / Proteínas</option>
+                            <option value="visualizacao">Visualização Molecular</option>
+                            <option value="docking">Docking e Descoberta de Fármacos</option>
+                            <option value="bases-dados">Bases de Dados e Portais</option>
+                        </select>
+                        <p class="erro" id="erro-area"></p>
+                    </div>
+                    <div>
+                        <label for="price">Preço para uso <span class="obrigatorio">*</span></label>
+                        <select id="price" name="price" required>
+                            <option value="">Selecione…</option>
+                            <option value="free">Gratuito / Open Source</option>
+                            <option value="academic">Grátis Acadêmico / Pago Comercial</option>
+                            <option value="paid">Pago / Comercial</option>
+                            <option value="freemium">Freemium</option>
+                        </select>
+                        <p class="erro" id="erro-price"></p>
+                    </div>
+                </div>
+
+                <fieldset>
+                    <legend>Aplicabilidade <span class="obrigatorio">*</span> <span class="rotulo-nota">(marque ao menos uma)</span></legend>
+                    <div class="checagens">
+                        <span class="checagem"><input type="checkbox" id="app-desktop" value="desktop"><label for="app-desktop" style="margin:0;font-weight:400;color:#555;">Desktop</label></span>
+                        <span class="checagem"><input type="checkbox" id="app-hpc" value="hpc"><label for="app-hpc" style="margin:0;font-weight:400;color:#555;">HPC / Supercomputadores</label></span>
+                        <span class="checagem"><input type="checkbox" id="app-web" value="web"><label for="app-web" style="margin:0;font-weight:400;color:#555;">Web / Nuvem</label></span>
+                        <span class="checagem"><input type="checkbox" id="app-cli" value="cli"><label for="app-cli" style="margin:0;font-weight:400;color:#555;">CLI / Linha de comando</label></span>
+                        <span class="checagem"><input type="checkbox" id="app-python" value="python"><label for="app-python" style="margin:0;font-weight:400;color:#555;">Python / Biblioteca</label></span>
+                    </div>
+                    <p class="erro" id="erro-applicability"></p>
+                </fieldset>
+
+                <label for="license">Licença <span class="obrigatorio">*</span>
+                    <span class="rotulo-nota">Copie do site oficial (ex.: LGPL-3.0, MIT, comercial por assinatura).</span>
+                </label>
+                <input type="text" id="license" name="license" placeholder="Ex.: Apache-2.0" required>
+                <p class="erro" id="erro-license"></p>
+            </div>
+
+            <div class="card">
+                <h2>3. Conteúdo da página dedicada</h2>
+                <p class="hint">Tudo aqui é opcional, mas acelera a aprovação: o administrador confere nas páginas oficiais antes de publicar.</p>
+
+                <label for="resumo">Visão geral
+                    <span class="rotulo-nota">Um parágrafo descrevendo para que serve e quando escolher esta ferramenta.</span>
+                </label>
+                <textarea id="resumo" name="resumo" placeholder="O Exemplo é um pacote de…"></textarea>
+
+                <label for="recursos">Métodos e recursos
+                    <span class="rotulo-nota">Um por linha, como na lista de verificação da página de detalhes.</span>
+                </label>
+                <textarea id="recursos" name="recursos" placeholder="DFT híbrido com RI&#10;CCSD(T)&#10;Solvatação implícita COSMO"></textarea>
+
+                <div class="linha">
+                    <div>
+                        <label for="plataformas">Plataformas
+                            <span class="rotulo-nota">Separadas por vírgula.</span>
+                        </label>
+                        <input type="text" id="plataformas" name="plataformas" placeholder="Linux, macOS, Windows">
+                    </div>
+                    <div>
+                        <label for="publicacao">Como citar
+                            <span class="rotulo-nota">Referência da publicação fundadora, se houver.</span>
+                        </label>
+                        <input type="text" id="publicacao" name="publicacao" placeholder="Autor et al. Título. Revista, ano, v. X, p. Y.">
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>4. Links oficiais</h2>
+                <p class="hint">Deixe em branco o que não existir. Nunca invente endereço: o administrador verifica um a um.</p>
+                <div class="linha">
+                    <div>
+                        <label for="link-download">Download / instalação</label>
+                        <input type="url" id="link-download" placeholder="https://…">
+                    </div>
+                    <div>
+                        <label for="link-documentacao">Documentação</label>
+                        <input type="url" id="link-documentacao" placeholder="https://…">
+                    </div>
+                    <div>
+                        <label for="link-tutorial">Tutoriais</label>
+                        <input type="url" id="link-tutorial" placeholder="https://…">
+                    </div>
+                    <div>
+                        <label for="link-suporte">Suporte / comunidade</label>
+                        <input type="url" id="link-suporte" placeholder="https://…">
+                    </div>
+                    <div>
+                        <label for="link-codigo">Código-fonte</label>
+                        <input type="url" id="link-codigo" placeholder="https://…">
+                    </div>
+                    <div>
+                        <label for="link-publicacao">Publicação / DOI</label>
+                        <input type="url" id="link-publicacao" placeholder="https://doi.org/…">
+                    </div>
+                </div>
+                <p class="erro" id="erro-links"></p>
+            </div>
+
+            <div class="card">
+                <h2>5. Quem sugere</h2>
+                <p class="hint">Opcional, mas ajuda se o administrador precisar de um esclarecimento. Os dados vão apenas no e-mail.</p>
+                <div class="linha">
+                    <div>
+                        <label for="proponente-nome">Seu nome</label>
+                        <input type="text" id="proponente-nome" autocomplete="name">
+                    </div>
+                    <div>
+                        <label for="proponente-email">Seu e-mail</label>
+                        <input type="email" id="proponente-email" autocomplete="email">
+                        <p class="erro" id="erro-proponente-email"></p>
+                    </div>
+                </div>
+                <label for="motivo">Por que incluir no catálogo?</label>
+                <textarea id="motivo" placeholder="Ex.: usamos em rotina de triagem virtual e falta uma referência em português sobre o assunto."></textarea>
+            </div>
+
+            <div class="acoes">
+                <button type="submit" class="btn btn-primario" id="btnEmail">📧 Enviar por e-mail</button>
+                <button type="button" class="btn btn-fantasma" id="btnCopiar">📋 Copiar sugestão</button>
+                <button type="button" class="btn btn-suave" id="btnBaixar">⬇️ Baixar .json</button>
+                <button type="button" class="btn btn-suave" id="btnLimpar">🗑️ Limpar formulário</button>
+            </div>
+            <p class="erro" id="msgStatus" role="status" style="min-height:1.3rem;margin-top:0.9rem;"></p>
+        </form>
+
+        <div class="card" id="painelTexto" hidden>
+            <h2>Texto pronto para o e-mail</h2>
+            <p class="hint">Se o programa de e-mail não abrir, copie abaixo e cole na mensagem. O bloco codificado entre as marcações é o que o painel do administrador lê.</p>
+            <pre id="saidaTexto"></pre>
+        </div>
+
+        <p class="rodape">Antes de sugerir, confira a <a href="index.html">lista completa</a> — sugestões duplicadas são recusadas. Ver também <a href="CONTRIBUTING.md">CONTRIBUTING.md</a>.</p>
+    </div>
+
+    <script src="dados/catalogo.js"></script>
+    <script>
+    // ── Configuração ──────────────────────────────────────────────────────────
+    // Endereço que recebe as sugestões. Troque antes de publicar o site.
+    const EMAIL_ADMIN = 'sci.rividy@gmail.com';
+    const ASSUNTO = '[Catálogo] Nova sugestão de software';
+    const MARCA_INICIO = '--- INICIO CAT 1 ---';
+    const MARCA_FIM = '--- FIM CAT 1 ---';
+    const RASCUNHO = 'qcat_sugestao_rascunho_v1';
+
+    const CAT = typeof CATALOGO !== 'undefined' ? CATALOGO : [];
+    const $ = (id) => document.getElementById(id);
+    const form = $('formSugestao');
+
+    const semAcento = (v) => String(v).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+    const slug = (nome) => semAcento(nome).replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+    const dominio = (url) => String(url).toLowerCase().replace(/^https?:\/\//, '').replace(/^www\./, '').split('/')[0].replace(/\/$/, '');
+    const lista = (v) => String(v || '').split(/[\n,]+/).map(x => x.trim()).filter(Boolean);
+    const emailValido = (v) => /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v);
+
+    function enderecoConfigurendo() {
+        return /SEU-EMAIL|@exemplo\.org$/i.test(EMAIL_ADMIN.trim());
+    }
+
+    // ── Coleta ────────────────────────────────────────────────────────────────
+    function coletar() {
+        const applicability = [...document.querySelectorAll('.checagens input:checked')].map(c => c.value);
+        const links = {};
+        [['download', 'link-download'], ['documentacao', 'link-documentacao'], ['tutorial', 'link-tutorial'],
+         ['suporte', 'link-suporte'], ['codigo', 'link-codigo'], ['publicacao', 'link-publicacao']]
+            .forEach(([chave, id]) => { links[chave] = $(id).value.trim() || null; });
+        links.site = $('website').value.trim() || null;
+
+        const url = $('website').value.trim();
+        const citacao = $('publicacao').value.trim();
+        return {
+            versao: 1,
+            enviado_em: new Date().toISOString(),
+            name: $('name').value.trim(),
+            area: $('area').value,
+            applicability,
+            price: $('price').value,
+            license: $('license').value.trim(),
+            website: url,
+            description: $('description').value.trim(),
+            tags: lista($('tags').value),
+            resumo: $('resumo').value.trim(),
+            recursos: lista($('recursos').value),
+            plataformas: lista($('plataformas').value),
+            publicacao: citacao || null,
+            doi_url: links.publicacao && /doi\.org/i.test(links.publicacao) ? links.publicacao : null,
+            links,
+            proponente: { nome: $('proponente-nome').value.trim(), email: $('proponente-email').value.trim() },
+            motivo: $('motivo').value.trim()
+        };
+    }
+
+    // ── Validação ─────────────────────────────────────────────────────────────
+    function errosDeValidacao(p) {
+        const e = {};
+        if (p.name.length < 2) e.name = 'Informe o nome do software.';
+        if (!/^https?:\/\/.+\..+/i.test(p.website)) e.website = 'Informe o site oficial completo, começando com https://';
+        if (p.description.length < 10) e.description = 'Descreva em uma frase (mínimo 10 caracteres).';
+        if (!p.area) e.area = 'Escolha a área de estudo.';
+        if (!p.price) e.price = 'Escolha o preço para uso.';
+        if (!p.applicability.length) e.applicability = 'Marque ao menos uma aplicabilidade.';
+        if (!p.license) e.license = 'Informe a licença declarada pelo site oficial.';
+        const urlsOpc = Object.entries(p.links).filter(([c]) => c !== 'site');
+        const ruins = urlsOpc.filter(([, u]) => u && !/^https?:\/\/.+\..+/i.test(u)).map(([c]) => c);
+        if (ruins.length) e.links = 'Endereço inválido em: ' + ruins.join(', ');
+        if ($('proponente-email').value.trim() && !emailValido(p.proponente.email)) e['proponente-email'] = 'E-mail inválido.';
+        return e;
+    }
+
+    function mostrarErros(e) {
+        const campos = ['name', 'website', 'description', 'area', 'price', 'applicability', 'license', 'links', 'proponente-email'];
+        campos.forEach(c => {
+            const alvo = $('erro-' + c);
+            if (alvo) alvo.textContent = e[c] || '';
+            const campo = $(c) || $(c.replace('-email', '-email'));
+            const entrada = c === 'applicability' ? $('.checagens input') : (c === 'links' ? $('link-download') : campo);
+            if (entrada) entrada.setAttribute('aria-invalid', e[c] ? 'true' : 'false');
+        });
+        const primeiro = Object.keys(e)[0];
+        if (primeiro) {
+            const foco = $(primeiro) || $('formSugestao');
+            if (foco && foco.focus) foco.focus();
+        }
+        return !primeiro;
+    }
+
+    // ── Duplicados ────────────────────────────────────────────────────────────
+    function procurarDuplicados(p) {
+        const alvo = semAcento(p.name);
+        const alvoSlug = slug(p.name);
+        const alvoDom = p.website ? dominio(p.website) : '';
+        return CAT.filter(s => {
+            const nome = semAcento(s.name);
+            const mesmoNome = nome === alvo;
+            const contido = alvo.length > 3 && (nome.includes(alvo) || alvo.includes(nome));
+            const mesmoSlug = slug(s.name) === alvoSlug;
+            const mesmoDom = alvoDom && s.website && dominio(s.website) === alvoDom;
+            return mesmoNome || mesmoDom || (mesmoSlug && contido);
+        }).map(s => ({ software: s, exato: semAcento(s.name) === alvo || (alvoDom && dominio(s.website || '') === alvoDom) }));
+    }
+
+    function atualizarAvisoDuplicado(p) {
+        const caixa = $('avisoDuplicado');
+        if (!p.name || p.name.trim().length < 2) { caixa.hidden = true; return false; }
+        const encontros = procurarDuplicados(p);
+        if (!encontros.length) { caixa.hidden = true; return false; }
+        $('duplicadoTexto').innerHTML = encontros.map(({ software, exato }) =>
+            `${exato ? 'Já cadastrado' : 'Possível duplicado'}: <strong>${software.name}</strong> — ` +
+            `<a href="${software.arquivo}" target="_blank" rel="noopener">ver a página</a> (${software.website || 'sem site'})`
+        ).join('<br>');
+        caixa.hidden = false;
+        return encontros.some(x => x.exato);
+    }
+
+    // ── Serialização para o e-mail ────────────────────────────────────────────
+    function base64Utf8(texto) {
+        const bytes = new TextEncoder().encode(texto);
+        let binario = '';
+        for (let i = 0; i < bytes.length; i++) binario += String.fromCharCode(bytes[i]);
+        return btoa(binario);
+    }
+
+    function quebrar(base64, largura) {
+        const pedacos = [];
+        for (let i = 0; i < base64.length; i += largura) pedacos.push(base64.slice(i, i + largura));
+        return pedacos.join('\r\n');
+    }
+
+    function textoLegivel(p, compacto) {
+        const L = { 'quimica-quantica': 'Química Quântica', 'dft-solidos': 'DFT e Sólidos', 'dinamica-molecular': 'Dinâmica Molecular', 'quimioinformatica': 'Quimioinformática', 'bioquimica': 'Bioquímica / Proteínas', 'visualizacao': 'Visualização Molecular', 'docking': 'Docking e Descoberta de Fármacos', 'bases-dados': 'Bases de Dados e Portais' };
+        const P = { free: 'Gratuito / Open Source', academic: 'Grátis Acadêmico / Pago Comercial', paid: 'Pago / Comercial', freemium: 'Freemium' };
+        if (compacto) {
+            return [`Nome: ${p.name}`, `Site oficial: ${p.website}`, `Área: ${L[p.area] || p.area}`, `Preço: ${P[p.price] || p.price}`, `Licença: ${p.license}`,
+                ...(p.proponente.email ? [`Resposta para: ${p.proponente.email}`] : [])].join('\r\n');
+        }
+        const linhas = [
+            `Nome: ${p.name}`,
+            `Site oficial: ${p.website}`,
+            `Área: ${L[p.area] || p.area}`,
+            `Preço: ${P[p.price] || p.price}`,
+            `Licença: ${p.license}`,
+            `Aplicabilidade: ${p.applicability.join(', ')}`,
+            `Descrição: ${p.description}`
+        ];
+        if (p.tags.length) linhas.push(`Tags: ${p.tags.join(', ')}`);
+        if (p.resumo) linhas.push(`Resumo: ${p.resumo}`);
+        if (p.recursos.length) linhas.push(`Recursos: ${p.recursos.join(' | ')}`);
+        if (p.plataformas.length) linhas.push(`Plataformas: ${p.plataformas.join(', ')}`);
+        if (p.publicacao) linhas.push(`Citação: ${p.publicacao}`);
+        Object.entries(p.links).forEach(([chave, valor]) => { if (valor && chave !== 'site') linhas.push(`Link ${chave}: ${valor}`); });
+        if (p.motivo) linhas.push(`Motivo: ${p.motivo}`);
+        if (p.proponente.nome || p.proponente.email) linhas.push(`Sugestão de: ${p.proponente.nome}${p.proponente.email ? ' <' + p.proponente.email + '>' : ''}`);
+        return linhas.join('\r\n');
+    }
+
+    function montarMensagem(p, compacto) {
+        const json = JSON.stringify(p);
+        return [
+            textoLegivel(p, compacto),
+            '',
+            MARCA_INICIO,
+            quebrar(base64Utf8(json), 72),
+            MARCA_FIM,
+            '',
+            'Envie este texto sem alterar as marcações: o painel do administrador decodifica o bloco acima.'
+        ].join('\r\n');
+    }
+
+    // ── Ações ─────────────────────────────────────────────────────────────────
+    let bloquearEnvio = false;
+
+    function preparar() {
+        const p = coletar();
+        bloquearEnvio = atualizarAvisoDuplicado(p);
+        $('saidaTexto').textContent = montarMensagem(p);
+        return p;
+    }
+
+    function confirmar(r, p) {
+        if (!mostrarErros(errosDeValidacao(p))) { r('Preencha os campos obrigatórios destacados antes de enviar.'); return false; }
+        if (bloquearEnvio) { r('Este software já consta no catálogo — a sugestão seria recusada. Confira a página indicada no aviso acima.'); return false; }
+        return true;
+    }
+
+    function copiarTexto(texto, aoTerminar) {
+        if (navigator.clipboard && window.isSecureContext) {
+            navigator.clipboard.writeText(texto).then(() => aoTerminar('Sugestão copiada. Cole no e-mail para o administrador.'), () => aoTerminar(legadoCopiar(texto)));
+            return;
+        }
+        aoTerminar(legadoCopiar(texto));
+    }
+
+    function legadoCopiar(texto) {
+        const area = $('saidaTexto');
+        area.textContent = texto;
+        const intervalo = document.createRange();
+        intervalo.selectNodeContents(area);
+        const sel = window.getSelection();
+        sel.removeAllRanges();
+        sel.addRange(intervalo);
+        let ok = false;
+        try { ok = document.execCommand('copy'); } catch (e) { ok = false; }
+        sel.removeAllRanges();
+        return ok ? 'Sugestão copiada. Cole no e-mail para o administrador.' : 'Seleção pronta no painel de baixo: copie manualmente (Ctrl+C).';
+    }
+
+    form.addEventListener('submit', (ev) => {
+        ev.preventDefault();
+        const status = $('msgStatus');
+        const p = preparar();
+        if (!confirmar((m) => { status.textContent = m; }, p)) return;
+
+        if (enderecoConfigurendo()) {
+            $('painelTexto').hidden = false;
+            status.textContent = 'O destino ainda não foi configurado em EMAIL_ADMIN. Use Copiar sugestão ou Baixar .json e envie ao administrador.';
+            return;
+        }
+        const mailtoDe = (corpo) => `mailto:${EMAIL_ADMIN}?subject=${encodeURIComponent(ASSUNTO + ' — ' + p.name)}&body=${encodeURIComponent(corpo)}`;
+        let corpo = montarMensagem(p);
+        let mailto = mailtoDe(corpo);
+        if (mailto.length > 1900) { corpo = montarMensagem(p, true); mailto = mailtoDe(corpo); }
+        if (mailto.length > 1900) {
+            $('painelTexto').hidden = false;
+            status.textContent = 'A mensagem ficou longa demais para o link de e-mail. Copie o texto pronto abaixo (o bloco codificado está no fim) ou baixe o .json.';
+            return;
+        }
+        status.textContent = 'Abrindo seu programa de e-mail… Se nada acontecer, use Copiar sugestão.';
+        window.location.href = mailto;
+        $('painelTexto').hidden = false;
+    });
+
+    $('btnCopiar').addEventListener('click', () => {
+        const status = $('msgStatus');
+        const p = preparar();
+        if (!confirmar((m) => { status.textContent = m; }, p)) return;
+        copiarTexto(montarMensagem(p), (m) => { status.textContent = m; $('painelTexto').hidden = false; });
+    });
+
+    $('btnBaixar').addEventListener('click', () => {
+        const status = $('msgStatus');
+        const p = preparar();
+        if (!confirmar((m) => { status.textContent = m; }, p)) return;
+        const nomeArquivo = `sugestao-${slug(p.name) || 'software'}.json`;
+        const blob = new Blob([JSON.stringify(p, null, 2)], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url; a.download = nomeArquivo;
+        document.body.appendChild(a); a.click(); a.remove();
+        setTimeout(() => URL.revokeObjectURL(url), 4000);
+        status.textContent = `Arquivo ${nomeArquivo} baixado. Anexe-o ao e-mail para o administrador.`;
+    });
+
+    $('btnLimpar').addEventListener('click', () => {
+        form.reset();
+        $('avisoDuplicado').hidden = true;
+        $('painelTexto').hidden = true;
+        $('msgStatus').textContent = '';
+        mostrarErros({});
+        ['name', 'website', 'description', 'area', 'price', 'license'].forEach(c => { const e = $(c); if (e) e.setAttribute('aria-invalid', 'false'); });
+        try { localStorage.removeItem(RASCUNHO); } catch (e) { }
+        $('msgStatus').textContent = 'Formulário limpo e rascunho apagado.';
+    });
+
+    // ── Rascunho automático ───────────────────────────────────────────────────
+    let salvaRascunho;
+    form.addEventListener('input', () => {
+        const p = coletar();
+        atualizarAvisoDuplicado(p);
+        clearTimeout(salvaRascunho);
+        salvaRascunho = setTimeout(() => {
+            try { localStorage.setItem(RASCUNHO, JSON.stringify(p)); } catch (e) { }
+        }, 400);
+    });
+
+    function restaurarRascunho() {
+        let rascunho = null;
+        try { rascunho = JSON.parse(localStorage.getItem(RASCUNHO) || 'null'); } catch (e) { }
+        if (!rascunho || !rascunho.name) return false;
+        $('name').value = rascunho.name || '';
+        $('website').value = rascunho.website || '';
+        $('description').value = rascunho.description || '';
+        $('tags').value = (rascunho.tags || []).join(', ');
+        $('area').value = rascunho.area || '';
+        $('price').value = rascunho.price || '';
+        $('license').value = rascunho.license || '';
+        (rascunho.applicability || []).forEach(v => { const c = $('app-' + v); if (c) c.checked = true; });
+        $('resumo').value = rascunho.resumo || '';
+        $('recursos').value = (rascunho.recursos || []).join('\n');
+        $('plataformas').value = (rascunho.plataformas || []).join(', ');
+        $('publicacao').value = rascunho.publicacao || '';
+        $('motivo').value = rascunho.motivo || '';
+        const l = rascunho.links || {};
+        ['download', 'documentacao', 'tutorial', 'suporte', 'codigo', 'publicacao'].forEach(c => { const i = $('link-' + c); if (i && l[c]) i.value = l[c]; });
+        const pr = rascunho.proponente || {};
+        $('proponente-nome').value = pr.nome || '';
+        $('proponente-email').value = pr.email || '';
+        atualizarAvisoDuplicado(coletar());
+        $('msgStatus').textContent = 'Rascunho recuperado deste navegador.';
+        return true;
+    }
+
+    $('avisoEmail').hidden = !enderecoConfigurendo();
+    restaurarRascunho();
+    </script>
+
+<footer class="site-footer">
+    <span>Faltou alguma ferramenta? <a href="sugerir.html">Sugira um software ou base de dados</a> — a proposta passa pela revisão do administrador antes de entrar no catálogo.</span>
+    <div class="footer-credits" style="text-align:center; font-size:0.85rem; color:#1a2a6c; margin-top:0.5rem;">Desenvolvido pelo Pople Computational Chemistry Laboratory </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Painel do administrador - CompMol</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', sans-serif; background: #ffffff; color: #1a2a6c; min-height: 100vh; line-height: 1.6; }
+        [hidden] { display: none !important; }
+        header { background: linear-gradient(135deg, #1a2a6c 0%, #3b5998 100%); color: #fff; padding: 2rem 0 1.5rem; text-align: center; }
+        header h1 { font-size: 2rem; margin-bottom: 0.35rem; }
+        header p { font-size: 1rem; opacity: 0.95; }
+        .container { max-width: 1250px; margin: 0 auto; padding: 1.5rem 2rem 3rem; }
+        .nav-back { margin-bottom: 1.25rem; display: flex; gap: 1.25rem; flex-wrap: wrap; }
+        .nav-back a { color: #1a2a6c; font-weight: 600; text-decoration: none; }
+        .nav-back a:hover { text-decoration: underline; }
+        .grade { display: grid; grid-template-columns: minmax(260px, 340px) 1fr; gap: 1.5rem; align-items: start; }
+        .card { background: #fff; border-radius: 14px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); padding: 1.5rem; border: 1px solid #e9ecef; margin-bottom: 1.5rem; }
+        .card h2 { color: #1a2a6c; font-size: 1.1rem; margin-bottom: 0.4rem; }
+        .card .hint { color: #666; font-size: 0.85rem; margin-bottom: 1rem; }
+        label { display: block; font-weight: 600; color: #1a2a6c; font-size: 0.85rem; margin: 0.75rem 0 0.3rem; }
+        textarea, input[type=file] { width: 100%; font: inherit; font-size: 0.9rem; padding: 0.65rem; border: 2px solid #ddd; border-radius: 8px; background: #fff; }
+        textarea { min-height: 140px; resize: vertical; }
+        textarea:focus { outline: none; border-color: #1a2a6c; box-shadow: 0 0 0 3px rgba(26,42,108,0.12); }
+        .btn { border: none; border-radius: 8px; padding: 0.6rem 1rem; font-size: 0.88rem; font-weight: 700; cursor: pointer; }
+        .btn-primario { background: linear-gradient(135deg, #1a2a6c 0%, #1a2a6c 100%); color: #fff; }
+        .btn-fantasma { background: #fff; color: #1a2a6c; border: 2px solid #1a2a6c; }
+        .btn-suave { background: #f0f4ff; color: #1a2a6c; }
+        .btn-aprovar { background: #1b5e20; color: #fff; }
+        .btn-rejeitar { background: #b71c1c; color: #fff; }
+        .btn:focus-visible { outline: 3px solid #1a2a6c; outline-offset: 2px; }
+        .acoes { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.75rem; }
+        .status { font-size: 0.85rem; min-height: 1.2rem; margin-top: 0.6rem; color: #1a2a6c; }
+        .fila { list-style: none; }
+        .fila li { border: 2px solid #e9ecef; border-radius: 10px; padding: 0.7rem 0.85rem; margin-bottom: 0.6rem; cursor: pointer; background: #fff; width: 100%; text-align: left; font: inherit; }
+        .fila li:hover { border-color: #1a2a6c; }
+        .fila li[aria-current=true] { border-color: #1a2a6c; background: #f0f4ff; }
+        .fila strong { display: block; color: #1a2a6c; font-size: 0.95rem; }
+        .fila span { font-size: 0.78rem; color: #666; }
+        .selo { display: inline-block; font-size: 0.68rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.4px; padding: 0.15rem 0.5rem; border-radius: 20px; margin-left: 0.35rem; }
+        .selo-pendente { background: #fff9c4; color: #8d6e00; }
+        .selo-aprovada { background: #c8e6c9; color: #1b5e20; }
+        .selo-rejeitada { background: #ffcdd2; color: #b71c1c; }
+        .resumo-numeros { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 1rem; }
+        .contador { flex: 1; min-width: 90px; background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 10px; padding: 0.6rem; text-align: center; }
+        .contador b { display: block; color: #1a2a6c; font-size: 1.3rem; }
+        .contador span { font-size: 0.72rem; text-transform: uppercase; color: #666; letter-spacing: 0.4px; }
+        dl.campos { display: grid; grid-template-columns: 150px 1fr; gap: 0.35rem 1rem; font-size: 0.9rem; }
+        dl.campos dt { color: #1a2a6c; font-weight: 700; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.4px; padding-top: 0.15rem; }
+        dl.campos dd { margin: 0; color: #444; overflow-wrap: anywhere; }
+        dl.campos dd a { color: #1a2a6c; }
+        .alerta { border-radius: 10px; padding: 0.8rem 1rem; font-size: 0.88rem; margin: 0.75rem 0; border: 1px solid; }
+        .alerta-ruim { background: #ffebee; border-color: #ef9a9a; color: #b71c1c; }
+        .alerta-meio { background: #fff8e1; border-color: #ffe082; color: #8d6e00; }
+        .alerta-bom { background: #e8f5e9; border-color: #a5d6a7; color: #1b5e20; }
+        .alerta ul { margin: 0.3rem 0 0 1.15rem; }
+        pre { background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 8px; padding: 0.9rem; font-size: 0.78rem; white-space: pre-wrap; overflow: auto; max-height: 320px; margin-top: 0.6rem; }
+        .vazio { color: #777; font-size: 0.9rem; font-style: italic; }
+        @media (max-width: 900px) { .grade { grid-template-columns: 1fr; } .container { padding: 1rem; } dl.campos { grid-template-columns: 1fr; } dl.campos dt { margin-top: 0.5rem; } }
+        .site-footer { width: 100%; margin: 0 auto; padding: 0 clamp(1rem, 2.5vw, 3rem) 2.5rem; display: flex; flex-direction: column; align-items: center; gap: 0.5rem; font-size: 0.85rem; color: #1a2a6c; text-align: center; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><img src="assets/Designer.png" alt="CompMol" style="height: 3rem; width: auto; vertical-align: middle; margin-right: 1rem;">CompMol</h1>
+        <p>Portal de Aplicações Computacionais Moleculares</p>
+    </header>
+
+    <div class="container">
+        <div class="nav-back">
+            <a href="index.html">← Catálogo</a>
+            <a href="sugerir.html">➕ Página de sugestão</a>
+        </div>
+
+        <div class="grade">
+            <section>
+                <div class="card">
+                    <h2>Importar sugestão</h2>
+                    <p class="hint">Cole o corpo do e-mail recebido (o bloco entre as marcações é decodificado automaticamente) ou anexe o arquivo <code>.json</code>/<code>.txt</code>.</p>
+                    <label for="entradaTexto">Texto do e-mail</label>
+                    <textarea id="entradaTexto" placeholder="Nome: …&#10;Site oficial: …&#10;&#10;--- INICIO CAT 1 ---&#10;eyJ2ZXJzYW8iOjEs…&#10;--- FIM CAT 1 ---"></textarea>
+                    <div class="acoes">
+                        <button type="button" class="btn btn-primario" id="btnImportar">Analisar texto</button>
+                        <button type="button" class="btn btn-suave" id="btnExemplo">Inserir exemplo</button>
+                    </div>
+                    <label for="entradaArquivo">Ou carregue um arquivo</label>
+                    <input type="file" id="entradaArquivo" accept=".json,.txt,application/json,text/plain">
+                    <p class="status" id="statusImport" role="status"></p>
+                </div>
+
+                <div class="card">
+                    <h2>Fila de revisão</h2>
+                    <div class="resumo-numeros">
+                        <div class="contador"><b id="contPendente">0</b><span>Pendentes</span></div>
+                        <div class="contador"><b id="contAprovada">0</b><span>Aprovadas</span></div>
+                        <div class="contador"><b id="contRejeitada">0</b><span>Rejeitadas</span></div>
+                    </div>
+                    <ul class="fila" id="listaFila"></ul>
+                    <p class="vazio" id="filaVazia">Nenhuma sugestão nesta navegador ainda.</p>
+                    <div class="acoes">
+                        <button type="button" class="btn btn-suave" id="btnExportarFila">Exportar fila</button>
+                        <button type="button" class="btn btn-suave" id="btnBaixarAprovadas">Baixar aprovadas</button>
+                        <button type="button" class="btn btn-fantasma" id="btnLimparFila">Esvaziar fila</button>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="card" id="painelAnalise" hidden>
+                    <h2 id="analiseTitulo">Análise da sugestão</h2>
+                    <p class="hint" id="analiseMeta"></p>
+                    <div id="analiseAlertas"></div>
+                    <dl class="campos" id="analiseCampos"></dl>
+                    <label for="parecer">Parecer do administrador</label>
+                    <textarea id="parecer" placeholder="Ex.: conferido no site oficial; falta documentação — pedir esclarecimento."></textarea>
+                    <div class="acoes">
+                        <button type="button" class="btn btn-aprovar" id="btnAprovar">✔ Aprovar</button>
+                        <button type="button" class="btn btn-rejeitar" id="btnRejeitar">✕ Rejeitar</button>
+                        <button type="button" class="btn btn-suave" id="btnPendente">Marcar como pendente</button>
+                        <button type="button" class="btn btn-fantasma" id="btnExcluir">Excluir da fila</button>
+                    </div>
+                    <p class="status" id="statusAnalise" role="status"></p>
+                </div>
+
+                <div class="card" id="painelPatch" hidden>
+                    <h2>Bloco pronto para os arquivos de dados</h2>
+                    <p class="hint">Cole a primeira parte em <code>dados/softwares.json</code> (array <code>softwares</code>) e a segunda em <code>dados/detalhes.json</code>. Depois rode <code>node gerar-paginas.js</code> — ou salve o pacote aprovado e use o script de mesclagem.</p>
+                    <label>dados/softwares.json</label>
+                    <pre id="patchSoftware"></pre>
+                    <label>dados/detalhes.json</label>
+                    <pre id="patchDetalhe"></pre>
+                    <div class="acoes">
+                        <button type="button" class="btn btn-suave" id="btnCopiarPatch">Copiar blocos</button>
+                        <button type="button" class="btn btn-primario" id="btnBaixarPatch">Baixar pacote aprovado</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2>Como funciona a aprovação</h2>
+                    <p class="hint" style="margin-bottom:0;">
+                        Este painel é estático: a fila vive no <code>localStorage</code> deste navegador, sem servidor.
+                        O fluxo completo é — <strong>1)</strong> o visitante preenche <a href="sugerir.html">sugerir.html</a> e envia por e-mail;
+                        <strong>2)</strong> você cola a mensagem aqui e verifica os avisos (duplicados e links faltando são os principais);
+                        <strong>3)</strong> ao aprovar, o painel reserva o próximo <code>id</code> livre e gera os blocos de dados;
+                        <strong>4)</strong> baixe o pacote das aprovadas e rode <code>node mesclar-sugestoes.js pacote.json</code>, que insere as entradas em
+                        <code>dados/softwares.json</code> e <code>dados/detalhes.json</code>; <strong>5)</strong> <code>node gerar-paginas.js</code> publica as páginas.
+                        Confira sempre no site oficial antes de aprovar: licença, preço e URL mudam.
+                    </p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="dados/catalogo.js"></script>
+    <script>
+    const MARCA_INICIO = '--- INICIO CAT 1 ---';
+    const MARCA_FIM = '--- FIM CAT 1 ---';
+    const CHAVE_FILA = 'qcat_admin_fila_v1';
+
+    const CAT = typeof CATALOGO !== 'undefined' ? CATALOGO : [];
+    const $ = (id) => document.getElementById(id);
+
+    const AREAS = ['quimica-quantica', 'dft-solidos', 'dinamica-molecular', 'quimioinformatica', 'bioquimica', 'visualizacao', 'docking', 'bases-dados'];
+    const PRECOS = ['free', 'academic', 'paid', 'freemium'];
+    const APPS = ['desktop', 'hpc', 'web', 'cli', 'python'];
+    const ROTULO_AREA = { 'quimica-quantica': 'Química Quântica', 'dft-solidos': 'DFT e Sólidos', 'dinamica-molecular': 'Dinâmica Molecular', 'quimioinformatica': 'Quimioinformática', 'bioquimica': 'Bioquímica / Proteínas', 'visualizacao': 'Visualização Molecular', 'docking': 'Docking e Descoberta de Fármacos', 'bases-dados': 'Bases de Dados e Portais' };
+    const ROTULO_PRECO = { free: 'Gratuito / Open Source', academic: 'Grátis Acadêmico / Pago Comercial', paid: 'Pago / Comercial', freemium: 'Freemium' };
+
+    const semAcento = (v) => String(v).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+    const slug = (nome) => semAcento(nome).replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+    const dominio = (url) => String(url || '').toLowerCase().replace(/^https?:\/\//, '').replace(/^www\./, '').split('/')[0];
+    const esc = (v) => String(v == null ? '' : v).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+
+    function decodificarBase64Utf8(b64) {
+        const binario = atob(b64);
+        const bytes = Uint8Array.from(binario, (c) => c.charCodeAt(0));
+        return new TextDecoder().decode(bytes);
+    }
+
+    // ── Leitura da mensagem ───────────────────────────────────────────────────
+    function extrairSugestao(texto) {
+        const bruto = String(texto || '');
+        const inicio = bruto.indexOf(MARCA_INICIO);
+        const fim = bruto.indexOf(MARCA_FIM);
+        if (inicio !== -1 && fim > inicio) {
+            const corpo = bruto.slice(inicio + MARCA_INICIO.length, fim).replace(/\s+/g, '');
+            try { return JSON.parse(decodificarBase64Utf8(corpo)); }
+            catch (e) { return { __erro: 'Bloco codificado ilegível: ' + e.message }; }
+        }
+        const jsonSolto = bruto.trim().match(/^\{[\s\S]*\}$/);
+        if (jsonSolto) { try { return JSON.parse(jsonSolto[0]); } catch (e) { return { __erro: 'JSON inválido: ' + e.message }; } }
+        return { __erro: 'Nenhuma sugestão reconhecida. Cole o e-mail inteiro ou anexe o .json gerado pelo formulário.' };
+    }
+
+    // ── Verificações ──────────────────────────────────────────────────────────
+    function proximoIdLivre(jaReservados) {
+        const ids = CAT.map(s => s.id).concat(jaReservados || []);
+        return Math.max(0, ...ids) + 1;
+    }
+
+    function duplicados(p) {
+        const alvo = semAcento(p.name || '');
+        const alvoSlug = slug(p.name || '');
+        const alvoDom = dominio(p.website);
+        return CAT.filter(s => {
+            const nome = semAcento(s.name);
+            return nome === alvo || slug(s.name) === alvoSlug || (alvoDom && dominio(s.website) === alvoDom);
+        });
+    }
+
+    function analisar(p) {
+        const erros = [];
+        const avisos = [];
+        const ok = [];
+
+        if (!p || p.__erro) { return { erros: [p && p.__erro ? p.__erro : 'Sugestão ilegível.'], avisos: [], ok: [] }; }
+        if (!p.name) erros.push('Sem nome.');
+        if (!/^https?:\/\/.+\..+/i.test(p.website || '')) erros.push('Site oficial ausente ou sem https://.');
+        if (!p.description) erros.push('Descrição de uma frase ausente.');
+        if (!AREAS.includes(p.area)) erros.push(`Área "${p.area}" fora do vocabulário do catálogo.`);
+        if (!PRECOS.includes(p.price)) erros.push(`Preço "${p.price}" fora do vocabulário.`);
+        if (!Array.isArray(p.applicability) || !p.applicability.length) erros.push('Nenhuma aplicabilidade marcada.');
+        else if (p.applicability.some(a => !APPS.includes(a))) erros.push('Aplicabilidade com valor desconhecido: ' + p.applicability.filter(a => !APPS.includes(a)).join(', '));
+        if (!p.license) erros.push('Licença não informada — obrigatória para publicar.');
+
+        const dup = duplicados(p);
+        dup.forEach(s => erros.push(`Já cadastrado: ${s.name} (id ${s.id}) — ${s.arquivo}`));
+
+        const l = p.links || {};
+        if (!l.documentacao) avisos.push('Sem link de documentação.');
+        if (!l.download) avisos.push('Sem link de download/instalação.');
+        if (!l.suporte) avisos.push('Sem canal de suporte/comunidade.');
+        if (!p.resumo) avisos.push('Sem visão geral: a página usaria a descrição curta como resumo.');
+        if (!(p.recursos || []).length) avisos.push('Sem lista de métodos e recursos (a página recorreria às tags).');
+        if (!(p.plataformas || []).length) avisos.push('Plataformas não informadas.');
+        if (!p.publicacao) avisos.push('Sem referência de publicação para a seção "Como citar".');
+
+        Object.entries(l).forEach(([chave, valor]) => {
+            if (valor && !/^https?:\/\/.+\..+/i.test(valor)) erros.push(`Link "${chave}" não é uma URL válida: ${valor}`);
+            if (/^http:\/\//i.test(valor || '')) avisos.push(`Link "${chave}" usa http:// sem TLS: ${valor}`);
+        });
+
+        const domOficial = dominio(p.website);
+        const domDesconhecido = Object.entries(l).filter(([, v]) => v && dominio(v) !== domOficial && !/github\.com|gitlab\.com|bitbucket\.org|sourceforge\.net|pypi\.org|readthedocs\.org|doi\.org|zenodo\.org|npmjs\.com/.test(dominio(v)));
+        if (domDesconhecido.length) avisos.push('Links em domínio não óbvio (verificar se é oficial): ' + domDesconhecido.map(([c, v]) => `${c} → ${dominio(v)}`).join('; '));
+
+        if (!avisos.length && !erros.length) ok.push('Campos completos e vocabulário compatível com o catálogo.');
+        if ((p.description || '').length > 140) avisos.push('Descrição longa para o card (' + p.description.length + ' caracteres).');
+        return { erros, avisos, ok, duplicados: dup };
+    }
+
+    // ── Fila persistida ───────────────────────────────────────────────────────
+    let fila = [];
+    let selecionada = null;
+
+    function carregarFila() {
+        try { fila = JSON.parse(localStorage.getItem(CHAVE_FILA) || '[]'); }
+        catch (e) { fila = []; $('statusImport').textContent = 'localStorage indisponível: a fila vale só nesta aba.'; }
+        if (!Array.isArray(fila)) fila = [];
+    }
+
+    function salvarFila() {
+        try { localStorage.setItem(CHAVE_FILA, JSON.stringify(fila)); } catch (e) { $('statusImport').textContent = 'Não foi possível guardar a fila neste navegador.'; }
+    }
+
+    function reservarIds() {
+        return fila.filter(i => i.status === 'aprovada').map(i => i.id_reservado).filter(Boolean);
+    }
+
+    function renderFila() {
+        const ul = $('listaFila');
+        ul.innerHTML = '';
+        fila.forEach(item => {
+            const li = document.createElement('li');
+            const botao = document.createElement('button');
+            botao.type = 'button';
+            botao.setAttribute('aria-current', String(selecionada === item.chave));
+            botao.innerHTML = `<strong>${esc(item.dados.name)}</strong>` +
+                `<span class="selo selo-${item.status}">${item.status}</span>` +
+                `<br><span>${esc(ROTULO_AREA[item.dados.area] || item.dados.area || '?')} · recebido ${new Date(item.recebido_em).toLocaleDateString('pt-BR')}</span>`;
+            botao.addEventListener('click', () => { selecionada = item.chave; mostrarItem(item); renderFila(); });
+            li.appendChild(botao);
+            ul.appendChild(li);
+        });
+        $('filaVazia').hidden = fila.length > 0;
+        $('contPendente').textContent = fila.filter(i => i.status === 'pendente').length;
+        $('contAprovada').textContent = fila.filter(i => i.status === 'aprovada').length;
+        $('contRejeitada').textContent = fila.filter(i => i.status === 'rejeitada').length;
+    }
+
+    function linhasCampos(p) {
+        const l = p.links || {};
+        const par = (rot, val) => `<dt>${esc(rot)}</dt><dd>${val}</dd>`;
+        const link = (u) => u ? `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(u)}</a>` : '<span class="vazio">—</span>';
+        return [
+            par('Nome', esc(p.name)),
+            par('Site oficial', link(p.website)),
+            par('Área', esc(ROTULO_AREA[p.area] || p.area)),
+            par('Preço', esc(ROTULO_PRECO[p.price] || p.price)),
+            par('Licença', esc(p.license)),
+            par('Aplicabilidade', esc((p.applicability || []).join(', '))),
+            par('Descrição', esc(p.description)),
+            par('Tags', esc((p.tags || []).join(', '))),
+            par('Visão geral', p.resumo ? esc(p.resumo) : '<span class="vazio">—</span>'),
+            par('Recursos', (p.recursos || []).length ? '<ul>' + p.recursos.map(r => `<li>${esc(r)}</li>`).join('') + '</ul>' : '<span class="vazio">—</span>'),
+            par('Plataformas', esc((p.plataformas || []).join(', '))),
+            par('Como citar', (p.publicacao ? esc(p.publicacao) + ' ' : '') + (p.doi_url ? link(p.doi_url) : '')),
+            par('Download', link(l.download)),
+            par('Documentação', link(l.documentacao)),
+            par('Tutorial', link(l.tutorial)),
+            par('Suporte', link(l.suporte)),
+            par('Código', link(l.codigo)),
+            par('Publicação', link(l.publicacao)),
+            par('Proponente', esc([p.proponente && p.proponente.nome, p.proponente && p.proponente.email].filter(Boolean).join(' <')) || '<span class="vazio">—</span>'),
+            par('Motivo', p.motivo ? esc(p.motivo) : '<span class="vazio">—</span>')
+        ].join('');
+    }
+
+    function mostrarItem(item) {
+        $('painelAnalise').hidden = false;
+        const a = analisar(item.dados);
+        $('analiseTitulo').textContent = `Análise: ${item.dados.name}`;
+        $('analiseMeta').textContent = `Recebida em ${new Date(item.recebido_em).toLocaleString('pt-BR')} · status ${item.status}${item.id_reservado ? ' · id reservado ' + item.id_reservado : ''}`;
+
+        const alertas = [];
+        if (a.erros.length) alertas.push(`<div class="alerta alerta-ruim"><strong>Bloqueia a publicação</strong><ul>${a.erros.map(e => `<li>${esc(e)}</li>`).join('')}</ul></div>`);
+        if (a.avisos.length) alertas.push(`<div class="alerta alerta-meio"><strong>Verificar antes de aprovar</strong><ul>${a.avisos.map(e => `<li>${esc(e)}</li>`).join('')}</ul></div>`);
+        if (a.ok.length) alertas.push(`<div class="alerta alerta-bom"><strong>Sem pendências</strong>${a.ok.map(e => esc(e)).join(' ')}</div>`);
+        $('analiseAlertas').innerHTML = alertas.join('');
+        $('analiseCampos').innerHTML = linhasCampos(item.dados);
+        $('parecer').value = item.parecer || '';
+        $('statusAnalise').textContent = '';
+        montarPatch(item);
+    }
+
+    // ── Geração do patch ──────────────────────────────────────────────────────
+    function entradaSoftwares(p, id) {
+        return { id, name: p.name, area: p.area, applicability: p.applicability, price: p.price, description: p.description, tags: p.tags || [], license: p.license, website: p.website };
+    }
+
+    function entradaDetalhes(p) {
+        const l = p.links || {};
+        return {
+            resumo: p.resumo || p.description,
+            recursos: p.recursos || [],
+            plataformas: p.plataformas || [],
+            licenca: p.license,
+            publicacao: p.publicacao || null,
+            doi_url: p.doi_url || null,
+            url_oficial_corrigida: null,
+            links: {
+                site: l.site || p.website || null,
+                download: l.download || null,
+                documentacao: l.documentacao || null,
+                tutorial: l.tutorial || null,
+                suporte: l.suporte || null,
+                codigo: l.codigo || null,
+                publicacao: l.publicacao || p.doi_url || null
+            }
+        };
+    }
+
+    function montarPatch(item) {
+        const painel = $('painelPatch');
+        if (item.status !== 'aprovada') { painel.hidden = true; return; }
+        const id = item.id_reservado;
+        const arquivo = `softwares/software-${id}-${slug(item.dados.name)}.html`;
+        $('patchSoftware').textContent = JSON.stringify(entradaSoftwares(item.dados, id), null, 2);
+        $('patchDetalhe').textContent = JSON.stringify({ [String(id)]: entradaDetalhes(item.dados) }, null, 2)
+            .replace(/^/, `// página gerada: ${arquivo}\n`);
+        painel.hidden = false;
+    }
+
+    // ── Ações do painel ───────────────────────────────────────────────────────
+    function importar(texto, origem) {
+        const p = extrairSugestao(texto);
+        if (!p || p.__erro || !p.name) { $('statusImport').textContent = (p && p.__erro) ? p.__erro : 'Não encontrei uma sugestão no texto.'; return; }
+        const chave = `${p.enviado_em || new Date().toISOString()}|${p.name}`;
+        const existente = fila.find(i => i.chave === chave);
+        if (existente) {
+            selecionada = chave;
+            mostrarItem(existente);
+            renderFila();
+            $('statusImport').textContent = `"${p.name}" já está na fila — mostrando o item existente (${origem}).`;
+            return;
+        }
+        const item = { chave, recebido_em: p.enviado_em || new Date().toISOString(), status: 'pendente', parecer: '', dados: p, id_reservado: null };
+        fila.unshift(item);
+        salvarFila();
+        selecionada = chave;
+        mostrarItem(item);
+        renderFila();
+        $('statusImport').textContent = `Sugestão de "${p.name}" importada de ${origem}.`;
+    }
+
+    $('btnImportar').addEventListener('click', () => {
+        const texto = $('entradaTexto').value;
+        if (!texto.trim()) { $('statusImport').textContent = 'Cole o texto do e-mail antes de analisar.'; return; }
+        importar(texto, 'texto colado');
+    });
+
+    $('entradaArquivo').addEventListener('change', (ev) => {
+        const arquivo = ev.target.files && ev.target.files[0];
+        if (!arquivo) return;
+        const leitor = new FileReader();
+        leitor.onload = () => importar(String(leitor.result), arquivo.name);
+        leitor.onerror = () => { $('statusImport').textContent = 'Falha ao ler o arquivo.'; };
+        leitor.readAsText(arquivo, 'utf-8');
+    });
+
+    $('btnAprovar').addEventListener('click', () => {
+        const item = fila.find(i => i.chave === selecionada);
+        if (!item) return;
+        const a = analisar(item.dados);
+        if (a.erros.length) { $('statusAnalise').textContent = 'A aprovação está bloqueada: resolva os itens em vermelho primeiro.'; return; }
+        item.status = 'aprovada';
+        item.parecer = $('parecer').value.trim();
+        item.id_reservado = proximoIdLivre(reservarIds().concat([item.id_reservado].filter(Boolean)));
+        salvarFila(); mostrarItem(item); renderFila();
+        $('statusAnalise').textContent = `Aprovada com id ${item.id_reservado}. O bloco de dados está abaixo.`;
+    });
+
+    $('btnRejeitar').addEventListener('click', () => {
+        const item = fila.find(i => i.chave === selecionada);
+        if (!item) return;
+        item.status = 'rejeitada';
+        item.parecer = $('parecer').value.trim();
+        item.id_reservado = null;
+        salvarFila(); mostrarItem(item); renderFila();
+        $('statusAnalise').textContent = 'Marcada como rejeitada. O parecer fica guardado na fila exportada.';
+    });
+
+    $('btnPendente').addEventListener('click', () => {
+        const item = fila.find(i => i.chave === selecionada);
+        if (!item) return;
+        item.status = 'pendente';
+        item.parecer = $('parecer').value.trim();
+        item.id_reservado = null;
+        salvarFila(); mostrarItem(item); renderFila();
+    });
+
+    $('btnExcluir').addEventListener('click', () => {
+        const item = fila.find(i => i.chave === selecionada);
+        if (!item) return;
+        if (!confirm(`Excluir "${item.dados.name}" da fila?`)) return;
+        fila = fila.filter(i => i.chave !== selecionada);
+        selecionada = null;
+        salvarFila(); renderFila();
+        $('painelAnalise').hidden = true;
+        $('painelPatch').hidden = true;
+    });
+
+    function baixar(nome, conteudo, tipo) {
+        const blob = new Blob([conteudo], { type: tipo || 'application/json' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url; a.download = nome;
+        document.body.appendChild(a); a.click(); a.remove();
+        setTimeout(() => URL.revokeObjectURL(url), 4000);
+    }
+
+    function pacoteAprovadas() {
+        const aprovadas = fila.filter(i => i.status === 'aprovada' && i.id_reservado);
+        return {
+            gerado_em: new Date().toISOString(),
+            softwares: aprovadas.map(i => entradaSoftwares(i.dados, i.id_reservado)),
+            detalhes: Object.fromEntries(aprovadas.map(i => [String(i.id_reservado), entradaDetalhes(i.dados)]))
+        };
+    }
+
+    $('btnBaixarAprovadas').addEventListener('click', () => {
+        const pacote = pacoteAprovadas();
+        if (!pacote.softwares.length) { $('statusImport').textContent = 'Nenhuma sugestão aprovada para baixar.'; return; }
+        baixar('pacote-aprovadas.json', JSON.stringify(pacote, null, 2));
+        $('statusImport').textContent = `Pacote com ${pacote.softwares.length} aprovada(s) baixado. Rode: node mesclar-sugestoes.js pacote-aprovadas.json`;
+    });
+
+    $('btnExportarFila').addEventListener('click', () => {
+        if (!fila.length) { $('statusImport').textContent = 'Fila vazia.'; return; }
+        baixar('fila-sugestoes.json', JSON.stringify(fila, null, 2));
+    });
+
+    $('btnBaixarPatch').addEventListener('click', () => {
+        const item = fila.find(i => i.chave === selecionada);
+        if (!item || item.status !== 'aprovada') return;
+        baixar(`aprovada-${item.id_reservado}-${slug(item.dados.name)}.json`, JSON.stringify({
+            gerado_em: new Date().toISOString(),
+            softwares: [entradaSoftwares(item.dados, item.id_reservado)],
+            detalhes: { [String(item.id_reservado)]: entradaDetalhes(item.dados) }
+        }, null, 2));
+    });
+
+    $('btnCopiarPatch').addEventListener('click', () => {
+        const texto = $('patchSoftware').textContent + '\n\n' + $('patchDetalhe').textContent;
+        if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(texto).then(() => { $('statusAnalise').textContent = 'Blocos copiados.'; }, () => { $('statusAnalise').textContent = 'Copie manualmente dos campos acima.'; });
+        else $('statusAnalise').textContent = 'Copie manualmente dos campos acima.';
+    });
+
+    $('btnLimparFila').addEventListener('click', () => {
+        if (!fila.length) return;
+        if (!confirm('Esvaziar a fila deste navegador? Exporte antes se quiser guardar o histórico.')) return;
+        fila = []; selecionada = null;
+        salvarFila(); renderFila();
+        $('painelAnalise').hidden = true;
+        $('painelPatch').hidden = true;
+    });
+
+    $('btnExemplo').addEventListener('click', () => {
+        const exemplo = {
+            versao: 1, enviado_em: new Date().toISOString(),
+            name: 'Exemplo-QM', area: 'quimica-quantica', applicability: ['cli', 'python'], price: 'free',
+            license: 'MIT', website: 'https://exemplo-qm.org/', description: 'Pacote de demonstração para testar o painel.',
+            tags: ['DFT', 'Open Source'], resumo: 'Ferramenta fictícia usada apenas para validar o fluxo de aprovação.',
+            recursos: ['DFT híbrido', 'Gradientes analíticos'], plataformas: ['Linux'],
+            publicacao: null, doi_url: null,
+            links: { site: 'https://exemplo-qm.org/', download: 'https://github.com/exemplo-qm/exemplo/releases', documentacao: 'https://exemplo-qm.org/docs', tutorial: null, suporte: null, codigo: 'https://github.com/exemplo-qm/exemplo', publicacao: null },
+            proponente: { nome: 'Painel de teste', email: '' }, motivo: 'Só para conferir a análise.'
+        };
+        const bloco = [MARCA_INICIO, (function () {
+            const bytes = new TextEncoder().encode(JSON.stringify(exemplo));
+            let bin = '';
+            for (let i = 0; i < bytes.length; i++) bin += String.fromCharCode(bytes[i]);
+            const b64 = btoa(bin);
+            const pedacos = [];
+            for (let i = 0; i < b64.length; i += 72) pedacos.push(b64.slice(i, i + 72));
+            return pedacos.join('\r\n');
+        })(), MARCA_FIM].join('\r\n');
+        $('entradaTexto').value = `Nome: Exemplo-QM\r\nSite oficial: https://exemplo-qm.org/\r\n\r\n${bloco}`;
+        $('statusImport').textContent = 'Exemplo pronto: clique em Analisar texto.';
+    });
+
+    carregarFila();
+    renderFila();
+    </script>
+
+<footer class="site-footer">
+    <span>Faltou alguma ferramenta? <a href="sugerir.html">Sugira um software ou base de dados</a> — a proposta passa pela revisão do administrador antes de entrar no catálogo.</span>
+    <div class="footer-credits" style="text-align:center; font-size:0.85rem; color:#1a2a6c; margin-top:0.5rem;">Desenvolvido pelo Pople Computational Chemistry</div>
+</footer>
+</body>
+</html>
