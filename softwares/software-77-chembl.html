@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Banco curado de atividades bioquímicas de fármacos e moléculas bioativas, mantido pelo EMBL-EBI.">
+    <title>ChEMBL - CompMol</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', sans-serif; background: #ffffff; color: #1a2a6c; min-height: 100vh; }
+        header { background: linear-gradient(135deg, #1a2a6c 0%, #3b5998 100%); color: white; padding: 2rem 0; text-align: center; }
+        header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+        header h1 a { color: inherit; text-decoration: none; border-bottom: 2px solid transparent; transition: opacity 0.2s, border-color 0.2s; }
+        header h1 a:hover { opacity: 0.85; border-bottom-color: rgba(255,255,255,0.7); }
+        header h1 a:focus-visible { outline: 3px solid #ffd54f; outline-offset: 4px; border-radius: 4px; }
+        header p { font-size: 1.1rem; opacity: 0.9; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+        .nav-back { margin-bottom: 2rem; text-align: center; }
+        .nav-back a { color: #1a2a6c; text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 0.5rem; }
+        .nav-back a:hover { text-decoration: underline; }
+        .software-detail { background: white; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); overflow: hidden; }
+        .detail-header { padding: 2rem; background: linear-gradient(135deg, #f0f4ff 0%, #e9ecef 100%); border-bottom: 1px solid #eee; }
+        .detail-header h2 { font-size: 2rem; color: #1a2a6c; margin-bottom: 0.5rem; }
+        .detail-subtitle { color: #666; font-size: 1rem; margin-bottom: 1rem; }
+        .detail-meta { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+        .badge { padding: 0.35rem 0.85rem; border-radius: 20px; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.3px; }
+        .badge-area { background: #e3f2fd; color: #1565c0; border: 1px solid #bbdefb; }
+        .badge-applicability { background: #e3f2fd; color: #1565c0; border: 1px solid #bbdefb; }
+        .badge-price { background: #e8f5e9; color: #2e7d32; border: 1px solid #c8e6c9; }
+        .price-free { background: #bbdefb; color: #0d47a1; border: 1px solid #90caf9; }
+        .price-academic { background: #e3f2fd; color: #1565c0; border: 1px solid #bbdefb; }
+        .price-paid { background: #bbdefb; color: #1a2a6c; border: 1px solid #90caf9; }
+        .price-freemium { background: #bbdefb; color: #0d47a1; border: 1px solid #90caf9; }
+        .app-desktop { background: #e3f2fd; color: #1565c0; border: 1px solid #bbdefb; }
+        .app-hpc { background: #e3f2fd; color: #1a2a6c; border: 1px solid #bbdefb; }
+        .app-web { background: #e3f2fd; color: #1565c0; border: 1px solid #bbdefb; }
+        .app-cli { background: #e3f2fd; color: #1565c0; border: 1px solid #bbdefb; }
+        .app-python { background: #e3f2fd; color: #1a2a6c; border: 1px solid #bbdefb; }
+        .detail-body { padding: 2rem; }
+        .info-section { margin-bottom: 2rem; }
+        .info-section:last-child { margin-bottom: 0; }
+        .info-section h3 { color: #1a2a6c; margin-bottom: 1rem; font-size: 1.2rem; border-bottom: 2px solid #1a2a6c; padding-bottom: 0.3rem; display: inline-block; }
+        .info-section p { color: #555; font-size: 1rem; line-height: 1.7; }
+        .grid-info { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin-bottom: 2rem; }
+        .info-card { background: #f0f4ff; padding: 1.25rem; border-radius: 8px; border-left: 4px solid #1a2a6c; }
+        .info-card h4 { color: #1a2a6c; font-size: 0.85rem; text-transform: uppercase; margin-bottom: 0.5rem; letter-spacing: 0.5px; }
+        .info-card p { color: #555; font-size: 0.95rem; margin: 0; line-height: 1.5; }
+        .recursos { list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 0.6rem 1.5rem; }
+        .recursos li { color: #555; font-size: 0.95rem; padding-left: 1.4rem; position: relative; line-height: 1.5; }
+        .recursos li::before { content: '✓'; position: absolute; left: 0; color: #1a2a6c; font-weight: 700; }
+        .tags { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+        .tag { font-size: 0.75rem; padding: 0.25rem 0.65rem; background: #e9ecef; border-radius: 6px; color: #555; font-weight: 500; }
+        .links-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; }
+        .link-card { display: flex; align-items: center; gap: 0.75rem; background: #f0f4ff; border: 1px solid #e9ecef; border-radius: 8px; padding: 1rem; text-decoration: none; color: #1a2a6c; font-weight: 600; font-size: 0.95rem; transition: all 0.2s; }
+        .link-card:hover { background: #1a2a6c; color: white; transform: translateY(-2px); box-shadow: 0 4px 12px rgba(26,42,108,0.25); }
+        .link-card span.domain { display: block; font-weight: 400; font-size: 0.8rem; opacity: 0.75; }
+        .citacao { background: #f0f4ff; border-left: 4px solid #1a2a6c; border-radius: 8px; padding: 1.25rem; }
+        .citacao p { font-size: 0.95rem; }
+        .citacao a { color: #1a2a6c; font-weight: 600; }
+        .aviso { margin-top: 1.5rem; font-size: 0.85rem; color: #777; background: #f0f4ff; border: 1px solid #e1e8ff; border-radius: 8px; padding: 0.9rem 1.1rem; }
+        .website-link { display: inline-flex; align-items: center; gap: 0.5rem; background: #1a2a6c; color: white; padding: 0.8rem 1.5rem; border-radius: 6px; text-decoration: none; font-weight: 600; transition: background 0.2s; }
+        .website-link:hover { background: #1a2a6c; }
+        @media (max-width: 768px) { .container { padding: 1rem; } header h1 { font-size: 1.8rem; } .detail-body { padding: 1.25rem; } .recursos { grid-template-columns: 1fr; } }
+        .site-footer { width: 100%; margin: 0 auto; padding: 0 clamp(1rem, 2.5vw, 3rem) 2.5rem; display: flex; flex-direction: column; align-items: center; gap: 0.5rem; font-size: 0.85rem; color: #1a2a6c; text-align: center; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a href="../index.html" aria-label="CompMol — voltar à página inicial"><img src="../assets/Designer.png" alt="CompMol" style="height: 2rem; width: auto; vertical-align: middle; margin-right: 0.75rem;">CompMol</a></h1>
+        <p>Portal de Aplicações Computacionais Moleculares</p>
+    </header>
+
+    <div class="container">
+        <div class="nav-back">
+            <a href="../index.html">← Voltar à lista de softwares</a>
+        </div>
+
+        <div class="software-detail">
+            <div class="detail-header">
+                <h2>ChEMBL</h2>
+                <p class="detail-subtitle">Banco curado de atividades bioquímicas de fármacos e moléculas bioativas, mantido pelo EMBL-EBI.</p>
+                <div class="detail-meta">
+                    <span class="badge badge-area">Bases de Dados e Portais</span>
+                    <span class="badge badge-price price-free">Gratuito / Open Source</span>
+                    <span class="badge badge-applicability app-web">Web / Nuvem</span>
+                </div>
+            </div>
+
+            <div class="detail-body">
+                <div class="grid-info">
+                    <div class="info-card">
+                        <h4>Área de Estudo</h4>
+                        <p>Bases de Dados e Portais</p>
+                    </div>
+                    <div class="info-card">
+                        <h4>Licença</h4>
+                        <p>CC BY-SA 3.0</p>
+                    </div>
+                    <div class="info-card">
+                        <h4>Preço para Uso</h4>
+                        <p>Gratuito / Open Source</p>
+                    </div>
+                    <div class="info-card">
+                        <h4>Plataformas</h4>
+                        <p>Web</p>
+                    </div>
+                </div>
+
+                <div class="info-section">
+                    <h3>Visão Geral</h3>
+                    <p>O ChEMBL reúne, com curadoria manual de literatura e repositórios, dados de moléculas bioativas, seus alvos, experimentos e medidas de atividade (potência, seletividade, ADMET e ensaios funcionais). É a base de referência para modelagem QSAR, mineração de relação estrutura-atividade e construção de datasets de aprendizado de máquina, com busca por estrutura, sequência e alvo, API REST, ferramentas web e downloads completos e por liberações versionadas.</p>
+                </div>
+
+                <div class="info-section">
+                    <h3>Principais Recursos</h3>
+                    <ul class="recursos">
+                        <li>Medidas de atividade curadas ligadas a alvos</li>
+                        <li>Busca por estrutura, similaridade e alvo</li>
+                        <li>API REST e ferramentas web</li>
+                        <li>Downloads completos em SDF/CSV por versão</li>
+                        <li>Dados de ADMET e ensaios funcionais</li>
+                    </ul>
+                </div>
+
+                <div class="info-section">
+                    <h3>Tags</h3>
+                    <div class="tags">
+                        <span class="tag">Banco de dados</span>
+                        <span class="tag">SAR</span>
+                        <span class="tag">Atividade</span>
+                        <span class="tag">Alvos</span>
+                        <span class="tag">QSAR</span>
+                    </div>
+                </div>
+
+                <div class="info-section">
+                    <h3>Links Úteis</h3>
+                    <div class="links-grid">
+                    <a class="link-card" href="https://www.ebi.ac.uk/chembl/" target="_blank" rel="noopener noreferrer">
+                        <span>🔗 Site Oficial</span>
+                        <span class="domain">ebi.ac.uk</span>
+                    </a>
+                    <a class="link-card" href="https://chembl.gitbook.io/chembl-interface-documentation/frequently-asked-questions/general-questions" target="_blank" rel="noopener noreferrer">
+                        <span>📖 Documentação</span>
+                        <span class="domain">chembl.gitbook.io</span>
+                    </a>
+                    <a class="link-card" href="https://doi.org/10.1093/nar/gkad1004" target="_blank" rel="noopener noreferrer">
+                        <span>📄 Publicação / Citação</span>
+                        <span class="domain">doi.org</span>
+                    </a>
+                    </div>
+                </div>
+
+                <p class="aviso">Conteúdo e links verificados nas páginas oficiais em novembro de 2026. Licenças e preços podem mudar — confirme no site do desenvolvedor antes de citar ou instalar.</p>
+            </div>
+        </div>
+    </div>
+<footer class="site-footer">
+                    <span>Faltou alguma ferramenta? <a href="../sugerir.html">Sugira um software ou base de dados</a> — a proposta passa pela revisão do administrador antes de entrar no catálogo.</span>
+                    <div class="footer-credits" style="text-align:center; font-size:0.85rem; color:#1a2a6c; margin-top:0.5rem;">Desenvolvido pelo Pople Computational Chemistry</div>
+                </footer>
+</body>
+</html>
