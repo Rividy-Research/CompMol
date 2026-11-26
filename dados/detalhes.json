@@ -1,0 +1,2342 @@
+{
+  "1": {
+    "resumo": "O Gaussian 16 é a versão mais recente da série de programas Gaussian, voltada à modelagem da estrutura eletrônica com capacidades de última geração. É amplamente utilizado por químicos teóricos e computacionais, tanto na academia quanto na indústria, para calcular estruturas, energias e propriedades espectroscópicas de moléculas.",
+    "recursos": [
+      "Hartree-Fock (HF)",
+      "DFT",
+      "MP2 e métodos de cluster acoplado (CCSD)",
+      "CASSCF",
+      "Métodos semiempíricos (AM1/PM3/PM6/PDDG)",
+      "ONIOM (métodos multinível)",
+      "Análise vibracional (IR/Raman/VCD/ROA)"
+    ],
+    "plataformas": [
+      "Linux",
+      "macOS",
+      "Windows",
+      "Unix"
+    ],
+    "licenca": "Comercial",
+    "publicacao": "Gaussian 16, Rev. C.01, M. J. Frisch, G. W. Trucks, H. B. Schlegel, G. E. Scuseria et al., Gaussian, Inc., Wallingford CT, 2016.",
+    "doi_url": null,
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://gaussian.com/",
+      "download": null,
+      "documentacao": "https://gaussian.com/man/",
+      "tutorial": null,
+      "suporte": "https://gaussian.com/techsupport/",
+      "codigo": null,
+      "publicacao": "https://gaussian.com/citation/"
+    }
+  },
+  "2": {
+    "resumo": "O ORCA é um pacote de química quântica de propósito geral, flexível e fácil de usar, iniciado por Frank Neese e desenvolvido pelo Max-Planck-Institut für Kohlenforschung junto à FACCTs, com ênfase nas propriedades espectroscópicas de sistemas de camada aberta. É gratuito para uso acadêmico e muito empregado em química computacional, inorgânica e espectroscopia teórica.",
+    "recursos": [
+      "Métodos semiempíricos",
+      "DFT",
+      "Perturbação de muitos corpos (MPn)",
+      "Cluster acoplado (CC)",
+      "Métodos multirreferenciais",
+      "Propriedades espectroscópicas de sistemas de camada aberta"
+    ],
+    "plataformas": [
+      "Linux",
+      "macOS",
+      "Windows"
+    ],
+    "licenca": "Gratuito para uso acadêmico (uso comercial via FACCTs)",
+    "publicacao": "Neese, F. The ORCA program system. WIREs Computational Molecular Science, 2012, v. 2, p. 73-78.",
+    "doi_url": "https://doi.org/10.1002/wcms.81",
+    "url_oficial_corrigida": "https://www.faccts.de/orca/",
+    "links": {
+      "site": "https://www.faccts.de/orca/",
+      "download": "https://www.faccts.de/docs/orca/6.1/manual/",
+      "documentacao": "https://www.faccts.de/docs/orca/6.1/manual/",
+      "tutorial": "https://www.faccts.de/docs/orca/6.0/tutorials/first_steps/install.html",
+      "suporte": "https://orcaforum.kofo.mpg.de/",
+      "codigo": null,
+      "publicacao": "https://doi.org/10.1002/wcms.81"
+    }
+  },
+  "3": {
+    "resumo": "O Psi4 é um programa de estrutura eletrônica ab initio de código aberto, com núcleo em C++ e driver em Python, capaz de executar cálculos em múltiplos núcleos de CPU. É usado por pesquisadores, docentes, estudantes e também pela indústria em química computacional.",
+    "recursos": [
+      "DFT",
+      "MP2",
+      "SAPT",
+      "Acoplado de cluster (CCSD(T))",
+      "DLPNO e métodos com correlação explícita (F12)",
+      "Density fitting",
+      "Execução multi-core com driver Python"
+    ],
+    "plataformas": [
+      "Linux",
+      "macOS",
+      "Windows"
+    ],
+    "licenca": "Código aberto (GNU LGPL)",
+    "publicacao": "Psi4 1.4: Open-Source Software for High-Throughput Quantum Chemistry, D. G. A. Smith et al., J. Chem. Phys. 152, 184108 (2020).",
+    "doi_url": "https://doi.org/10.1063/5.0006002",
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://psicode.org/",
+      "download": "https://psicode.org/installs/latest/",
+      "documentacao": "https://psicode.org/psi4manual/master/index.html",
+      "tutorial": "http://psicode.org/psi4manual/master/index_tutorials.html",
+      "suporte": "http://forum.psicode.org",
+      "codigo": "https://github.com/psi4/psi4/",
+      "publicacao": "https://doi.org/10.1063/5.0006002"
+    }
+  },
+  "4": {
+    "resumo": "O GAMESS (General Atomic and Molecular Electronic Structure System) é um programa de química quântica ab initio para o cálculo de funções de onda moleculares e propriedades de moléculas e materiais. É distribuído gratuitamente mediante cadastro e amplamente utilizado pela comunidade acadêmica e industrial.",
+    "recursos": [
+      "SCF/Hartree-Fock (RHF/ROHF/UHF)",
+      "DFT",
+      "MP2",
+      "Métodos CI e CCSD",
+      "CASSCF",
+      "Semiempíricos (AM1/PM3/PM6/PDDG)",
+      "Teoria do vínculo de valência (VB)"
+    ],
+    "plataformas": [
+      "Linux",
+      "macOS",
+      "Windows"
+    ],
+    "licenca": "Gratuito (requer cadastro/licença)",
+    "publicacao": "General Atomic and Molecular Electronic Structure System, M. W. Schmidt, K. K. Baldridge, J. A. Boatz, S. T. Elbert, M. S. Gordon et al., J. Comput. Chem. 14, 1347-1363 (1993).",
+    "doi_url": "https://doi.org/10.1002/jcc.540141112",
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://www.msg.chem.iastate.edu/gamess/",
+      "download": "https://www.msg.chem.iastate.edu/gamess/download.html",
+      "documentacao": "https://www.msg.chem.iastate.edu/gamess/GAMESS_Manual/intro.pdf",
+      "tutorial": "https://www.msg.chem.iastate.edu/tutorials/gamessintro.pdf",
+      "suporte": "https://www.msg.chem.iastate.edu/gamess/",
+      "codigo": null,
+      "publicacao": "https://www.msg.chem.iastate.edu/gamess/references.html"
+    }
+  },
+  "5": {
+    "resumo": "O Q-Chem é um programa comercial de química quântica para prever com rapidez e precisão estruturas, reatividades, propriedades e espectros de moléculas e materiais. Inclui os pacotes relacionados QC-PBC (modelagem periódica) e M-Chem (modelagem biomolecular), sendo usado em academia e indústria.",
+    "recursos": [
+      "DFT com mais de 200 funcionais",
+      "MP2 de escala linear e DFT dupla-híbrida",
+      "Estados excitados (CIS/TDDFT, MRSF-TDDFT)",
+      "Espectroscopia de raios-X e RMN",
+      "Modelos de solvatação e QM/MM",
+      "ALMO-EDA e XSAPT",
+      "Sólidos periódicos (QC-PBC)"
+    ],
+    "plataformas": [
+      "Linux",
+      "macOS",
+      "Windows"
+    ],
+    "licenca": "Comercial",
+    "publicacao": null,
+    "doi_url": null,
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://q-chem.com/",
+      "download": "https://www.q-chem.com/try",
+      "documentacao": "https://manual.q-chem.com/",
+      "tutorial": "https://www.q-chem.com/learn/start",
+      "suporte": "https://talk.q-chem.com/",
+      "codigo": null,
+      "publicacao": null
+    }
+  },
+  "6": {
+    "resumo": "Pacote para modelagem de materiais em escala atômica a partir de primeiros princípios, desenvolvido na Universidade de Viena. É um código comercial licenciado, amplamente usado em física, química e ciência dos materiais para cálculos de estrutura eletrônica e simulações atomísticas.",
+    "recursos": [
+      "DFT com base de ondas planas",
+      "Pseudopotenciais PAW e ultrasuaves",
+      "Dinâmica molecular ab initio",
+      "Funcionais de troca-correlação incluindo meta-GGA e híbridos",
+      "Espectroscopia many-body (GW, BSE, XAS)",
+      "Fónons e RMN de estado sólido",
+      "Machine-learned force fields"
+    ],
+    "plataformas": [],
+    "licenca": "Comercial (licenciamento obrigatório via registro)",
+    "publicacao": "G. Kresse e J. Furthmüller, Efficient iterative schemes for ab initio total-energy calculations using a plane-wave basis set, Phys. Rev. B 54, 11169 (1996).",
+    "doi_url": "https://doi.org/10.1103/PhysRevB.54.11169",
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://www.vasp.at",
+      "download": "https://www.vasp.at/sign_in/registration_form/",
+      "documentacao": "https://www.vasp.at/wiki/",
+      "tutorial": "https://www.vasp.at/tutorials/latest/",
+      "suporte": "https://www.vasp.at/forum/",
+      "codigo": null,
+      "publicacao": "https://www.vasp.at/learn/papers/"
+    }
+  },
+  "7": {
+    "resumo": "Suíte integrada de códigos open-source para cálculos de estrutura eletrônica e modelagem de materiais na nanoescala, baseada em teoria do funcional da densidade (DFT), ondas planas e pseudopotenciais. Mantida pela Quantum ESPRESSO Foundation e usada por pesquisadores acadêmicos e industriais em todo o mundo.",
+    "recursos": [
+      "DFT com ondas planas",
+      "Pseudopotenciais (com banco de dados oficial)",
+      "Modelagem de materiais na nanoescala",
+      "Versões habilitadas para GPU",
+      "Ecossistema de módulos e ferramentas integradas"
+    ],
+    "plataformas": [],
+    "licenca": "GNU GPL v2 ou posterior (open source)",
+    "publicacao": "P. Giannozzi et al., Quantum ESPRESSO: a modular and open-source software project for quantum simulations of materials, J. Phys.: Condens. Matter 21, 395502 (2009).",
+    "doi_url": "https://doi.org/10.1088/0953-8984/21/39/395502",
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://www.quantum-espresso.org",
+      "download": "https://www.quantum-espresso.org/download-page/",
+      "documentacao": "https://www.quantum-espresso.org/documentation/",
+      "tutorial": "https://www.quantum-espresso.org/learn/",
+      "suporte": "https://www.quantum-espresso.org/forum/",
+      "codigo": "https://gitlab.com/QEF/q-e",
+      "publicacao": "https://www.quantum-espresso.org/cite/"
+    }
+  },
+  "8": {
+    "resumo": "Pacote de software de química quântica e física do estado sólido, escrito em Fortran 2008, para simulações atomísticas de sistemas sólidos, líquidos, moleculares, periódicos, cristalinos e biológicos. É open-source e usado em dinâmica molecular eletrônica com alto desempenho paralelo.",
+    "recursos": [
+      "DFT com abordagem mista Gaussianas/plano de onda (GPW e GAPW)",
+      "DFTB, LDA, GGA, MP2, RPA e semiempíricos (AM1, PM3, PM6, MNDO)",
+      "Campos de força clássicos (AMBER, CHARMM)",
+      "Dinâmica molecular ab initio, metadinâmica e Monte Carlo",
+      "QM/MM (componentes Quickstep e FIST)",
+      "Análise vibracional e otimização de estado de transição (NEB/dimer)",
+      "Paralelismo com multithreading, MPI, CUDA e HIP"
+    ],
+    "plataformas": [
+      "Linux",
+      "macOS",
+      "Windows"
+    ],
+    "licenca": "GNU GPL (gratuito/open source)",
+    "publicacao": "T. D. Kühne et al., CP2K: An electronic structure and molecular dynamics software package - Quickstep, J. Chem. Phys. 152, 194103 (2020).",
+    "doi_url": "https://doi.org/10.1063/5.0007045",
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://www.cp2k.org",
+      "download": "https://www.cp2k.org/download",
+      "documentacao": "http://manual.cp2k.org",
+      "tutorial": "https://www.cp2k.org/exercises",
+      "suporte": "https://github.com/cp2k/cp2k/issues",
+      "codigo": "https://github.com/cp2k/cp2k",
+      "publicacao": "https://doi.org/10.1063/5.0007045"
+    }
+  },
+  "9": {
+    "resumo": "Método e programa para cálculos eficientes de estrutura eletrônica e dinâmica molecular ab initio de moléculas e sólidos, usando orbitais atômicos estritamente localizados que permitem escala linear (O(N)). É open-source e usado por vários milhares de usuários em geociências, biologia, engenharia e física/química de materiais.",
+    "recursos": [
+      "DFT de Kohn-Sham (LDA-LSD e GGA, com van der Waals)",
+      "Pseudopotenciais norm-conserving não locais (Kleinman-Bylander)",
+      "Orbitais atômicos localizados de suporte finito (múltiplos zeta, polarização)",
+      "Escalonamento O(N)",
+      "Dinâmica molecular com termostato de Nosé e célula de Parrinello-Rahman",
+      "Fónons e TDDFT em tempo real",
+      "TranSIESTA para transporte quântico em nanoescala"
+    ],
+    "plataformas": [],
+    "licenca": "GNU GPL v3 (open source desde 2016)",
+    "publicacao": "J. M. Soler et al., The SIESTA method for ab initio order-N materials simulation, J. Phys.: Condens. Matter 14, 2745 (2002).",
+    "doi_url": "https://doi.org/10.1088/0953-8984/14/11/302",
+    "url_oficial_corrigida": "https://siesta-project.org/siesta",
+    "links": {
+      "site": "https://siesta-project.org/siesta",
+      "download": "https://siesta-project.org/siesta/CodeAccess/",
+      "documentacao": "https://siesta-project.org/siesta/Documentation/",
+      "tutorial": null,
+      "suporte": "https://siesta-project.org/siesta/support/",
+      "codigo": "https://gitlab.com/siesta-project/siesta",
+      "publicacao": "https://doi.org/10.1088/0953-8984/14/11/302"
+    }
+  },
+  "10": {
+    "resumo": "Código de primeira princípios para calcular propriedades de materiais, baseado em teoria do funcional da densidade (DFT), cobrindo energias, estrutura atômica, vibrações, resposta eletrônica e espectroscopias comparáveis a experimentos. É distribuído gratuitamente para uso acadêmico sob licença do STFC, com versão comercial integrada ao BIOVIA Materials Studio.",
+    "recursos": [
+      "DFT com ondas planas e pseudopotenciais",
+      "Espectroscopia vibracional (IR/Raman)",
+      "RMN de estado sólido",
+      "Espectroscopias ópticas e de core-loss",
+      "Propriedades estruturais e dinâmica",
+      "Solucionadores eletrônicos e paralelismo"
+    ],
+    "plataformas": [],
+    "licenca": "Gratuita para acadêmicos (licença STFC); comercial via BIOVIA Materials Studio",
+    "publicacao": null,
+    "doi_url": null,
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://www.castep.org",
+      "download": "https://licences.stfc.ac.uk/product/castep",
+      "documentacao": "https://castep-docs.github.io/castep-docs",
+      "tutorial": "https://castep-docs.github.io/castep-docs/",
+      "suporte": "http://www.jiscmail.ac.uk/lists/CASTEP.html",
+      "codigo": null,
+      "publicacao": null
+    }
+  },
+  "11": {
+    "resumo": "Suíte gratuita e de código aberto para dinâmica molecular de alto desempenho e análise de resultados, usada sobretudo em simulações de biomoléculas, com foco em desempenho que vai de laptops a supercomputadores.",
+    "recursos": [
+      "Dinâmica molecular de alto desempenho",
+      "Análise de saída e trajetórias",
+      "Aceleração por GPU com CUDA, OpenCL e SYCL",
+      "Otimização por SIMD em CPU",
+      "Paralelismo MPI e Thread MPI",
+      "Simulações em larga escala em supercomputadores"
+    ],
+    "plataformas": [
+      "Linux",
+      "macOS",
+      "Windows"
+    ],
+    "licenca": "GNU LGPL v2.1 (software livre)",
+    "publicacao": "M. J. Abraham, T. Murtola, R. Schulz, S. Páll, J. C. Smith, B. Hess, E. Lindahl, GROMACS: High performance molecular simulations through multi-level parallelism from laptops to supercomputers, SoftwareX 1-2, 19-25 (2015).",
+    "doi_url": "https://doi.org/10.1016/j.softx.2015.06.001",
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://www.gromacs.org",
+      "download": "https://manual.gromacs.org/current/download.html",
+      "documentacao": "https://manual.gromacs.org/current/index.html",
+      "tutorial": "https://tutorials.gromacs.org/md-intro-tutorial.html",
+      "suporte": "http://forums.gromacs.org",
+      "codigo": "https://gitlab.com/gromacs/gromacs",
+      "publicacao": "https://doi.org/10.1016/j.softx.2015.06.001"
+    }
+  },
+  "12": {
+    "resumo": "Conjunto de programas de simulação biomolecular com origem no final dos anos 1970, que designa tanto o conjunto público de campos de força moleculares quanto o pacote de programas de simulação com código-fonte. É distribuído em duas partes: AmberTools (gratuito) e Amber (mediante licença).",
+    "recursos": [
+      "Campos de força para biomoléculas (ff19SB, OL24, OL3, GLYCAM_06j, lipids21, gaff2)",
+      "Dinâmica molecular com sander e pmemd",
+      "Aceleração por GPU (pmemd.cuda)",
+      "Energia livre alquímica (potenciais softcore, Jarzynski/Crooks)",
+      "Solvente implícito por Poisson-Boltzmann/GB",
+      "REMD de temperatura e Hamiltoniano",
+      "AmberTools com antechamber, tleap, cpptraj e sqm"
+    ],
+    "plataformas": [
+      "Linux",
+      "macOS",
+      "Windows"
+    ],
+    "licenca": "AmberTools gratuito (maioria GPL); Amber requer licença — gratuita para uso não comercial",
+    "publicacao": "D. A. Case et al., Recent Developments in Amber Biomolecular Simulations, J. Chem. Inf. Model. 65, 7835-7843 (2025).",
+    "doi_url": "https://doi.org/10.1021/acs.jcim.5c01063",
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://ambermd.org",
+      "download": "https://ambermd.org/GetAmber.php",
+      "documentacao": "https://ambermd.org/Manuals.php",
+      "tutorial": "https://ambermd.org/tutorials/",
+      "suporte": "https://ambermd.org/MailingLists.php",
+      "codigo": null,
+      "publicacao": "https://ambermd.org/CiteAmber.php"
+    }
+  },
+  "13": {
+    "resumo": "Código de dinâmica molecular paralelo projetado para simulação de alto desempenho de grandes sistemas biomoleculares, construído sobre o runtime paralelo Charm++. É distribuído gratuitamente com código-fonte pelo Theoretical and Computational Biophysics Group e usado com o VMD para preparo e análise.",
+    "recursos": [
+      "Dinâmica molecular paralela de grandes sistemas biomoleculares",
+      "Paralelismo Charm++ com balanceamento de carga",
+      "Compilações aceleradas por GPU (CUDA e AMD HIP/ROCm)",
+      "Eletrostática Particle Mesh Ewald",
+      "Termostato Langevin e controle de pressão",
+      "Replica exchange, umbrella sampling e energia livre alquímica",
+      "Solvente implícito Generalized Born e campo coarse-grain MARTINI"
+    ],
+    "plataformas": [
+      "Linux",
+      "macOS",
+      "Windows"
+    ],
+    "licenca": "Gratuito para uso acadêmico e de pesquisa; uso comercial exige licença",
+    "publicacao": "J. C. Phillips, D. J. Hardy, J. D. C. Maia et al., Scalable molecular dynamics on CPU and GPU architectures with NAMD, Journal of Chemical Physics 153, 044130 (2020).",
+    "doi_url": "https://doi.org/10.1063/5.0014475",
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://www.ks.uiuc.edu/Research/namd",
+      "download": "https://www.ks.uiuc.edu/Development/Download/download.cgi?PackageName=NAMD",
+      "documentacao": "https://www.ks.uiuc.edu/Research/namd/current/ug/",
+      "tutorial": "https://www.ks.uiuc.edu/Training/Tutorials/",
+      "suporte": "https://www.ks.uiuc.edu/Research/namd/mailing_list/",
+      "codigo": "https://gitlab.com/tcbgUIUC/namd",
+      "publicacao": "https://doi.org/10.1063/5.0014475"
+    }
+  },
+  "14": {
+    "resumo": "Código de dinâmica molecular clássica com foco em modelagem de materiais (Large-scale Atomic/Molecular Massively Parallel Simulator). Modela átomos ou atua como simulador paralelo de partículas em escala atômica, meso ou continuum, distribuído como software aberto sob GPLv2.",
+    "recursos": [
+      "Dinâmica molecular clássica para modelagem de materiais",
+      "Potenciais para sólidos (metais, semicondutores) e matéria mole",
+      "Paralelismo com message-passing e decomposição espacial",
+      "Desempenho acelerado em CPU e GPU",
+      "Simulação em escala atômica, meso e continuum",
+      "Arquitetura extensível por packages",
+      "LAMMPS-GUI interativa multiplataforma"
+    ],
+    "plataformas": [
+      "Linux",
+      "macOS",
+      "Windows"
+    ],
+    "licenca": "GPLv2 (open source)",
+    "publicacao": "A. P. Thompson et al., LAMMPS - a flexible simulation tool for particle-based materials modeling at the atomic, meso, and continuum scales, Comp. Phys. Comm. 271, 108171 (2022).",
+    "doi_url": "https://doi.org/10.1016/j.cpc.2021.108171",
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://www.lammps.org",
+      "download": "https://www.lammps.org/download/",
+      "documentacao": "https://docs.lammps.org/Manual.html",
+      "tutorial": "https://www.lammps.org/documentation/tutorials/",
+      "suporte": "https://matsci.org/lammps",
+      "codigo": "https://github.com/lammps/lammps",
+      "publicacao": "https://www.lammps.org/about/citing/"
+    }
+  },
+  "15": {
+    "resumo": "Ferramenta de simulação molecular de alta performance e personalizável, que pode ser usada como aplicação autônoma ou como biblioteca embutida em outros programas. Oferece flexibilidade extrema, abertura e alto desempenho, especialmente em GPUs recentes.",
+    "recursos": [
+      "Dinâmica molecular de alta performance, especialmente em GPU",
+      "Plataformas CUDA, OpenCL, HIP, CPU e Reference",
+      "Forças e integradores customizáveis",
+      "Camada de aplicação e biblioteca de APIs",
+      "APIs em Python, C++ e Fortran",
+      "Potenciais de machine learning (OpenMM 8) e forças polarizáveis AMOEBA"
+    ],
+    "plataformas": [
+      "Linux",
+      "macOS",
+      "Windows"
+    ],
+    "licenca": "MIT ou GNU LGPL (maior parte do código)",
+    "publicacao": "P. Eastman, R. Galvelis, R. P. Peláez et al. e T. E. Markland, OpenMM 8: Molecular Dynamics Simulation with Machine Learning Potentials, J. Phys. Chem. B 128(1), 109-116 (2024).",
+    "doi_url": "https://doi.org/10.1021/acs.jpcb.3c06662",
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://openmm.org",
+      "download": "https://docs.openmm.org/latest/userguide/application/01_getting_started.html",
+      "documentacao": "https://docs.openmm.org/latest/userguide/",
+      "tutorial": "https://openmm.github.io/openmm-cookbook/",
+      "suporte": "https://github.com/openmm/openmm/discussions",
+      "codigo": "https://github.com/openmm/openmm",
+      "publicacao": "https://doi.org/10.1021/acs.jpcb.3c06662"
+    }
+  },
+  "16": {
+    "resumo": "Conjunto de bibliotecas de quimioinformática de código aberto. O núcleo de estruturas de dados e algoritmos é escrito em C++, com wrappers para Python, Java e C#, além de componentes de integração. É usado por químicos computacionais e desenvolvedores que precisam manipular moléculas programaticamente.",
+    "recursos": [
+      "Núcleo de quimioinformática em C++",
+      "Wrapper para Python 3.x",
+      "Wrappers Java e C# gerados com SWIG",
+      "Wrapper JavaScript (emscripten) e CFFI",
+      "Cartucho para PostgreSQL",
+      "Nós de quimioinformática para KNIME",
+      "Instalação via pip e conda-forge"
+    ],
+    "plataformas": [
+      "Linux",
+      "macOS",
+      "Windows"
+    ],
+    "licenca": "BSD (BSD-3-Clause)",
+    "publicacao": null,
+    "doi_url": null,
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://www.rdkit.org",
+      "download": "https://pypi.org/project/rdkit/",
+      "documentacao": "https://www.rdkit.org/docs/index.html",
+      "tutorial": "https://rdkit.org/docs/GettingStartedInPython.html",
+      "suporte": "https://github.com/rdkit/rdkit/discussions",
+      "codigo": "https://github.com/rdkit/rdkit",
+      "publicacao": null
+    }
+  },
+  "17": {
+    "resumo": "Caixa de ferramentas química projetada para falar as muitas linguagens dos dados químicos, um projeto aberto e colaborativo para buscar, converter, analisar e armazenar dados moleculares. Oferece programas prontos e um kit completo para programadores, sendo amplamente usado em quimioinformática e bioinformática.",
+    "recursos": [
+      "Leitura, escrita e conversão de mais de 110 formatos químicos",
+      "Filtragem e busca de arquivos moleculares com SMARTS",
+      "Programas prontos e toolkit para programadores",
+      "Suporte a modelagem molecular, quimioinformática e bioinformática",
+      "Cobertura de química orgânica, inorgânica e materiais de estado sólido"
+    ],
+    "plataformas": [
+      "Windows",
+      "Linux",
+      "macOS"
+    ],
+    "licenca": "GNU GPL (GPL-2.0)",
+    "publicacao": "N. M. O'Boyle, M. Banck, C. A. James, C. Morley, T. Vandermeersch, G. R. Hutchison, Open Babel: An open chemical toolbox, Journal of Cheminformatics 3, 33 (2011).",
+    "doi_url": "https://doi.org/10.1186/1758-2946-3-33",
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://openbabel.org",
+      "download": "https://github.com/openbabel/openbabel/releases",
+      "documentacao": "https://openbabel.org/docs/",
+      "tutorial": null,
+      "suporte": "https://sourceforge.net/p/openbabel/mailman/openbabel-discuss/",
+      "codigo": "https://github.com/openbabel/openbabel",
+      "publicacao": "https://doi.org/10.1186/1758-2946-3-33"
+    }
+  },
+  "18": {
+    "resumo": "Software comercial de desenho químico da Revvity Signals Software: a URL antiga da PerkinElmer retorna 404 e o produto hoje pertence à Revvity. Reúne ferramentas de desenho e edição para criar estruturas e reações, com opções desktop e em nuvem, destinado a químicos que produzem figuras e esquemas reacionais para publicação.",
+    "recursos": [
+      "Ferramentas de desenho e edição de estruturas e reações",
+      "Name-to-Structure e Structure-to-Name",
+      "Previsão de RMN de 1H e 13C e de pKa (edições Professional)",
+      "Análise e checagem de estruturas com percepção estereoquímica",
+      "Ferramentas de fragmentação por massas",
+      "Coleções de moléculas e reações na nuvem",
+      "Conexão do canvas a bases científicas como SciFinder e Reaxys"
+    ],
+    "plataformas": [
+      "Windows",
+      "macOS"
+    ],
+    "licenca": "Comercial",
+    "publicacao": null,
+    "doi_url": null,
+    "url_oficial_corrigida": "https://revvitysignals.com/products/research/chemdraw",
+    "links": {
+      "site": "https://revvitysignals.com/products/research/chemdraw",
+      "download": "https://connect.revvitysignals.com/sitesubscription/",
+      "documentacao": "https://support.revvitysignals.com/hc/en-us/articles/9130327027220-ChemDraw-Where-can-I-find-the-User-Guide-for-ChemDraw",
+      "tutorial": "https://support.revvitysignals.com/hc/en-us/articles/39632645717396-How-to-get-started-with-ChemDraw-as-a-University-Student",
+      "suporte": "https://support.revvitysignals.com/hc/en-us/sections/360010804431-ChemDraw-ChemOffice-Products",
+      "codigo": null,
+      "publicacao": null
+    }
+  },
+  "19": {
+    "resumo": "Editor químico da ChemAxon, hoje distribuído sob a marca Certara após a aquisição. A página oficial apresenta o Marvin Desktop Suite, que reúne o MarvinSketch para desenho de estruturas, queries e reações, o visualizador MarvinView e o conversor de linha de comando Molconvert.",
+    "recursos": [
+      "Editor químico avançado e com consciência química",
+      "Desenho de estruturas, queries e reações",
+      "Visualização de múltiplas estruturas com MarvinView",
+      "Conversão entre formatos químicos via Molconvert",
+      "Suporte aos plugins de cálculo da ChemAxon",
+      "Importação/exportação nos formatos químicos mais comuns e no CXN",
+      "Execução em desktop e como componente web (Marvin JS)"
+    ],
+    "plataformas": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "licenca": "Comercial (versão gratuita para uso acadêmico)",
+    "publicacao": null,
+    "doi_url": null,
+    "url_oficial_corrigida": "https://www.certara.com/marvin/",
+    "links": {
+      "site": "https://www.certara.com/marvin/",
+      "download": "https://download.chemaxon.com/marvin-sketch",
+      "documentacao": "https://docs.chemaxon.com/latest/marvin_marvin-desktop-suite.html",
+      "tutorial": "https://www.certara.com/video/clean-to-scaffold-how-to-marvin/",
+      "suporte": "https://certara.atlassian.net/servicedesk/customer/portals/",
+      "codigo": null,
+      "publicacao": null
+    }
+  },
+  "20": {
+    "resumo": "Programa de código aberto para docking molecular, criado por Oleg Trott no Molecular Graphics Lab (hoje CCSB) do Scripps Research e um dos motores da AutoDock Suite. É usado para docking proteína-ligante, com o site cobrindo a versão legada 1.1.2 e as versões 1.2.x mantidas no GitHub da instituição.",
+    "recursos": [
+      "Docking molecular proteína-ligante",
+      "Cadeias laterais flexíveis no receptor",
+      "Compatível com o formato PDBQT do AutoDock",
+      "Não requer grid maps, arquivos GPF/DPF nem cargas atômicas",
+      "Sem viés estatístico conformacional",
+      "Ordens de magnitude mais rápido que o AutoDock 4",
+      "Suporte a múltiplas CPUs/núcleos"
+    ],
+    "plataformas": [
+      "Linux",
+      "macOS",
+      "Windows"
+    ],
+    "licenca": "Apache License 2.0",
+    "publicacao": "O. Trott e A. J. Olson, AutoDock Vina: improving the speed and accuracy of docking with a new scoring function, efficient optimization and multithreading, J. Comput. Chem. 31, 455-461 (2010).",
+    "doi_url": "https://doi.org/10.1002/jcc.21334",
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://vina.scripps.edu",
+      "download": "https://vina.scripps.edu/downloads/",
+      "documentacao": "https://vina.scripps.edu/manual/",
+      "tutorial": "https://vina.scripps.edu/tutorial/",
+      "suporte": "https://vina.scripps.edu/questions/",
+      "codigo": "https://github.com/ccsb-scripps/AutoDock-Vina",
+      "publicacao": "https://doi.org/10.1002/jcc.21334"
+    }
+  },
+  "21": {
+    "resumo": "Plataforma comercial de descoberta computacional de fármacos e de materiais, descrita como uma plataforma computacional movida por física, que combina física computacional e aprendizado de máquina em um ambiente unificado. Reúne módulos como Maestro, Glide, FEP+, Desmond, Jaguar e LiveDesign.",
+    "recursos": [
+      "Modelagem e docking de moléculas pequenas (Glide)",
+      "Cálculos de energia livre de ligação (FEP+)",
+      "Dinâmica molecular (Desmond)",
+      "Química quântica (Jaguar)",
+      "Ambiente unificado Maestro",
+      "API em Python para automação de fluxos de trabalho",
+      "Predição de propriedades e toxicidade"
+    ],
+    "plataformas": [
+      "Linux",
+      "Windows",
+      "macOS"
+    ],
+    "licenca": "Comercial (acesso a downloads e documentação mediante conta/licença)",
+    "publicacao": "Pede-se citar a release exata usada, no formato \"Schrödinger Release 2026-4: <módulo>, Schrödinger, LLC, New York, NY, 2026\", além do artigo de cada módulo.",
+    "doi_url": null,
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://www.schrodinger.com/platform/",
+      "download": "https://www.schrodinger.com/release-download/",
+      "documentacao": "https://learn.schrodinger.com/private/edu/release/current/Documentation/html/Home.htm",
+      "tutorial": "https://www.schrodinger.com/life-science/resources/?type=tutorial",
+      "suporte": "https://my.schrodinger.com/support",
+      "codigo": null,
+      "publicacao": "https://www.schrodinger.com/citations/"
+    }
+  },
+  "22": {
+    "resumo": "Plataforma de modelagem, simulação e análise de dados para ciências da vida da BIOVIA (Dassault Systèmes), descrita como a solução mais completa de modelagem 3D e simulação para descoberta de fármacos, apoiando o trabalho de Target ID a Lead Optimization. O Discovery Studio Visualizer é distribuído gratuitamente para visualização.",
+    "recursos": [
+      "Modelagem molecular e dinâmica molecular (CHARMm, NAMD, OpenMM)",
+      "Design baseado em estrutura com docking CDOCKER",
+      "Design baseado em ligante e farmacóforos (Catalyst)",
+      "Modelagem de bioterapêuticos e anticorpos, incluindo humanização",
+      "Modelos QSAR, ADMET e toxicologia preditiva",
+      "Visualização 3D com imagens de qualidade de publicação",
+      "Fluxos de trabalho automatizados na plataforma 3DEXPERIENCE"
+    ],
+    "plataformas": [
+      "Windows",
+      "Linux"
+    ],
+    "licenca": "Comercial (Discovery Studio Visualizer gratuito)",
+    "publicacao": null,
+    "doi_url": null,
+    "url_oficial_corrigida": "https://www.3ds.com/products/biovia/discovery-studio",
+    "links": {
+      "site": "https://www.3ds.com/products/biovia/discovery-studio",
+      "download": "https://discover.3ds.com/discovery-studio-visualizer-download",
+      "documentacao": "https://www.3ds.com/support/documentation/resource-library",
+      "tutorial": "https://www.3ds.com/products/biovia/training",
+      "suporte": "https://www.3ds.com/products/biovia/user-communities",
+      "codigo": null,
+      "publicacao": null
+    }
+  },
+  "23": {
+    "resumo": "Sistema de visualização molecular patrocinado por usuários sobre uma fundação open source, mantido e distribuído pela Schrödinger. É amplamente usado para inspecionar estruturas, preparar imagens com ray tracing de qualidade de publicação e montar filmes, inclusive multi-estado com trajetórias de MD.",
+    "recursos": [
+      "Renderização com ray tracing de qualidade de publicação",
+      "Criação de filmes com timeline e interpolação de cenas",
+      "Filmes multi-estado, incluindo estruturas de RMN e trajetórias de MD",
+      "Seleções, estilos e análise de bolso de ligação",
+      "Importação de cenas do Maestro",
+      "Scripts e plugins em Python",
+      "Arquivos de sessão para salvar e compartilhar cenários"
+    ],
+    "plataformas": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "licenca": "Open Source (licença tipo BSD) e produto comercial PyMOL 3 mediante licença",
+    "publicacao": "The PyMOL Molecular Graphics System, Version 3.0, Schrödinger, LLC.",
+    "doi_url": null,
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://pymol.org/",
+      "download": "https://pymol.org/2/",
+      "documentacao": "https://pymol.org/dokuwiki/",
+      "tutorial": "https://pymol.org/dokuwiki/doku.php?id=tutorials",
+      "suporte": "https://pymol.org/support.html",
+      "codigo": "https://github.com/schrodinger/pymol-open-source",
+      "publicacao": "https://pymol.org/support.html"
+    }
+  },
+  "24": {
+    "resumo": "Programa de visualização molecular para exibir, animar e analisar grandes sistemas biomoleculares com gráficos 3D e scripting embutido, desenvolvido pelo Theoretical and Computational Biophysics Group da University of Illinois Urbana-Champaign. É distribuído gratuitamente, com código-fonte, para uso acadêmico e de pesquisa.",
+    "recursos": [
+      "Representações moleculares e biblioteca de plugins",
+      "Leitura de ampla variedade de formatos moleculares",
+      "Computação acelerada em GPU",
+      "Dinâmica molecular interativa (IMD)",
+      "Análise e visualização paralelas para simulações em escala celular",
+      "Plugins de preparo e análise (QwikMD, ParseFEP, MDFF, ffTK, NMWiz)",
+      "Ray tracing interativo e renderização de filmes 360º"
+    ],
+    "plataformas": [
+      "macOS",
+      "Unix",
+      "Windows"
+    ],
+    "licenca": "Gratuito para uso acadêmico e de pesquisa (inclui código-fonte); uso comercial requer licença",
+    "publicacao": "W. Humphrey, A. Dalke, K. Schulten, VMD - Visual Molecular Dynamics, J. Molec. Graphics 14, 33-38 (1996).",
+    "doi_url": null,
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://www.ks.uiuc.edu/Research/vmd/",
+      "download": "https://www.ks.uiuc.edu/Development/Download/download.cgi?PackageName=VMD",
+      "documentacao": "https://www.ks.uiuc.edu/Research/vmd/current/ug/",
+      "tutorial": "https://www.ks.uiuc.edu/Research/vmd/current/docs.html",
+      "suporte": "https://www.ks.uiuc.edu/Research/vmd/mailing_list/",
+      "codigo": null,
+      "publicacao": "https://www.ks.uiuc.edu/Research/vmd/allversions/cite.html"
+    }
+  },
+  "25": {
+    "resumo": "Programa de visualização molecular de nova geração do Resource for Biocomputing, Visualization, and Informatics (RBVI) da UCSF, sucessor do UCSF Chimera, voltado a pesquisadores, educadores e desenvolvedores. Além da visualização, traz ferramentas de análise e suporte a mapas cryo-EM, AlphaFold e realidade virtual.",
+    "recursos": [
+      "Sobreposição de estruturas (matchmaker) e morphing para animação",
+      "Análise de interfaces entre cadeias por área superficial soterrada",
+      "Identificação de cavidades e canais (KVFinder, MOLE)",
+      "Visualização de mapas de densidade e cryo-EM",
+      "Carregamento de predições do AlphaFold com coloração por confiança",
+      "Renderização de imagens e filmes com exportação GLTF",
+      "Suporte a realidade virtual (SteamVR) e sessões colaborativas"
+    ],
+    "plataformas": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "licenca": "Gratuito para uso acadêmico, governamental e pessoal; licença comercial necessária",
+    "publicacao": "Pettersen EF, Goddard TD, Huang CC, Meng EC, Couch GS, Croll TI, Morris JH, Ferrin TE. UCSF ChimeraX: Structure visualization for researchers, educators, and developers. Protein Science 30(1), 70-82 (2021).",
+    "doi_url": "https://doi.org/10.1002/pro.3943",
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://www.rbvi.ucsf.edu/chimerax/",
+      "download": "https://www.rbvi.ucsf.edu/chimerax/download.html",
+      "documentacao": "https://www.rbvi.ucsf.edu/chimerax/docs/index.html",
+      "tutorial": "https://www.rbvi.ucsf.edu/chimerax/tutorials.html",
+      "suporte": "https://mail.cgl.ucsf.edu/mailman/mailman3/lists/chimerax-users.cgl.ucsf.edu/",
+      "codigo": "https://github.com/RBVI/ChimeraX/",
+      "publicacao": "https://doi.org/10.1002/pro.3943"
+    }
+  },
+  "26": {
+    "resumo": "Suíte de software em C++ para modelagem macromolecular, com funcionalidades de predição de estrutura, design e remodelagem de proteínas e ácidos nucleicos. É desenvolvido pelo Rosetta Commons, uma colaboração de mais de 100 grupos acadêmicos, e licenciado pela University of Washington.",
+    "recursos": [
+      "Predição de estrutura de proteínas",
+      "Design de novo de proteínas",
+      "Design de enzimas",
+      "Docking de ligantes",
+      "Modelagem de complexos macromoleculares",
+      "PyRosetta (scripting em Python)",
+      "RosettaScripts (scripting em XML)"
+    ],
+    "plataformas": [
+      "Linux",
+      "macOS"
+    ],
+    "licenca": "Gratuito para uso acadêmico/não comercial; licença comercial paga via University of Washington",
+    "publicacao": "Leman JK et al., Macromolecular modeling and design in Rosetta: recent methods and frameworks, Nature Methods 17, 665-680 (2020). O Rosetta Commons recomenda citar os artigos dos protocolos usados.",
+    "doi_url": "https://doi.org/10.1038/s41592-020-0848-2",
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://www.rosettacommons.org",
+      "download": "https://downloads.rosettacommons.org/software/academic/",
+      "documentacao": "https://docs.rosettacommons.org",
+      "tutorial": "https://www.rosettacommons.org/demos/latest/Home#tutorials",
+      "suporte": "https://forum.rosettacommons.org/forum/",
+      "codigo": "https://github.com/RosettaCommons/rosetta",
+      "publicacao": "https://doi.org/10.1038/s41592-020-0848-2"
+    }
+  },
+  "27": {
+    "resumo": "Sistema completo de programas ab initio para cálculos avançados de estrutura eletrônica molecular, projetado e mantido por H.-J. Werner e P. J. Knowles com contribuições de muitos outros autores. É usado tanto para aplicações padrão quanto para métodos de alto nível e como plataforma de desenvolvimento de novos métodos.",
+    "recursos": [
+      "CASPT2-F12, MRCI-F12 e CCSD(T)-F12",
+      "PNO-LCCSD(T)-F12 para moléculas com 100-200 átomos",
+      "DFT e TD-DFT com grande número de funcionais",
+      "Gradientes analíticos e propriedades para estados fundamentais e excitados",
+      "Efeitos relativísticos: Douglas-Kroll-Hess, Breit-Pauli e ECP",
+      "Embedding WF-in-DFT e métodos QM/MM",
+      "Interfaces gráficas iMolpro e gmolpro"
+    ],
+    "plataformas": [
+      "Linux",
+      "macOS"
+    ],
+    "licenca": "Comercial/proprietário; licenças não comerciais e de teste por 30 dias",
+    "publicacao": "H.-J. Werner, P. J. Knowles, G. Knizia, F. R. Manby, M. Schütz et al., Molpro: a general-purpose quantum chemistry program package, WIREs Comput. Mol. Sci. 2, 242-253 (2012).",
+    "doi_url": "https://doi.org/10.1002/wcms.82",
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://www.molpro.net",
+      "download": "https://www.molpro.net/licensee/login.php",
+      "documentacao": "https://www.molpro.net/manual/doku.php",
+      "tutorial": "https://www.molpro.net/manual/doku.php?id=quickstart",
+      "suporte": "https://groups.google.com/d/forum/molpro-user",
+      "codigo": null,
+      "publicacao": "https://www.molpro.net/manual/doku.php?id=references"
+    }
+  },
+  "28": {
+    "resumo": "Ambiente completo de modelagem e simulação multiescala da BIOVIA (Dassault Systèmes) que permite relacionar a estrutura atômica e molecular de um material com suas propriedades e comportamento. Cobre do nível quântico ao mesoscópico, voltado a polímeros, catalisadores, baterias, semicondutores e metais.",
+    "recursos": [
+      "Solvers quânticos CASTEP, DMol3, DFTB+, ONETEP e VAMP",
+      "Simulação clássica e Monte Carlo com Forcite, GULP, Mesocite e MesoDyn",
+      "Dinâmica molecular reativa por Monte Carlo cinético (ReactionFinder)",
+      "DFT-D4, bibliotecas ReaxFF e busca de estado de transição (FlexTS)",
+      "Modelos de campo de fases e dinâmica granular",
+      "Execução acelerada em GPUs NVIDIA e suporte a clusters Linux"
+    ],
+    "plataformas": [
+      "Windows",
+      "Linux"
+    ],
+    "licenca": "Comercial (licenças para instituições de ensino e pesquisa)",
+    "publicacao": null,
+    "doi_url": null,
+    "url_oficial_corrigida": "https://www.3ds.com/products/biovia/materials-studio",
+    "links": {
+      "site": "https://www.3ds.com/products/biovia/materials-studio",
+      "download": "https://software.3ds.com",
+      "documentacao": "https://www.3ds.com/support/documentation/resource-library/t61-2025-materials-studio-2026",
+      "tutorial": "https://www.3ds.com/products/biovia/training",
+      "suporte": "https://www.3ds.com/support/",
+      "codigo": null,
+      "publicacao": null
+    }
+  },
+  "29": {
+    "resumo": "Pacote open source de química computacional de alto desempenho, mantido pela EMSL do PNNL. Cobre métodos quânticos, clássicos e híbridos, para estados fundamentais e excitados, com bases gaussianas ou ondas planas, e é projetado para escalar de um a milhares de processadores.",
+    "recursos": [
+      "Hartree-Fock e DFT para moléculas",
+      "TD-DFT, CIS/TDHF e real-time TDDFT",
+      "MP2, CCSD, MCSCF e GW",
+      "DFT com ondas planas e DFTB/XTB",
+      "Cálculos QM/MM e híbridos com ONIOM",
+      "Modelos de solvatação (PCM, 1D-RISM) e efeitos relativísticos",
+      "Dinâmica molecular, NEB e estados de transição"
+    ],
+    "plataformas": [
+      "Linux",
+      "macOS"
+    ],
+    "licenca": "Código aberto, Educational Community License (ECL) 2.0",
+    "publicacao": "E. Aprà et al., NWChem: Past, present, and future, The Journal of Chemical Physics 152, 184102 (2020).",
+    "doi_url": "https://doi.org/10.1063/5.0004997",
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://nwchemgit.github.io",
+      "download": "https://github.com/nwchemgit/nwchem/releases",
+      "documentacao": "https://nwchemgit.github.io/nwchemusermanual.pdf",
+      "tutorial": "https://nwchemgit.github.io/Tutorials.html",
+      "suporte": "https://groups.google.com/g/nwchem-forum",
+      "codigo": "https://github.com/nwchemgit/nwchem",
+      "publicacao": "https://nwchemgit.github.io/Citation.html"
+    }
+  },
+  "30": {
+    "resumo": "Sistema de programas de estrutura eletrônica molecular de uso geral, composto pelos executáveis Dalton e LSDalton; este último é um código HF/DFT de escalamento linear para sistemas grandes, agora também com capacidades CCSD. Oferece extenso escopo de cálculos de propriedades moleculares nos níveis HF, DFT, MCSCF e CC.",
+    "recursos": [
+      "Teoria de resposta dependente de frequência linear, quadrática e cúbica",
+      "Propriedades de RMN (blindagens e parâmetros magnéticos)",
+      "RHF/ROHF e DFT com correções de dispersão DFT-D2/D3/D3BJ",
+      "MCSCF/CASSCF, FCI e NEVPT2 para sistemas multirreferenciais",
+      "MP2, SCS-MP2, SOS-MP2 e modelos R12",
+      "Gradientes, hessianos, estados de transição e análise vibracional",
+      "Modelos multiescala: SCRF/PCM, polarizable embedding (PE), QM/MM"
+    ],
+    "plataformas": [],
+    "licenca": "Código aberto, GNU LGPL v2.1",
+    "publicacao": "K. Aidas et al., The Dalton quantum chemistry program system, WIREs Computational Molecular Science 4, 269-284 (2014).",
+    "doi_url": "https://doi.org/10.1002/wcms.1172",
+    "url_oficial_corrigida": "https://gitlab.com/dalton/dalton",
+    "links": {
+      "site": "https://gitlab.com/dalton/dalton",
+      "download": "https://gitlab.com/dalton/dalton/-/releases",
+      "documentacao": "https://daltonproject.readthedocs.io/en/latest/",
+      "tutorial": "https://daltonproject.readthedocs.io/en/latest/tutorials/spectrum/spectrum_tutorial.html",
+      "suporte": "https://gitlab.com/dalton/user-support",
+      "codigo": "https://gitlab.com/dalton/dalton",
+      "publicacao": "https://doi.org/10.1002/wcms.1172"
+    }
+  },
+  "31": {
+    "resumo": "O PySCF ('Quantum chemistry with Python') é um pacote de estrutura eletrônica rápido e modular, com núcleo em C/C++ e interface em Python. Cobre de Hartree-Fock e DFT a CCSD(T), CASSCF/DMRG e NEVPT2, inclui sistemas periódicos em k-ponto, métodos relativísticos X2C e propriedades NMR/EPR. É mantido por um conselho acadêmico e usado como base de muitos fluxos de aprendizado de máquina em química.",
+    "recursos": [
+      "RHF/UHF/DHF e DKS relativístico",
+      "RKS/UKS, TDDFT",
+      "MP2, CCSD e CCSD(T)",
+      "CASSCF/CASCI com DMRG e FCIQMC",
+      "SC-NEVPT2",
+      "Sólidos periódicos em k-ponto",
+      "Propriedades NMR e EPR"
+    ],
+    "plataformas": [],
+    "licenca": "Apache-2.0",
+    "publicacao": "Q. Sun et al., J. Chem. Phys. 165, 102502 (2026) — citado na página About do site oficial.",
+    "doi_url": "https://doi.org/10.1063/5.0337441",
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://pyscf.org/",
+      "download": null,
+      "documentacao": "https://pyscf.org/features.html",
+      "tutorial": null,
+      "suporte": null,
+      "codigo": "https://github.com/pyscf/pyscf",
+      "publicacao": "https://doi.org/10.1063/5.0337441"
+    }
+  },
+  "32": {
+    "resumo": "O xtb implementa as parametrizações GFN0/GFN1/GFN2-xTB, o campo de força GFN-FF, correções de dispersão DFT-D4 e modelos de solvatação implícita (GBSA, ALPB, ddCOSMO, CPCM-X). Também oferece sTDA-xTB, Hessiano numérico, metadinâmica e cálculos ONIOM, sendo comum na preparação de conformeros antes de um cálculo DFT. Há binários estáticos para Linux e Windows, pacotes conda-forge e build por Meson ou CMake.",
+    "recursos": [
+      "GFN0-xTB, GFN1-xTB e GFN2-xTB",
+      "Força de campo GFN-FF",
+      "Correções de dispersão DFT-D4",
+      "GBSA/ALPB e ddCOSMO/CPCM-X",
+      "sTDA-xTB",
+      "Metadinâmica e ONIOM"
+    ],
+    "plataformas": [
+      "Linux",
+      "macOS",
+      "Windows"
+    ],
+    "licenca": "LGPL-3.0-or-later",
+    "publicacao": "C. Bannwarth et al., WIREs Comput. Mol. Sci. 11, e01493 (2021) — citado pelo README.",
+    "doi_url": "https://doi.org/10.1002/wcms.1493",
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://github.com/grimme-lab/xtb",
+      "download": "https://github.com/grimme-lab/xtb/releases/latest",
+      "documentacao": "https://xtb-docs.readthedocs.io/en/latest/",
+      "tutorial": null,
+      "suporte": null,
+      "codigo": "https://github.com/grimme-lab/xtb",
+      "publicacao": "https://doi.org/10.1002/wcms.1493"
+    }
+  },
+  "33": {
+    "resumo": "O TURBOMOLE é apresentado no site oficial como um pacote de estrutura eletrônica ab initio com DFT rápido e robusto (RI-J, RI-CFMM) para moléculas e sólidos, métodos de função de onda (MP2, CC2, CCSD(T) e variantes F12/PNO, RPA, GW), estados excitados (TDDFT, ADC(2), GW-BSE, RT-TDDFT), relativística X2C/DKH, propriedades espectroscópicas (NMR, EPR, VCD) e solvatação implícita COSMO. Executa em número arbitrário de núcleos de CPU e em GPU.",
+    "recursos": [
+      "RI-DFT (GGA, híbridos, double hybrids, D3/D4)",
+      "MP2, CC2, CCSD(T), F12 e PNO",
+      "TDDFT e ADC(2)",
+      "GW/BSE",
+      "Relativística X2C e spin-órbita",
+      "COSMO",
+      "Dinâmica ab initio"
+    ],
+    "plataformas": [
+      "Linux",
+      "macOS",
+      "Windows"
+    ],
+    "licenca": "Comercial; licenças perpétuas para academias, organizações sem fins lucrativos e indústria, e licença educacional gratuita para estudantes",
+    "publicacao": "F. J. Goedig, Y. J. Franzke et al., TURBOMOLE: Today and Tomorrow, J. Chem. Theory Comput. 19, 6859-6890 (2023).",
+    "doi_url": "https://doi.org/10.1021/acs.jctc.3c00347",
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://www.turbomole.org/",
+      "download": "https://downloadcenter.turbomole.org/",
+      "documentacao": "https://manual.turbomole.org/",
+      "tutorial": null,
+      "suporte": "https://forum.turbomole.org/",
+      "codigo": null,
+      "publicacao": "https://doi.org/10.1021/acs.jctc.3c00347"
+    }
+  },
+  "34": {
+    "resumo": "A Amsterdam Modeling Suite reúne o ADF (código DFT molecular rápido e preciso com base de orbitais atômicos), o BAND para sólidos periódicos, métodos semiempíricos rápidos (DFTB e MOPAC) e potenciais reativos ReaxFF, todos integrados à interface gráfica AMSinput. A SCM distribui para Windows, macOS e Linux e oferece licenças acadêmicas com desconto e trial gratuito.",
+    "recursos": [
+      "ADF: DFT molecular com orbital base",
+      "BAND: DFT periódico",
+      "DFTB e módulo MOPAC",
+      "Potenciais ReaxFF",
+      "Interface AMSinput",
+      "Análise de energia de ligação e fragmentos"
+    ],
+    "plataformas": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "licenca": "Comercial; licenças acadêmicas anuais pagas e avaliação gratuita",
+    "publicacao": null,
+    "doi_url": null,
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://www.scm.com/",
+      "download": "https://www.scm.com/downloads/",
+      "documentacao": "https://www.scm.com/doc/",
+      "tutorial": null,
+      "suporte": "https://www.scm.com/contact-us/",
+      "codigo": null,
+      "publicacao": null
+    }
+  },
+  "35": {
+    "resumo": "Segundo o site oficial, o MRCC é um conjunto de programas ab initio e de funcionais de densidade para cálculos de alta acurácia, mantido pelo grupo de química quântica da Universidade Tecnológica e Econômica de Budapeste. Oferece métodos CC e CI com referência simples até alto grau de excitação, abordagens multirreferência, derivadas de energia e funções de resposta, métodos perturbativos, hamiltonianas relativísticas e técnicas de correlação local para moléculas médias e grandes.",
+    "recursos": [
+      "CCSDT e CCQPR em referência simples",
+      "CC multirreferência",
+      "Derivadas de energia e funções de resposta",
+      "Métodos perturbativos",
+      "Hamiltonianas relativísticas",
+      "Correlação local (pNO e afins)"
+    ],
+    "plataformas": [],
+    "licenca": "Gratuito para uso acadêmico mediante registro com e-mail institucional e aceite do acordo de licença; uso comercial sob termos próprios",
+    "publicacao": null,
+    "doi_url": null,
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://www.mrcc.hu/",
+      "download": "https://www.mrcc.hu/index.php/getting-started/download",
+      "documentacao": "https://www.mrcc.hu/index.php/documentation/manual",
+      "tutorial": null,
+      "suporte": "https://www.mrcc.hu/index.php/support",
+      "codigo": null,
+      "publicacao": null
+    }
+  },
+  "36": {
+    "resumo": "O TeraChem é um pacote de estrutura eletrônica e dinâmica molecular ab initio de primeira princípio para moléculas e sistemas biológicos, escrito do zero para arquiteturas GPU NVIDIA e distribuído pela PetaChem, LLC. Requer Linux de 64 bits e ao menos uma GPU NVIDIA, e é usado sobretudo em dinâmica ab initio em larga escala e em geração de dados de treinamento para potenciais de machine learning, com distribuição de pontos on-the-fly.",
+    "recursos": [
+      "Cálculos em GPU NVIDIA/CUDA",
+      "Dinâmica ab initio",
+      "Estrutura eletrônica de moléculas e biomoléculas",
+      "Distribuição on-the-fly de dados de treinamento",
+      "Versão de avaliação"
+    ],
+    "plataformas": [
+      "Linux"
+    ],
+    "licenca": "Proprietário, licença anual por máquina (valores acadêmicos e industriais publicados na página de preços)",
+    "publicacao": "S. Seritan et al., TeraChem: Accelerating electronic structure and ab initio molecular dynamics on GPUs, WIREs Comput. Mol. Sci. 10, e1494 (2020).",
+    "doi_url": "https://doi.org/10.1002/wcms.1494",
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "http://www.petachem.com/",
+      "download": null,
+      "documentacao": null,
+      "tutorial": null,
+      "suporte": null,
+      "codigo": null,
+      "publicacao": "https://doi.org/10.1002/wcms.1494"
+    }
+  },
+  "37": {
+    "resumo": "O MOPAC ('Enabling simple, low-cost quantum chemistry calculations since 1983') implementa os modelos semiempíricos AM1, PM6 e PM7, o modelo de solvatação implícita COSMO, o solver MOZYME para cálculos de camada fechada rápidos e tratamento periódico 1D, 2D e 3D no ponto gama. O desenvolvimento comercial terminou no MOPAC2016 e a versão atual é mantida como projeto aberto, com instaladores para Linux, macOS e Windows, pacote conda-forge e código no GitHub.",
+    "recursos": [
+      "Modelos AM1, PM6 e PM7",
+      "Solvatação implícita COSMO",
+      "Solver MOZYME",
+      "Tratamento periódico 1D-3D no ponto gama",
+      "API e uso via linha de comando"
+    ],
+    "plataformas": [
+      "Linux",
+      "macOS",
+      "Windows"
+    ],
+    "licenca": "Apache-2.0 (versão open source atual, mantida com o MolSSI)",
+    "publicacao": null,
+    "doi_url": null,
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://openmopac.net/",
+      "download": "https://openmopac.net/download/",
+      "documentacao": "https://openmopac.net/Manual",
+      "tutorial": "https://openmopac.net/guides/",
+      "suporte": null,
+      "codigo": "https://github.com/openmopac/mopac",
+      "publicacao": null
+    }
+  },
+  "38": {
+    "resumo": "O ABINIT calcula energia total, densidade de carga e estrutura eletrônica na DFT com pseudopotenciais ou dados PAW em base de ondas planas, e obtém propriedades ópticas, mecânicas e vibracionais de materiais. Através de Density-Functional Perturbation Theory gera fônons, cargas efetivas de Born e tensores dielétricos; estados excitados são tratados por GW e equação de Bethe-Salpeter, e há DFT+U e DMFT para materiais fortemente correlacionados. Inclui a biblioteca Python AbiPy para pós-processamento.",
+    "recursos": [
+      "DFT com pseudopotenciais e PAW em ondas planas",
+      "DFPT: fônons, cargas de Born, dielétricos",
+      "GW e equação de Bethe-Salpeter",
+      "DFT+U e DMFT",
+      "TDDFT linear e em tempo real",
+      "Dinâmica molecular ab initio",
+      "Biblioteca Python AbiPy e interface Wannier90"
+    ],
+    "plataformas": [
+      "Linux",
+      "macOS"
+    ],
+    "licenca": "GNU GPL v3",
+    "publicacao": null,
+    "doi_url": null,
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://www.abinit.org/",
+      "download": "https://github.com/abinit/abinit/releases/latest",
+      "documentacao": "https://docs.abinit.org/",
+      "tutorial": "https://docs.abinit.org/tutorial/",
+      "suporte": "https://discourse.abinit.org/",
+      "codigo": "https://github.com/abinit/abinit",
+      "publicacao": "https://docs.abinit.org/theory/acknowledgments/"
+    }
+  },
+  "39": {
+    "resumo": "Mantido no Institute of Materials Chemistry da TU Wien, o WIEN2k é um dos esquemas mais precisos de cálculo de estrutura de bandas: full-potential (linearized) augmented plane-wave mais local orbitals, com tratamento all-electron inclusive dos efeitos relativísticos. O acesso é solicitado on-line e liberado por userid e senha após o pagamento da licença de grupo. Escrito em Fortran 90, roda de um único PC a clusters, com paralelização por k-ponto e por núcleo.",
+    "recursos": [
+      "Método FP-(L)APW com local orbitals",
+      "Tratamento all-electron e relativístico",
+      "Estruturas de bandas e densidade de estados",
+      "Paralelização por k-ponto, MPI e OpenMP",
+      "Licença de grupo com código-fonte"
+    ],
+    "plataformas": [
+      "Linux"
+    ],
+    "licenca": "Software não gratuito, disponível por taxa única de licença de grupo (valores distintos para academia, laboratório governamental e indústria), com código-fonte e atualizações",
+    "publicacao": "P. Blaha, K. Schwarz, F. Tran, R. Laskowski, G. K. H. Madsen, L. D. Marks, J. Chem. Phys. 152, 074101 (2020).",
+    "doi_url": "https://doi.org/10.1063/1.5143061",
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "http://susi.theochem.tuwien.ac.at/",
+      "download": "https://susi.theochem.tuwien.ac.at/order/index.html",
+      "documentacao": null,
+      "tutorial": null,
+      "suporte": null,
+      "codigo": null,
+      "publicacao": "https://susi.theochem.tuwien.ac.at/papers/index.html"
+    }
+  },
+  "40": {
+    "resumo": "O Elk é um código all-electron full-potential linearised augmented-plane wave escrito em Fortran 2008 e executado de forma híbrida com OpenMP e MPI. Cobre LSDA, GGA e meta-GGA variacional via Libxc, LDA+U, magnetismo não colinear com spin-órbita e espirais magnéticas, exchange exato OEP e Hartree-Fock para sólidos, TDDFT em resposta linear e tempo real, GW experimental, BSE, DFPT com fônons em supercélula e acoplamento elétron-fônico, além de interface com o Wannier90.",
+    "recursos": [
+      "FP-LAPW com core pela equação radial de Dirac",
+      "LDA+U e meta-GGA variacional (Libxc)",
+      "Magnetismo não colinear e spin-órbita",
+      "TDDFT em resposta linear e tempo real",
+      "GW e BSE",
+      "DFPT e fônons em supercélula",
+      "Interface Wannier90"
+    ],
+    "plataformas": [],
+    "licenca": "GNU GPL v3 ou posterior",
+    "publicacao": null,
+    "doi_url": null,
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://elk.sourceforge.io/",
+      "download": "https://sourceforge.net/projects/elk/files/",
+      "documentacao": null,
+      "tutorial": null,
+      "suporte": "https://sourceforge.net/p/elk/discussion/",
+      "codigo": null,
+      "publicacao": null
+    }
+  },
+  "41": {
+    "resumo": "O manual oficial define o Octopus como um pacote de pseudopotenciais em espaço real para simular a dinâmica elétron-íon de sistemas 1D, 2D e 3D sob campos eletromagnéticos dependentes do tempo, no esquema de Kohn-Sham da TDDFT, com todas as quantidades em malha regular. É usado para espectros de absorção lineares e não lineares, emissão de harmônicos e fragmentação induzida por laser, e inclui DFT+U, spin-órbita, fônons, controle ótimo e acoplamento Maxwell-matéria.",
+    "recursos": [
+      "Malhas no espaço real e propagação em tempo real",
+      "TDDFT linear por Casida e Sternheimer",
+      "Controle ótimo e dinâmica de Floquet",
+      "DFT+U, spin-órbita e exchange exato",
+      "Fônons e modos vibracionais",
+      "Acoplamento Maxwell-matéria",
+      "Utilitários oct-wannier90 e oct-photoelectron_spectrum"
+    ],
+    "plataformas": [
+      "Linux",
+      "macOS",
+      "Windows"
+    ],
+    "licenca": "GNU GPL v3 com exceções para bibliotecas externas",
+    "publicacao": null,
+    "doi_url": null,
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://www.octopus-code.org/",
+      "download": "https://www.octopus-code.org/documentation/16/releases",
+      "documentacao": "https://www.octopus-code.org/documentation/16/manual/",
+      "tutorial": "https://www.octopus-code.org/documentation/16/tutorial/",
+      "suporte": null,
+      "codigo": "https://gitlab.com/octopus-code/octopus",
+      "publicacao": null
+    }
+  },
+  "42": {
+    "resumo": "O OpenMX (Material eXplorer) trata aglomerados, moléculas, sólidos, superfícies, interfaces, materiais de baixa dimensionalidade e líquidos num mesmo arcabouço, com norm-conserving pseudopotentials e pseudo-atomic basis functions otimizadas. A versão atual tem builds de CPU e GPU, pacote Debian para Linux/WSL e imagem Docker. Recursos incluem DFT+U, método O(N) e low-order scaling, magnetismo não colinear, dinâmica molecular NVE/NVT/NPT, NEB, transporte por NEGF, polarização por Berry phase e interface com o Wannier90.",
+    "recursos": [
+      "Pseudopotenciais de conservação de norma e bases pseudo-atômicas",
+      "Método O(N) e low-order scaling",
+      "DFT+U, LDA/LSDA e GGA",
+      "DFT não colinear com momentos orbitais",
+      "Transporte por NEGF",
+      "Dinâmica molecular NVE/NVT/NPT e NEB",
+      "Wannier functions e interface Wannier90"
+    ],
+    "plataformas": [
+      "Linux",
+      "macOS"
+    ],
+    "licenca": "GNU GPL v3",
+    "publicacao": null,
+    "doi_url": null,
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://www.openmx-square.org/",
+      "download": "https://www.openmx-square.org/download.html",
+      "documentacao": "https://www.openmx-square.org/openmx_man4.0/index.html",
+      "tutorial": "https://www.openmx-square.org/video_lec/video_lec.html",
+      "suporte": "https://www.openmx-square.org/forum/patio.cgi",
+      "codigo": null,
+      "publicacao": "https://www.openmx-square.org/publications.html"
+    }
+  },
+  "43": {
+    "resumo": "No GPAW as funções de onda podem ser descritas por ondas planas (pw), funções de base atômicas centralizadas (lcao) ou malhas uniformes no espaço real com multigrid e diferenças finitas (fd), sempre pelo método PAW. Instala-se via PyPI ou a partir do código no GitLab, exige ASE e compila partes em C que falam com BLAS, Libxc, MPI e ScaLAPACK. A documentação descreve resposta dielétrica linear (RPA e ALDA), energia de correlação RPA, TDDFT e suporte a GPU.",
+    "recursos": [
+      "Método PAW com modos pw, lcao e fd",
+      "Scripting em Python via ASE",
+      "RPA e energia de correlação RPA",
+      "Resposta dielétrica linear e TDDFT",
+      "MPI com ScaLAPACK e suporte a GPU",
+      "Bibliotecas de setups PAW incluindo lantanídeos"
+    ],
+    "plataformas": [
+      "Linux",
+      "macOS"
+    ],
+    "licenca": "GNU GPL v3 ou posterior",
+    "publicacao": "Mortensen, K. A.; Larsen, A. H.; Kuisma, M. J. et al. GPAW: An open Python package for electronic structure calculations. Journal of Chemical Physics, 2024, v. 160, p. 092503.",
+    "doi_url": "https://doi.org/10.1063/5.0182685",
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://gpaw.readthedocs.io/",
+      "download": "https://pypi.org/project/gpaw/",
+      "documentacao": "https://gpaw.readthedocs.io/documentation/documentation.html",
+      "tutorial": "https://gpaw.readthedocs.io/tutorialsexercises/tutorialsexercises.html",
+      "suporte": null,
+      "codigo": "https://gitlab.com/gpaw/gpaw",
+      "publicacao": "https://doi.org/10.1063/5.0182685"
+    }
+  },
+  "44": {
+    "resumo": "O Wannier90 calcula maximally-localised Wannier functions (MLWFs) e as usa para obter propriedades eletrônicas com eficiência: bandas, densidade de estados e superfícies de Fermi por interpolação, além de propriedades de Berry como curvatura, condutividade Hall anômala e magnetização orbital, e transporte de Boltzmann (BoltzWann) e Landauer-Büttiker. Inclui desentrelaçamento de bandas de Souza-Marzari-Vanderbilt, projeções iniciais por SCDM, funções adaptadas a simetria e spinor Wannier functions, e roda como biblioteca com MPI.",
+    "recursos": [
+      "MLWF pelo esquema de Marzari-Vanderbilt",
+      "Desentrelaçamento de Souza-Marzari-Vanderbilt",
+      "Projeções iniciais por SCDM",
+      "Wannier adaptadas a simetria e spinor",
+      "Interpolação de bandas, DOS e superfícies de Fermi",
+      "Curvatura de Berry, Hall anômalo e magnetização orbital",
+      "Transporte de Boltzmann (BoltzWann)"
+    ],
+    "plataformas": [],
+    "licenca": "GNU LGPL v2.1 ou posterior (versões até 3.1.0 sob GNU GPL v2)",
+    "publicacao": "G. Pizzi et al., J. Phys.: Condens. Matter 32, 165902 (2020).",
+    "doi_url": "https://doi.org/10.1088/1361-648X/ab51ff",
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://wannier.org/",
+      "download": "https://wannier.org/download/",
+      "documentacao": "https://wannier.org/documentation/",
+      "tutorial": null,
+      "suporte": "https://wannier.org/support/",
+      "codigo": "https://github.com/wannier-developers/wannier90",
+      "publicacao": "https://wannier.org/papers/"
+    }
+  },
+  "45": {
+    "resumo": "O Yambo calcula energias de quasipartícula pela aproximação GW e propriedades ópticas pela equação de Bethe-Salpeter ou pela ALDA adiabática, em sólidos no arcabouço de many-body perturbation theory e TDDFT. Exige uma estrutura eletrônica previamente calculada e por isso é interfaces com Quantum ESPRESSO e ABINIT. Cobre screening dinâmico, correções elétron-fônicas, absorção e éxcitons, EELS, dinâmica em tempo real, óptica não linear com polarização por Berry phase, interpolação de quasipartículas e os scripts Python YAMBOPY.",
+    "recursos": [
+      "Aproximação GW para a autoenergia",
+      "Equação de Bethe-Salpeter para éxcitons",
+      "ALDA/TDDFT e dinâmica em tempo real",
+      "Screening plasmon-pole, multipolo e full-frequency",
+      "Correções elétron-fônicas",
+      "Óptica não linear com Berry phase",
+      "YAMBOPY e plugins AiiDA"
+    ],
+    "plataformas": [],
+    "licenca": "Código aberto sob GNU GPL",
+    "publicacao": null,
+    "doi_url": null,
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://www.yambo-code.eu/",
+      "download": "https://www.yambo-code.eu/download/",
+      "documentacao": "https://yambo-code.github.io/yambo-wiki/",
+      "tutorial": "https://www.yambo-code.eu/learn/#learn-tutorials",
+      "suporte": "https://www.yambo-code.eu/forum/",
+      "codigo": "https://github.com/yambo-code",
+      "publicacao": "https://doi.org/10.1002/wcms.1634"
+    }
+  },
+  "46": {
+    "resumo": "O Atomic Simulation Environment representa sistemas com o objeto Atoms e os conecta a uma longa lista de calculadoras externas (VASP, Quantum ESPRESSO, GPAW, LAMMPS e potentials empíricos) ou internas. A documentação traz tutoriais de optimização, structures and calculators, NEB, estruturas de banda, fônons e catálogos de estruturas, e o projeto é governado por um Steering Committee.",
+    "recursos": [
+      "Objeto Atoms para construir e manipular sistemas",
+      "Interface com dezenas de calculadoras externas",
+      "Cadeias de NEB, bandas e fônons",
+      "Otimizadores e dinâmica molecular",
+      "Visualização e leitura/escrita de trajetórias",
+      "Catálogo de estruturas e bibliotecas de potenciais"
+    ],
+    "plataformas": [
+      "Linux",
+      "macOS"
+    ],
+    "licenca": "GNU LGPL v2.1 ou posterior",
+    "publicacao": "A. H. Larsen et al., J. Phys.: Condens. Matter 29, 273002 (2017).",
+    "doi_url": "https://doi.org/10.1088/1361-648X/aa680e",
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://ase-lib.org/",
+      "download": null,
+      "documentacao": "https://docs.ase-lib.org/",
+      "tutorial": "https://docs.ase-lib.org/",
+      "suporte": null,
+      "codigo": "https://gitlab.com/ase/ase",
+      "publicacao": "https://doi.org/10.1088/1361-648X/aa680e"
+    }
+  },
+  "47": {
+    "resumo": "O pymatgen (Python Materials Genomics) é a biblioteca que sustenta o Materials Project. Oferece classes para Element, Site, Molecule e Structure, leitura e escrita de VASP, ABINIT, CIF, Gaussian e XYZ, análises de diagramas de fase, Pourbaix, difusão e reações, além de DOS e estrutura de bandas. Integra-se à REST API do Materials Project e ao Crystallography Open Database, exige Python 3.10+ e traz o utilitário de linha de comando pmg.",
+    "recursos": [
+      "Classes Element, Site, Molecule e Structure",
+      "Importação/exportação de VASP, ABINIT, CIF, XYZ",
+      "Diagramas de fase, Pourbaix e reações",
+      "Análise de DOS e estrutura de bandas",
+      "Integração com Materials Project e COD",
+      "CLI pmg e complementos custodian/pymatgen-db"
+    ],
+    "plataformas": [
+      "Linux",
+      "macOS",
+      "Windows"
+    ],
+    "licenca": "MIT",
+    "publicacao": "S. P. Ong et al., Comput. Mater. Sci. 68, 314-319 (2013).",
+    "doi_url": "https://doi.org/10.1016/j.commatsci.2012.10.028",
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://pymatgen.org/",
+      "download": null,
+      "documentacao": "https://pymatgen.org/",
+      "tutorial": null,
+      "suporte": null,
+      "codigo": "https://github.com/materialsproject/pymatgen",
+      "publicacao": "https://doi.org/10.1016/j.commatsci.2012.10.028"
+    }
+  },
+  "48": {
+    "resumo": "O HOOMD-blue simula sistemas de partículas em CPUs e GPUs, fazendo Monte Carlo de partículas rígidas de várias classes de formas (HPMC) e dinâmica molecular com potenciais de par, ligação e ângulo. Voltado à pesquisa em matéria mole mas de propósito geral, usa MPI para múltiplos núcleos e GPUs, lê e escreve arquivos GSD e é distribuído por conda-forge, Docker e Singularity.",
+    "recursos": [
+      "Monte Carlo de partículas rígidas (HPMC)",
+      "Potenciais de par, ligação e ângulo",
+      "Execução em CPU e GPU com MPI",
+      "Formato de trajetória GSD",
+      "Integradores NVT e termostatos",
+      "Distribuição via conda-forge, Docker e Singularity"
+    ],
+    "plataformas": [],
+    "licenca": "BSD-3-Clause",
+    "publicacao": "J. A. Anderson, J. Glaser, S. C. Glotzer, Comput. Mater. Sci. 173, 109363 (2020).",
+    "doi_url": "https://doi.org/10.1016/j.commatsci.2019.109363",
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://github.com/glotzerlab/hoomd-blue",
+      "download": null,
+      "documentacao": "https://hoomd-blue.readthedocs.io/en/stable/",
+      "tutorial": null,
+      "suporte": "https://github.com/glotzerlab/hoomd-blue/discussions",
+      "codigo": "https://github.com/glotzerlab/hoomd-blue",
+      "publicacao": "https://hoomd-blue.readthedocs.io/en/stable/citing.html"
+    }
+  },
+  "49": {
+    "resumo": "A documentação oficial (DL Software Digital Guide) descreve o DL_POLY como dinâmica molecular clássica de propósito geral para sistemas poliatômicos, de quase qualquer tipo de sistema molecular, do biológico ao estado sólido. É um código Fortran 90 com MPI2 autossuficiente, paralelo por decomposição de domínios, que roda do notebook ao supercomputador, com propriedades termodinâmicas calculadas durante a execução.",
+    "recursos": [
+      "Dinâmica molecular clássica Fortran90 + MPI2",
+      "Otimização por gradiente conjugado",
+      "Propriedades termodinâmicas em execução",
+      "Paralelismo por decomposição de domínios",
+      "Exercícios e tutoriais oficiais"
+    ],
+    "plataformas": [
+      "Linux",
+      "macOS",
+      "Windows"
+    ],
+    "licenca": "Gratuito para uso acadêmico e em pesquisa, distribuído como código-fonte pelo STFC Daresbury Laboratory mediante cadastro",
+    "publicacao": null,
+    "doi_url": null,
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://dl-sdg.github.io/",
+      "download": null,
+      "documentacao": "https://dl-sdg.github.io/RESOURCES/dl_poly_intro.html",
+      "tutorial": "https://dl-sdg.github.io/RESOURCES/EXERCISES/exercises_dlpoly.html",
+      "suporte": null,
+      "codigo": null,
+      "publicacao": null
+    }
+  },
+  "50": {
+    "resumo": "CHARMM (Chemistry at HARvard Macromolecular Mechanics) oferece um amplo conjunto de funções de energia, métodos de amostragem aprimorada e abordagens multinível (QM/MM, MM/CG e solvente implícito), aplicados a peptídeos, proteínas, ligantes, ácidos nucleicos e lipídios. Desde 2022 a versão acadêmica é gratuita e completa, roda em clusters paralelos e em GPU (DOMDEC-GPU, BLaDE, OpenMM), e a interface pyCHARMM expõe o programa em Python.",
+    "recursos": [
+      "Funções de energia abrangentes com campos de força CHARMM",
+      "Amostragem aprimorada (REMD e afins)",
+      "QM/MM, MM/CG e solvente implícito",
+      "Ferramentas de construção de modelos e análise",
+      "pyCHARMM em Python",
+      "Paralelismo MPI/OpenMP e GPU"
+    ],
+    "plataformas": [
+      "Linux",
+      "macOS"
+    ],
+    "licenca": "Versão acadêmica gratuita para instituições de ensino, governo e sem fins lucrativos; uso comercial pela versão CHARMm licenciada",
+    "publicacao": "T. Hwang et al., J. Phys. Chem. B 128, 9976-10042 (2024).",
+    "doi_url": "https://doi.org/10.1021/acs.jpcb.4c04100",
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://academiccharmm.org/",
+      "download": "https://brooks.chem.lsa.umich.edu/register/",
+      "documentacao": "https://academiccharmm.org/documentation",
+      "tutorial": null,
+      "suporte": "https://forums-academiccharmm.org/",
+      "codigo": null,
+      "publicacao": "https://doi.org/10.1021/acs.jpcb.4c04100"
+    }
+  },
+  "51": {
+    "resumo": "O site do Ponder Lab (Washington University in St. Louis) apresenta o Tinker como um pacote completo e geral para mecânica molecular e dinâmica, com ênfase em biopolímeros e suporte aos campos de força Amber, CHARMM, MM2/MM3, OPLS, MMFF94, AMOEBA, AMOEBA+ e HIPPO. É distribuído como Fortran 95 transportável com OpenMP, com binários pré-compilados, uma versão Tinker-GPU em C++/OpenACC/CUDA e a interface gráfica Tinker Studio.",
+    "recursos": [
+      "Campos polarizáveis AMOEBA, AMOEBA+ e HIPPO",
+      "Eletrostática de multipolos e GB/SA",
+      "Otimização TNCG e dinâmica RESPA com PME",
+      "Paralelização OpenMP e versão Tinker-GPU",
+      "Conjuntos de parâmetros e guia do usuário publicados"
+    ],
+    "plataformas": [
+      "Linux",
+      "macOS",
+      "Windows"
+    ],
+    "licenca": "Gratuito para grupos acadêmicos de pesquisa, laboratórios governamentais e organizações sem fins lucrativos; uso comercial exige licença",
+    "publicacao": null,
+    "doi_url": null,
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://dasher.wustl.edu/tinker/",
+      "download": null,
+      "documentacao": null,
+      "tutorial": null,
+      "suporte": null,
+      "codigo": "https://github.com/TinkerTools",
+      "publicacao": null
+    }
+  },
+  "52": {
+    "resumo": "O MDAnalysis expõe as coordenadas atômicas como arrays NumPy, oferece uma linguagem de seleção de átomos e transformações de trajetória como o ajuste a uma estrutura de referência, e lê saídas de GROMACS, AMBER, NAMD, CHARMM, LAMMPS, HOOMD e DL_POLY. O projeto, com patrocínio fiscal da NumFOCUS, mantém o ecossistema de extensões MDAKits.",
+    "recursos": [
+      "Leitura e escrita de múltiplos formatos de trajetória",
+      "Coordenadas como arrays NumPy",
+      "Linguagem de seleção de átomos",
+      "Transformações e ajuste a referência",
+      "Extensões via MDAKits"
+    ],
+    "plataformas": [],
+    "licenca": "GNU LGPL v3 ou posterior (alguns componentes LGPL v2.1+)",
+    "publicacao": "N. Michaud-Agrawal, E. J. Denning, T. B. Woolf, O. Beckstein, J. Comput. Chem. 32, 2319-2327 (2011).",
+    "doi_url": "https://doi.org/10.1002/jcc.21787",
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://www.mdanalysis.org/",
+      "download": null,
+      "documentacao": "https://www.mdanalysis.org/documentation/",
+      "tutorial": "https://www.mdanalysis.org/learning_MDAnalysis/",
+      "suporte": "https://github.com/MDAnalysis/mdanalysis",
+      "codigo": "https://github.com/MDAnalysis/mdanalysis",
+      "publicacao": "https://www.mdanalysis.org/citations/"
+    }
+  },
+  "53": {
+    "resumo": "O MDTraj permite ler, escrever e analisar trajetórias de MD com poucas linhas de Python, suportando formatos como pdb, xtc, trr, dcd, netcdf, mdcrd, prmtop e gsd. Inclui RMSD acelerado (cerca de 4x o QCP original), análises de ligações, ângulos, diedros, ligações de hidrogênio, estrutura secundária e observáveis de RMN, e o conversor de linha de comando mdconvert.",
+    "recursos": [
+      "Suporte amplo a formatos de trajetória",
+      "RMSD acelerado",
+      "Ligações, ângulos e diedros",
+      "Detectores de ligação de hidrogênio e estrutura secundária",
+      "Comando mdconvert"
+    ],
+    "plataformas": [],
+    "licenca": "GNU LGPL v2.1 ou posterior",
+    "publicacao": "R. T. McGibbon et al., Biophys. J. 109, 1528-1532 (2015).",
+    "doi_url": "https://doi.org/10.1016/j.bpj.2015.08.015",
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://github.com/mdtraj/mdtraj",
+      "download": "https://pypi.org/project/mdtraj/",
+      "documentacao": "https://mdtraj.readthedocs.io/en/latest/",
+      "tutorial": "https://mdtraj.readthedocs.io/en/latest/notebook-examples/index.html",
+      "suporte": "https://github.com/mdtraj/mdtraj/discussions",
+      "codigo": "https://github.com/mdtraj/mdtraj",
+      "publicacao": "https://doi.org/10.1016/j.bpj.2015.08.015"
+    }
+  },
+  "54": {
+    "resumo": "Desenvolvido no grupo M3G da Unicamp, o Packmol cria o ponto de partida de simulações de dinâmica molecular ao empacotar moléculas em regiões definidas do espaço, garantindo que interações repulsivas de curto alcance não quebrem a simulação. Aceita entradas PDB, TINKER e XYZ e permite montar sistemas ordenados, como camadas lamelares, esféricas ou tubulares de lipídios. Instala-se por pip, conda, fpm ou compilação.",
+    "recursos": [
+      "Restrições espaciais por molécula ou átomo",
+      "Eliminação de sobreposições repulsivas",
+      "Montagem de lamelas, esferas e tubos",
+      "Entradas PDB, TINKER e XYZ",
+      "Instalação via pip, conda, fpm ou código-fonte"
+    ],
+    "plataformas": [],
+    "licenca": "MIT",
+    "publicacao": "L. Martinez, R. Andrade, E. G. Birgin, J. M. Martinez, J. Comput. Chem. 30, 2157-2164 (2009).",
+    "doi_url": "https://doi.org/10.1002/jcc.21224",
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://m3g.github.io/packmol/",
+      "download": "https://github.com/m3g/packmol/releases",
+      "documentacao": "https://m3g.github.io/packmol/",
+      "tutorial": "https://m3g.github.io/packmol/userguide.shtml",
+      "suporte": null,
+      "codigo": "https://github.com/m3g/packmol",
+      "publicacao": "https://m3g.github.io/packmol/citation.shtml"
+    }
+  },
+  "55": {
+    "resumo": "O ACPYPE usa o Antechamber para gerar topologias de compostos químicos: em um comando executa antechamber, parmchk2 e tleap e converte a saída para CNS/XPLOR, GROMACS, CHARMM e AMBER. Também converte prmtop/inpcrd para GROMACS sem AmberTools (amb2gmx) e oferece métodos de carga bcc, abcg2, gas e user.",
+    "recursos": [
+      "Fluxo único com antechamber, parmchk2 e tleap",
+      "Saídas GROMACS, CNS/XPLOR, CHARMM e AMBER",
+      "amb2gmx sem AmberTools",
+      "Métodos de carga bcc, abcg2, gas e user",
+      "Instalação via conda-forge, pip e Docker"
+    ],
+    "plataformas": [
+      "Linux",
+      "macOS"
+    ],
+    "licenca": "GNU GPL v3",
+    "publicacao": "A. W. Sousa da Silva, W. F. Vranken, BMC Res. Notes 5, 367 (2012).",
+    "doi_url": "https://doi.org/10.1186/1756-0500-5-367",
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://github.com/alanwilter/acpype",
+      "download": "https://github.com/alanwilter/acpype",
+      "documentacao": "https://acpype.readthedocs.io/",
+      "tutorial": null,
+      "suporte": null,
+      "codigo": "https://github.com/alanwilter/acpype",
+      "publicacao": "https://doi.org/10.1186/1756-0500-5-367"
+    }
+  },
+  "56": {
+    "resumo": "O Bonvin Lab (Universidade de Utrecht) apresenta o HADDOCK3 como uma reinvenção modular do HADDOCK usado há mais de vinte anos para modelagem integrativa de complexos biomoleculares, que explora as ambiguous interaction restraints (AIRs) para guiar o docking. Os fluxos são configurados em arquivos TOML e a instalação é por pip, Docker ou SBGrid; o servidor web HADDOCK 2.4 continua disponível para produção.",
+    "recursos": [
+      "Restrições ambíguas de interação (AIRs)",
+      "Workflows modulares em TOML",
+      "Docking proteína-proteína, proteína-peptídeo e proteína-ácido nucleico",
+      "Integração de dados experimentais e predições",
+      "Manual do usuário com cenários de docking",
+      "Servidor web HADDOCK 2.4 para produção"
+    ],
+    "plataformas": [],
+    "licenca": "Apache-2.0",
+    "publicacao": "Giulini, M.; Reys, K. J.-P.; Teixeira, J. M. F. et al. HADDOCK3: A Modular and Versatile Platform for Integrative Modeling of Biomolecular Complexes. Journal of Chemical Information and Modeling, 2025, v. 65, p. 7315-7324.",
+    "doi_url": "https://doi.org/10.1021/acs.jcim.5c00969",
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://www.bonvinlab.org/software/haddock3/",
+      "download": "https://pypi.org/project/haddock3/",
+      "documentacao": "https://www.bonvinlab.org/haddock3",
+      "tutorial": "https://www.bonvinlab.org/haddock3-user-manual/",
+      "suporte": "https://ask.bioexcel.eu/",
+      "codigo": "https://github.com/haddocking/haddock3",
+      "publicacao": "https://doi.org/10.1021/acs.jcim.5c00969"
+    }
+  },
+  "57": {
+    "resumo": "O GOLD usa um algoritmo genético para posicionar ligandos flexíveis nos sítios de ligação de proteínas e pontua as poses com quatro funções (ChemPLP, ChemScore, GoldScore e ASP). Suporta docking covalente e de ensemble, flexibilidade de cadeias laterais e restrições configuráveis, sendo distribuído pela CCDC dentro das licenças do CSD.",
+    "recursos": [
+      "Funções ChemPLP, ChemScore, GoldScore e ASP",
+      "Docking covalente",
+      "Docking de ensemble",
+      "Flexibilidade de cadeias laterais",
+      "Triagem virtual em ambiente HPC",
+      "API Python e componente KNIME"
+    ],
+    "plataformas": [],
+    "licenca": "Comercial, incluído nas licenças CSD-Discovery e CSD-Enterprise; licenças acadêmicas pagas com desconto",
+    "publicacao": "Verdonk, M. L.; Cole, J. C.; Hartshorn, M. J. et al. Improved protein-ligand docking using GOLD. Proteins: Structure, Function, and Bioinformatics, 2003, v. 52, p. 609-623.",
+    "doi_url": "https://doi.org/10.1002/prot.10465",
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://www.ccdc.cam.ac.uk/solutions/software/gold/",
+      "download": "https://www.ccdc.cam.ac.uk/support-and-resources/csdsdownloads/",
+      "documentacao": null,
+      "tutorial": null,
+      "suporte": "https://support.ccdc.cam.ac.uk/support/home",
+      "codigo": null,
+      "publicacao": "https://doi.org/10.1002/prot.10465"
+    }
+  },
+  "58": {
+    "resumo": "O rDock é um programa de docking escrito em C++ para docking de moléculas pequenas contra proteínas e ácidos nucleicos, otimizado para triagem virtual de alto rendimento e predição de modos de ligação. O pacote ocupa menos de 50 MB, inclui preparação e pós-processamento, roda em qualquer Linux e escala a clusters com número arbitrário de CPUs.",
+    "recursos": [
+      "Docking de proteínas e ácidos nucleicos",
+      "Otimização para HTVS",
+      "Preparação e pós-processamento incluídos",
+      "Execução em cluster com escalonamento linear",
+      "Scripts em Perl e Python"
+    ],
+    "plataformas": [
+      "Linux"
+    ],
+    "licenca": "GNU LGPL v3",
+    "publicacao": null,
+    "doi_url": null,
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://rdock.github.io/",
+      "download": "https://github.com/CBDD/rDock",
+      "documentacao": "https://rdock.github.io/documentation/",
+      "tutorial": "https://rdock.github.io/getting-started/",
+      "suporte": null,
+      "codigo": "https://github.com/CBDD/rDock",
+      "publicacao": null
+    }
+  },
+  "59": {
+    "resumo": "O AutoDock-GPU é a implementação em GPU do motor de docking AutoDock4, mantendo o formato de entrada, as grades de potencial pré-computadas (.map.grd) e a função de pontuação da versão original. Combina o algoritmo de busca LGA com busca local acelerada em GPU e roda tanto em placas NVIDIA (CUDA) quanto em AMD (HIP/ROCm), sendo usado sobretudo em triagem virtual de grandes bibliotecas, em que o throughput por nó é o fator decisivo. O código é desenvolvido no Scripps Research e no grupo de Bioinformática Estrutural da USP, com releases publicados no GitHub.",
+    "recursos": [
+      "Docking AutoDock4 acelerado em GPU",
+      "Busca local por gradiente (L-GAPA e AD4-SO)",
+      "Suporte a CUDA e a HIP/ROCm",
+      "Modo de triagem em lote para grandes bibliotecas",
+      "Compatível com grades de potencial .map.grd"
+    ],
+    "plataformas": [
+      "Linux",
+      "macOS"
+    ],
+    "licenca": "GPL-2.0",
+    "publicacao": null,
+    "doi_url": "https://doi.org/10.1021/acs.jctc.0c01006",
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://autodock.scripps.edu/",
+      "download": "https://github.com/forlilab/AutoDock-GPU/releases",
+      "documentacao": "https://github.com/ccsb-scripps/AutoDock-GPU/wiki/Guideline-for-users",
+      "tutorial": "https://github.com/ccsb-scripps/AutoDock-GPU/wiki/Guideline-for-users",
+      "suporte": "https://github.com/ccsb-scripps/AutoDock-GPU/issues",
+      "codigo": "https://github.com/forlilab/AutoDock-GPU",
+      "publicacao": "https://doi.org/10.1021/acs.jctc.0c01006"
+    }
+  },
+  "60": {
+    "resumo": "O Smina deriva do AutoDock Vina e reutiliza sua interface de linha de comando e seu algoritmo de busca, ampliando a função de pontuação: aceita termos de energia de força de campo (Amber e CHARMM), trata hidrogênios de forma mais explícita, permite receptor flexível e pode apenas pontuar poses já geradas. É distribuído no SourceForge como binários pré-compilados e código-fonte, e aparece com frequência em fluxos de triagem que usam o Vina com filtros adicionais.",
+    "recursos": [
+      "Interface compatível com o AutoDock Vina",
+      "Função de pontuação estendida",
+      "Energias de força de campo Amber e CHARMM",
+      "Modo somente de pontuação (--score)",
+      "Receptor flexível"
+    ],
+    "plataformas": [],
+    "licenca": "GPLv2",
+    "publicacao": null,
+    "doi_url": null,
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://sourceforge.net/projects/smina/",
+      "download": "https://sourceforge.net/projects/smina/files/",
+      "documentacao": null,
+      "tutorial": null,
+      "suporte": "https://sourceforge.net/p/smina/tickets/",
+      "codigo": "https://sourceforge.net/p/smina/code/",
+      "publicacao": null
+    }
+  },
+  "61": {
+    "resumo": "O GNINA substitui ou complementa a pontuação clássica do docking por redes neurais convolucionais 3D treinadas em dados de complexos proteína-ligante, mantendo uma interface de linha de comando no estilo do Vina. Além da pontuação, oferece minimização com força de campo, busca conformacional e, nas versões mais recentes, geração de poses por modelos de difusão. O uso de GPU requer CUDA; a distribuição é feita por binários e por pacotes Conda.",
+    "recursos": [
+      "Pontuação por CNN 3D treinada em dados experimentais",
+      "Busca e minimização compatíveis com o AutoDock Vina",
+      "Aceleração por GPU via CUDA",
+      "Geração de poses com modelo de difusão",
+      "Saída em SDF/PDB com análise de interações"
+    ],
+    "plataformas": [],
+    "licenca": "Apache-2.0 (código) e GPL-2.0 (componentes derivados do AutoDock)",
+    "publicacao": null,
+    "doi_url": "https://doi.org/10.1186/s13321-025-00973-x",
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://github.com/gnina/gnina",
+      "download": "https://github.com/gnina/gnina/releases",
+      "documentacao": null,
+      "tutorial": null,
+      "suporte": null,
+      "codigo": "https://github.com/gnina/gnina",
+      "publicacao": "https://doi.org/10.1186/s13321-025-00973-x"
+    }
+  },
+  "62": {
+    "resumo": "O AlphaFold venceu o desafio CASP14 ao predizer estruturas proteicas com acurácia próxima à experimental, combinando alinhamentos múltiplos de sequência e templates com blocos de transformer (Evoformer) e reciclagem iterativa. O repositório oficial mantém os pipelines do AlphaFold 2 e do AlphaFold 3, que estende a predição a complexos, ligantes, íons e modificações; o AlphaFold DB distribui estruturas preditas para dezenas de milhões de sequências e o OpenFold é uma reimplementação aberta orientada a treinamento. A instalação local é feita em Linux com GPU NVIDIA.",
+    "recursos": [
+      "Predição de estrutura a partir da sequência",
+      "AlphaFold 2 com MSA e templates",
+      "AlphaFold 3 para complexos, ligantes e íons",
+      "Milhões de estruturas pré-computadas no AlphaFold DB",
+      "Reimplementação aberta OpenFold"
+    ],
+    "plataformas": [
+      "Linux"
+    ],
+    "licenca": "Código sob Apache-2.0; parâmetros do AlphaFold 2 sob CC BY 4.0; AlphaFold 3 sob termos próprios da Google DeepMind; servidor web apenas para uso não comercial",
+    "publicacao": "Jumper, J. et al. Highly accurate protein structure prediction with AlphaFold. Nature, 2021, v. 596, p. 583-589.",
+    "doi_url": "https://doi.org/10.1038/s41586-021-03819-2",
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://deepmind.google/science/alphafold/",
+      "download": null,
+      "documentacao": null,
+      "tutorial": null,
+      "suporte": null,
+      "codigo": "https://github.com/google-deepmind/alphafold",
+      "publicacao": "https://doi.org/10.1038/s41586-021-03819-2"
+    }
+  },
+  "63": {
+    "resumo": "O MODELLER constrói modelos tridimensionais de proteínas e complexos a partir do alinhamento da sequência-alvo com moldes de estrutura conhecida, otimizando uma função objetivo de satisfação de restrições espaciais derivadas das estruturas homólogas e de potenciais estatísticos. Também atende a refinamento contra dados experimentais, modelagem de loops, montagem de complexos e modelos com simetria, e vem com biblioteca em Python para roteiros de modelagem em lote e avaliação por DOPE. É padrão em laboratórios que precisam modelar alvos sem estrutura resolvida.",
+    "recursos": [
+      "Modelagem por homologia a partir de alinhamento sequência-estrutura",
+      "Otimização por restrições espaciais",
+      "Potenciais estatísticos de avaliação (DOPE)",
+      "Modelagem de loops e refinamento local",
+      "Construção de complexos e modelos simétricos",
+      "Interface em Python para automação"
+    ],
+    "plataformas": [],
+    "licenca": "Gratuito para uso acadêmico; uso comercial mediante licença",
+    "publicacao": "Webb, B.; Sali, A. Protein Structure Modeling Using MODELLER. Current Protocols in Bioinformatics, 2016, v. 54, p. 5.6.1-5.6.37.",
+    "doi_url": null,
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://salilab.org/modeller/",
+      "download": "https://salilab.org/modeller/download_installation.html",
+      "documentacao": "https://salilab.org/modeller/documentation.html",
+      "tutorial": "https://salilab.org/modeller/tutorial/",
+      "suporte": null,
+      "codigo": null,
+      "publicacao": null
+    }
+  },
+  "64": {
+    "resumo": "O SWISS-MODEL é um servidor de modelagem comparativa de proteínas: o usuário fornece a sequência-alvo, o sistema busca moldes estruturais em bases anotadas e no SWISS-MODEL Repository, gera o alinhamento e devolve o modelo com estimativas de qualidade por região. A interface interativa permite editar o alinhamento antes do cálculo, e a workspace atende tarefas em lote. É a alternativa mais usada quando se quer um modelo razoável sem instalar software local.",
+    "recursos": [
+      "Modelagem por homologia pelo navegador",
+      "Busca automática de moldes estruturais",
+      "Alinhamento interativo editável",
+      "Estimativas de qualidade do modelo",
+      "SWISS-MODEL Repository com modelos publicados"
+    ],
+    "plataformas": [
+      "Web"
+    ],
+    "licenca": "Gratuito (servidor mantido pelo SIB Swiss Institute of Bioinformatics)",
+    "publicacao": "Waterhouse, A. et al. SWISS-MODEL: homology modelling of protein structures and complexes. Nucleic Acids Research, 2018, v. 46, p. W296-W303.",
+    "doi_url": "https://doi.org/10.1093/nar/gky427",
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://swissmodel.expasy.org/",
+      "download": null,
+      "documentacao": "https://swissmodel.expasy.org/docs/help",
+      "tutorial": null,
+      "suporte": null,
+      "codigo": null,
+      "publicacao": "https://doi.org/10.1093/nar/gky427"
+    }
+  },
+  "65": {
+    "resumo": "O ESMFold prediz a estrutura tridimensional diretamente da sequência, usando as representações do modelo de linguagem ESM-2 em lugar de alinhamentos múltiplos, o que torna a inferência muito mais rápida que os métodos dependentes de busca em bancos de sequências. O repositório da Meta reúne ESM-2, ESM-1b, ESMFold, o ESM Atlas (representações e estruturas de sequências de metagenomas) e o pacote esm. Convém registrar que esse repositório foi arquivado, de modo que manutenção e derivações recentes ficam com a comunidade.",
+    "recursos": [
+      "Predição de estrutura apenas com a sequência",
+      "Modelos de linguagem ESM-2 e ESM-1b",
+      "ESM Atlas com estruturas de sequências de metagenomas",
+      "Inferência acelerada em GPU",
+      "Biblioteca Python com pesos abertos"
+    ],
+    "plataformas": [],
+    "licenca": "MIT (código e pesos abertos)",
+    "publicacao": "Lin, Z.; Akin, R.; Rao, R. et al. Evolutionary-scale prediction of atomic-level protein structure with a language model. Science, 2023, v. 379, p. 1123-1130.",
+    "doi_url": "https://doi.org/10.1126/science.ade2574",
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://github.com/facebookresearch/esm",
+      "download": null,
+      "documentacao": null,
+      "tutorial": null,
+      "suporte": null,
+      "codigo": "https://github.com/facebookresearch/esm",
+      "publicacao": "https://doi.org/10.1126/science.ade2574"
+    }
+  },
+  "66": {
+    "resumo": "O FreeSASA calcula áreas acessíveis a solvente de estruturas biomoleculares com implementações eficientes dos métodos clássicos, por pontos de sonda e por grade. É distribuído como biblioteca C, utilitário de linha de comando e módulo Python, lendo arquivos PDB e trajetórias de dinâmica molecular para produzir séries temporais de SASA, área de interface e exposição por resíduo. Por ser leve e com poucas dependências, aparece com frequência em roteiros de análise de simulações.",
+    "recursos": [
+      "Métodos Lee-Richards e Shrake-Rupley",
+      "Cálculo por grade e por pontos de sonda",
+      "Uso como linha de comando e como módulo Python",
+      "Séries temporais a partir de trajetórias",
+      "SASA por resíduo, grupo e cadeia"
+    ],
+    "plataformas": [
+      "Linux",
+      "macOS",
+      "Windows"
+    ],
+    "licenca": "MIT",
+    "publicacao": "Mitternacht, S. FreeSASA: An open source C library for solvent accessible surface area calculations. F1000Research, 2016, v. 5, p. 189.",
+    "doi_url": "https://doi.org/10.12688/f1000research.7931.1",
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://freesasa.github.io/",
+      "download": null,
+      "documentacao": null,
+      "tutorial": null,
+      "suporte": null,
+      "codigo": null,
+      "publicacao": "https://doi.org/10.12688/f1000research.7931.1"
+    }
+  },
+  "67": {
+    "resumo": "O PLIP analisa complexos proteína-ligante e reconhece automaticamente pontes de hidrogênio polares e carregadas, interações hidrofóbicas, empilhamento aromático, interações de cátion-π e ânion-π, pontes salinas, contatos mediados por água, interações com metais e ligações covalentes. Está disponível como servidor web, pacote Python instalável por pip e ferramenta de linha de comando, com saída em texto, JSON e figura interativa, o que o tornou um passo comum para descrever e validar resultados de docking.",
+    "recursos": [
+      "Detecção de pontes de hidrogênio e interações hidrofóbicas",
+      "Empilhamento aromático e cátion-π/ânion-π",
+      "Pontes salinas, água de ponte e contato com metais",
+      "Servidor web, pacote Python e linha de comando",
+      "Saída estruturada para análise em lote"
+    ],
+    "plataformas": [],
+    "licenca": "GPL-2.0",
+    "publicacao": null,
+    "doi_url": "https://doi.org/10.1093/nar/gkab294",
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://plip-tool.biotec.tu-dresden.de/plip-web/plip/index",
+      "download": "https://pypi.org/project/plip/",
+      "documentacao": null,
+      "tutorial": null,
+      "suporte": null,
+      "codigo": "https://github.com/pharmai/plip",
+      "publicacao": "https://doi.org/10.1093/nar/gkab294"
+    }
+  },
+  "68": {
+    "resumo": "O Biopython é o conjunto de bibliotecas Python consolidado para biologia molecular computacional, com módulos para leitura e manipulação de sequências, alinhamento, filogenia, entrada e saída dos formatos biológicos mais usados (FASTA, GenBank, PDB, mmCIF) e acesso a bancos como UniProt, NCBI e PDB. Em química e biofísica estrutural é a base de muitos scripts que preparam sistemas para dinâmica molecular ou extraem geometrias de arquivos de depósito, e é mantido por uma comunidade aberta com liberações frequentes.",
+    "recursos": [
+      "Objetos de sequência e alinhamento",
+      "Parser de PDB, mmCIF, FASTA e GenBank",
+      "Filogenia e árvores",
+      "Acesso a UniProt, NCBI e outros bancos",
+      "Ferramentas de estrutura para preparação de sistemas"
+    ],
+    "plataformas": [
+      "Linux",
+      "macOS",
+      "Windows"
+    ],
+    "licenca": "Biopython License Agreement (livre, compatível com BSD-3 para parte dos módulos)",
+    "publicacao": "Cock, P. J. et al. Biopython: freely available Python tools for computational molecular biology and bioinformatics. Bioinformatics, 2009, v. 25, p. 1422-1423.",
+    "doi_url": "https://doi.org/10.1093/bioinformatics/btp163",
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://biopython.org/",
+      "download": null,
+      "documentacao": "https://biopython.org/wiki/Documentation",
+      "tutorial": null,
+      "suporte": null,
+      "codigo": "https://github.com/biopython/biopython",
+      "publicacao": "https://doi.org/10.1093/bioinformatics/btp163"
+    }
+  },
+  "69": {
+    "resumo": "O Ketcher é um editor de moléculas open source que roda no navegador, distribuído como aplicação standalone e como componentes para React e Angular. Além do desenho 2D com símbolos, cargas, radicais, R-grupos e polímeros, oferece visualização 3D, verificação de valência, geração de coordenadas e conversão entre os formatos de intercâmbio mais usados, servindo de interface de entrada para bases e serviços de quimioinformática. É mantido como projeto open source pela EPAM.",
+    "recursos": [
+      "Desenho de estruturas 2D no navegador",
+      "Componentes React e Angular embutíveis",
+      "Visualização 3D da estrutura desenhada",
+      "R-grupos, mer e polímeros",
+      "Conversão de formatos de intercâmbio"
+    ],
+    "plataformas": [
+      "Web"
+    ],
+    "licenca": "Apache-2.0",
+    "publicacao": null,
+    "doi_url": null,
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://lifescience.opensource.epam.com/ketcher/index.html",
+      "download": null,
+      "documentacao": null,
+      "tutorial": null,
+      "suporte": null,
+      "codigo": "https://github.com/epam/ketcher",
+      "publicacao": null
+    }
+  },
+  "70": {
+    "resumo": "O DeepChem reúne, em uma API Python única, o pré-processamento de dados químicos e a construção de modelos de aprendizado de máquina: descritores e fingerprints, featurizers baseados em grafo e em estrutura 3D, divisões de conjunto e modelos que vão de random forest e redes fully connected a GCN, MPNN e transformers, com integração a frameworks profundos. É muito usado em QSAR, predição de propriedades e triagem virtual, e traz um acervo de datasets de referência e scripts de exemplo que facilitam o aprendizado.",
+    "recursos": [
+      "Descritores e fingerprints moleculares",
+      "Featurizers 2D, 3D e de grafo",
+      "Modelos lineares, florestas e redes neurais",
+      "Redes de grafo (GCN, MPNN) e transformers",
+      "Datasets de referência e scripts de exemplo"
+    ],
+    "plataformas": [
+      "Linux",
+      "macOS",
+      "Windows"
+    ],
+    "licenca": "MIT",
+    "publicacao": "Ramsundar, B.; et al. Deep Learning for the Life Sciences. O'Reilly Media, 2019.",
+    "doi_url": null,
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://deepchem.io/",
+      "download": null,
+      "documentacao": "https://deepchem.readthedocs.io/en/latest/",
+      "tutorial": "https://deepchem.github.io/tutorials/",
+      "suporte": null,
+      "codigo": "https://github.com/deepchem/deepchem",
+      "publicacao": null
+    }
+  },
+  "71": {
+    "resumo": "O CDK é uma biblioteca em Java de código aberto para quimioinformática, que cobre parse e escrita dos formatos moleculares correntes, percepção de aromatividade e tipos de átomo, geração de descritores e fingerprints, busca por subestrutura com SMARTS, desenho e layout de estruturas e cálculo de propriedades. Também fornece utilitários de linha de comando para converter e anotar arquivos, o que o torna opção frequente em aplicações corporativas e fluxos que precisam de uma toolkit madura em Java.",
+    "recursos": [
+      "Leitura e escrita de formatos moleculares",
+      "Atribuição de tipos de átomo e aromatividade",
+      "Descritores moleculares e fingerprints",
+      "Busca por subestrutura com SMARTS",
+      "Renderização e layout 2D",
+      "Utilitários de linha de comando"
+    ],
+    "plataformas": [
+      "Linux",
+      "macOS",
+      "Windows"
+    ],
+    "licenca": "LGPL-2.1-or-later",
+    "publicacao": "Willighagen, E. L.; Mayfield, J. W.; Alvarsson, J. et al. The Chemistry Development Kit (CDK) v2.0: atom typing, depiction, molecular formulas, and substructure searching. Journal of Cheminformatics, 2017, v. 9, p. 33.",
+    "doi_url": "https://doi.org/10.1186/s13321-017-0220-4",
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://cdk.github.io/",
+      "download": "https://github.com/cdk/cdk/releases",
+      "documentacao": "https://cdk.github.io/cdk/latest/docs/api/index.html",
+      "tutorial": null,
+      "suporte": null,
+      "codigo": "https://github.com/cdk/cdk",
+      "publicacao": "https://doi.org/10.1186/s13321-017-0220-4"
+    }
+  },
+  "72": {
+    "resumo": "O Jmol é um visualizador molecular multiplataforma escrito em Java, capaz de exibir estruturas de pequenas moléculas e macromoléculas em modos de bola-e-vareta, estilizado, superfície e malha, com script de automação e cálculo de superfícies. O JSmol é o mesmo motor empacotado em JavaScript/HTML5, o que permite embutir visualizações interativas em páginas sem plug-ins. Por isso os dois aparecem com frequência em materiais didáticos, periódicos e repositórios de dados que precisam de um applet de estrutura.",
+    "recursos": [
+      "Modos de exibição 3D para moléculas e proteínas",
+      "Superfícies de van der Waals, solvente e potencial eletrostático",
+      "Linguagem de script para animação e automação",
+      "JSmol em HTML5 para embutir na web",
+      "Leitura de PDB, CIF, mol e muitos outros formatos"
+    ],
+    "plataformas": [
+      "Linux",
+      "macOS",
+      "Windows"
+    ],
+    "licenca": "LGPL",
+    "publicacao": null,
+    "doi_url": null,
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://jmol.sourceforge.net/",
+      "download": "https://sourceforge.net/projects/jmol/files/",
+      "documentacao": "https://chemapps.stolaf.edu/jmol/docs/",
+      "tutorial": null,
+      "suporte": "https://wiki.jmol.org/",
+      "codigo": null,
+      "publicacao": null
+    }
+  },
+  "73": {
+    "resumo": "O 3Dmol.js renderiza moléculas e biomoléculas no navegador com WebGL, sem dependências externas, e expõe uma API JavaScript para montar representações, estilos, superfícies, cores por propriedade, seleções, animação de trajetórias e scripts interativos. É usado em sites de repositórios de dados e em ferramentas de docking para mostrar resultados de forma rápida, e funciona embutido em qualquer página, inclusive em notebooks via widget.",
+    "recursos": [
+      "Renderização WebGL sem plug-ins",
+      "Estilos, cores por cadeia/resíduo e superfícies",
+      "Suporte a trajetórias e animação",
+      "API JavaScript com seleções e eventos",
+      "Documentação com exemplos embutíveis"
+    ],
+    "plataformas": [
+      "Web"
+    ],
+    "licenca": "BSD-3-Clause",
+    "publicacao": null,
+    "doi_url": null,
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://3dmol.csb.pitt.edu/",
+      "download": null,
+      "documentacao": "https://3dmol.csb.pitt.edu/doc/",
+      "tutorial": "https://3dmol.csb.pitt.edu/doc/tutorial-embeddable.html",
+      "suporte": null,
+      "codigo": "https://github.com/3dmol/3Dmol.js",
+      "publicacao": null
+    }
+  },
+  "74": {
+    "resumo": "O NGLview incorpora o visualizador WebGL NGLmol dentro de notebooks Jupyter e do JupyterLab, permitindo rodar trajetórias de dinâmica molecular, inspecionar estruturas e ajustar estilo, representação e cor de forma interativa. É instalável por pip e conda e se integra ao Biopython e a ferramentas de análise de simulação, o que o tornou a escolha comum para ensinar e relatar resultados de dinâmica molecular em cadernos executáveis.",
+    "recursos": [
+      "Widget de visualização para Jupyter e JupyterLab",
+      "Carregamento de trajetórias de dinâmica molecular",
+      "Representações, estilos e seleções interativas",
+      "Integração com Biopython e ferramentas de análise",
+      "Instalação por pip e conda"
+    ],
+    "plataformas": [
+      "Linux",
+      "macOS",
+      "Windows"
+    ],
+    "licenca": "MIT",
+    "publicacao": null,
+    "doi_url": null,
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://github.com/nglviewer/nglview",
+      "download": "https://pypi.org/project/nglview/",
+      "documentacao": null,
+      "tutorial": null,
+      "suporte": null,
+      "codigo": "https://github.com/nglviewer/nglview",
+      "publicacao": null
+    }
+  },
+  "75": {
+    "resumo": "O OVITO é voltado à análise e ao render de simulações atomísticas em larga escala, lendo os formatos de trajetória mais usados e oferecendo um conjunto de modificadores de dados — análise de estrutura local, identificação de defeitos, vetor de deslocamento, seleção por propriedade, vínculo covalente e criação de superfícies — combináveis em pipeline executável sobre todos os quadros. A interface gráfica permite animar e renderizar, com motor embutido ou saída para POV-Ray; há também API Python e versão em linha de comando para scripts.",
+    "recursos": [
+      "Modificadores de análise e pipeline de dados",
+      "Identificação de estrutura local e defeitos",
+      "Seleção e coloração por propriedade atômica",
+      "Animação e render de alta qualidade",
+      "API Python e versão sem interface gráfica"
+    ],
+    "plataformas": [
+      "Linux",
+      "macOS",
+      "Windows"
+    ],
+    "licenca": "OVITO Basic gratuito; OVITO Pro comercial (licença por assinatura)",
+    "publicacao": "Stukowski, A. Visualization and analysis of atomistic simulation data with OVITO: the Open Visualization Tool. Modelling and Simulation in Materials Science and Engineering, 2010, v. 18, p. 015012.",
+    "doi_url": "https://doi.org/10.1088/0965-0393/18/1/015012",
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://www.ovito.org/",
+      "download": "https://www.ovito.org/download/",
+      "documentacao": "https://www.ovito.org/docs/current/",
+      "tutorial": null,
+      "suporte": "https://matsci.org/c/ovito/",
+      "codigo": null,
+      "publicacao": "https://doi.org/10.1088/0965-0393/18/1/015012"
+    }
+  },
+  "76": {
+    "resumo": "O PubChem agrega compostos e substâncias com suas propriedades calculadas e experimentalmente relatadas, registros de bioensaios (BioAssay) com curadoria, e dados de patentes e literatura. É uma das principais fontes de estruturas para aprendizado de máquina químico e para triagem, e oferece PUG REST e PUG View para recuperação programática de JSON, XML, CSV e SDF. O identificador CID e a estrutura normalizada dele são usados como referência em muitos fluxos de anotação.",
+    "recursos": [
+      "Compostos (CID) e substâncias (SID) com propriedades",
+      "Registros de bioensaios com dados dose-resposta",
+      "APIs PUG REST e PUG View",
+      "Download em massa de arquivos SDF/CSV",
+      "Fusão de dados de literatura e patentes"
+    ],
+    "plataformas": [
+      "Web"
+    ],
+    "licenca": "Conteúdo do domínio público (governo dos EUA); uso sujeito às políticas do NCBI",
+    "publicacao": null,
+    "doi_url": "https://doi.org/10.1093/nar/gkae1059",
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://pubchem.ncbi.nlm.nih.gov/",
+      "download": null,
+      "documentacao": null,
+      "tutorial": null,
+      "suporte": null,
+      "codigo": null,
+      "publicacao": "https://doi.org/10.1093/nar/gkae1059"
+    }
+  },
+  "77": {
+    "resumo": "O ChEMBL reúne, com curadoria manual de literatura e repositórios, dados de moléculas bioativas, seus alvos, experimentos e medidas de atividade (potência, seletividade, ADMET e ensaios funcionais). É a base de referência para modelagem QSAR, mineração de relação estrutura-atividade e construção de datasets de aprendizado de máquina, com busca por estrutura, sequência e alvo, API REST, ferramentas web e downloads completos e por liberações versionadas.",
+    "recursos": [
+      "Medidas de atividade curadas ligadas a alvos",
+      "Busca por estrutura, similaridade e alvo",
+      "API REST e ferramentas web",
+      "Downloads completos em SDF/CSV por versão",
+      "Dados de ADMET e ensaios funcionais"
+    ],
+    "plataformas": [
+      "Web"
+    ],
+    "licenca": "CC BY-SA 3.0",
+    "publicacao": null,
+    "doi_url": "https://doi.org/10.1093/nar/gkad1004",
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://www.ebi.ac.uk/chembl/",
+      "download": null,
+      "documentacao": "https://chembl.gitbook.io/chembl-interface-documentation/frequently-asked-questions/general-questions",
+      "tutorial": null,
+      "suporte": null,
+      "codigo": null,
+      "publicacao": "https://doi.org/10.1093/nar/gkad1004"
+    }
+  },
+  "78": {
+    "resumo": "O ZINC20 organiza centenas de milhões de compostos comercialmente disponíveis, anotando-os por classes química e biológica, filtros de propriedade e blocos de montagem, e os oferece em formatos prontos para docking em 2D e conformeros 3D pré-feitos. A busca é por subestrutura, similaridade, texto e propriedades, com download em lote — o que o torna etapa inicial comum em campanhas de descoberta antes de qualquer cálculo.",
+    "recursos": [
+      "Bibliotecas de compostos disponíveis para compra",
+      "Conformeros 3D preparados para docking",
+      "Busca por subestrutura e similaridade",
+      "Filtros de propriedade e de reagrupamento",
+      "Download em lote por transação de compra"
+    ],
+    "plataformas": [
+      "Web"
+    ],
+    "licenca": "Gratuito para acesso e uso",
+    "publicacao": "Irwin, J. J.; Tang, K. G.; Young, J. et al. ZINC20: A Free Ultralarge-Scale Chemical Database for Ligand Discovery. Journal of Chemical Information and Modeling, 2020, v. 60, p. 6065-6073.",
+    "doi_url": "https://doi.org/10.1021/acs.jcim.0c00675",
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://zinc20.docking.org/",
+      "download": null,
+      "documentacao": null,
+      "tutorial": null,
+      "suporte": null,
+      "codigo": null,
+      "publicacao": "https://doi.org/10.1021/acs.jcim.0c00675"
+    }
+  },
+  "79": {
+    "resumo": "O RCSB PDB é o nó americano da wwPDB e a interface mais usada para acessar estruturas biomoleculares determinadas por difração de raios X, RMN e criomicroscopia eletrônica. Além da busca por sequência, estrutura, ligante e entidade, oferece anotação de domínio, ligações, dados de validação, arquivos em mmCIF/PDB, superposição e ferramentas de análise, e serve de fonte para modelagem, docking e dinâmica molecular. O PDB-101 traz material didático para ensino de estrutura.",
+    "recursos": [
+      "Busca por sequência, estrutura, ligante e metadados",
+      "Arquivos em mmCIF, PDB e formatos derivados",
+      "Anotação de sítios, ligações e domínios",
+      "Ferramentas de superposição e comparação",
+      "PDB-101 com material de ensino"
+    ],
+    "plataformas": [
+      "Web"
+    ],
+    "licenca": "Dados em domínio público/CC0; software sob licenças abertas (MIT/Apache-2.0)",
+    "publicacao": "Berman, H. M.; Westbrook, J.; Feng, Z. et al. The Protein Data Bank. Nucleic Acids Research, 2000, v. 28, p. 235-242.",
+    "doi_url": "https://doi.org/10.1093/nar/28.1.235",
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://www.rcsb.org/",
+      "download": null,
+      "documentacao": "https://www.rcsb.org/pages/policies",
+      "tutorial": "https://pdb101.rcsb.org/",
+      "suporte": null,
+      "codigo": null,
+      "publicacao": "https://doi.org/10.1093/nar/28.1.235"
+    }
+  },
+  "80": {
+    "resumo": "O Materials Project publica, para dezenas de milhares de compostos inorgânicos, resultados de cálculos de estrutura eletrônica padronizados: estrutura, energia de formação e acima do convex hull, banda e gap, propriedades elásticas, dielétricas, termodinâmicas e de superfície, além de dados de inserção iônica para baterias. O acesso é feito pelo portal web, por downloads e pela API mp-api em Python, integrada ao pymatgen, o que permite filtrar candidatos por propriedade antes de refazer um cálculo.",
+    "recursos": [
+      "Propriedades estruturais e eletrônicas por DFT",
+      "Estabilidade termodinâmica e convex hull",
+      "Propriedades elásticas, dielétricas e de superfície",
+      "API e pacote Python mp-api",
+      "Integração com pymatgen para análise"
+    ],
+    "plataformas": [
+      "Web"
+    ],
+    "licenca": "CC BY 4.0 (dados)",
+    "publicacao": "Jain, A. et al. Commentary: The Materials Project: A materials genome approach to accelerating materials innovation. APL Materials, 2013, v. 1, p. 011002.",
+    "doi_url": "https://doi.org/10.1063/1.4812323",
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://materialsproject.org/",
+      "download": null,
+      "documentacao": "https://docs.materialsproject.org/frequently-asked-questions",
+      "tutorial": null,
+      "suporte": null,
+      "codigo": null,
+      "publicacao": "https://doi.org/10.1063/1.4812323"
+    }
+  },
+  "81": {
+    "resumo": "O NOMAD armazena entradas e saídas completas de cálculos de estrutura eletrônica e de dinâmica molecular, com um serviço de parse que extrai metadados padronizados de milhares de arquivos de VASP, Quantum ESPRESSO, CP2K, ORCA, Gaussian e outros. Isso viabiliza busca por material, método, funcional e propriedades em escala, publicação com DOI e reuso conforme os princípios FAIR; a plataforma também oferece notebooks, ferramentas de análise e APIs.",
+    "recursos": [
+      "Parse automático de arquivos de saída de muitos códigos",
+      "Metadados padronizados e buscáveis",
+      "Publicação com DOI e licenças do autor",
+      "API e ferramentas de análise online",
+      "Filtros por método, funcional e material"
+    ],
+    "plataformas": [
+      "Web"
+    ],
+    "licenca": "Plataforma open source; dados sob a licença escolhida pelo autor",
+    "publicacao": null,
+    "doi_url": "https://doi.org/10.21105/joss.05388",
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://nomad-lab.eu/",
+      "download": null,
+      "documentacao": null,
+      "tutorial": null,
+      "suporte": null,
+      "codigo": null,
+      "publicacao": "https://doi.org/10.21105/joss.05388"
+    }
+  },
+  "82": {
+    "resumo": "A COD reúne estruturas determinadas por difração de raios X ou nêutrons — de moléculas orgânicas a materiais inorgânicos e metal-orgânicos — cujo depósito é feito por autores e periódicos sob dedicação ao domínio público. Cada entrada traz arquivo CIF, parâmetros de rede e referência, e o conjunto completo pode ser baixado para filtragem por subestrutura, comparação de célula ou validação de modelos; é a alternativa aberta à CSD para levantamentos cristalográficos.",
+    "recursos": [
+      "Arquivos CIF completos e reutilizáveis",
+      "Busca por fórmula, célula e subestrutura",
+      "Download do conjunto inteiro",
+      "Dados derivados de difração de raios X e nêutrons",
+      "Licença CC0, sem restrição de reuso"
+    ],
+    "plataformas": [
+      "Web"
+    ],
+    "licenca": "CC0 (domínio público)",
+    "publicacao": "Gražulis, S. et al. Crystallography Open Database (COD): an open-access collection of crystal structures and platform for world-wide collaboration. Nucleic Acids Research, 2012, v. 40, p. D420-D427.",
+    "doi_url": "https://doi.org/10.1093/nar/gkr900",
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://www.crystallography.net/cod/",
+      "download": "https://wiki.crystallography.net/howtoobtaincod/",
+      "documentacao": "https://wiki.crystallography.net/howtoquerycod/",
+      "tutorial": null,
+      "suporte": null,
+      "codigo": null,
+      "publicacao": "https://doi.org/10.1093/nar/gkr900"
+    }
+  },
+  "83": {
+    "resumo": "A CSD, mantida pelo Cambridge Crystallographic Data Centre, é a coleção de referência de estruturas de moléculas orgânicas e organometálicas determinadas por difração, com curadoria e validação. Além do acesso às entradas, o pacote oferece ferramentas de análise de geometria e de conformação, busca por subestrutura e ligações de hidrogênio, e dados usados como fonte de parâmetros e de validação em modelagem, cristalografia de pós e descoberta de sólidos; o acesso exige licença institucional.",
+    "recursos": [
+      "Estruturas curadas de moléculas orgânicas e organometálicas",
+      "Busca por subestrutura e por padrão de ligação de hidrogênio",
+      "Análise conformacional e de empacotamento",
+      "Dados de referência para parametrização e validação",
+      "Pacote de software associado à consulta"
+    ],
+    "plataformas": [
+      "Web"
+    ],
+    "licenca": "Comercial; licenças institucionais e acadêmicas pela CCDC",
+    "publicacao": null,
+    "doi_url": null,
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://www.ccdc.cam.ac.uk/",
+      "download": null,
+      "documentacao": null,
+      "tutorial": null,
+      "suporte": null,
+      "codigo": null,
+      "publicacao": null
+    }
+  },
+  "84": {
+    "resumo": "O BindingDB cataloga constantes de ligação e inibição (Ki, IC50, Kd, eficiência de inibição) para interações proteína-ligante extraídas de literatura e de depósitos diretos de laboratórios, associando alvos, compostos e ensaios. É muito usado para calibrar e validar funções de pontuação de docking, montar séries SAR e definir pontos de corte em triagem virtual, com busca por composto, alvo ou faixa de atividade e download dos dados.",
+    "recursos": [
+      "Medidas de afinidade Ki, IC50 e Kd anotadas",
+      "Busca por composto, alvo e faixa de atividade",
+      "Download de subconjuntos em planilha",
+      "Referência para calibração de pontuação de docking",
+      "Curadoria a partir de literatura e depósitos"
+    ],
+    "plataformas": [
+      "Web"
+    ],
+    "licenca": "CC BY 3.0 (registros derivados de outras fontes seguem a licença original, como CC BY-SA do ChEMBL)",
+    "publicacao": null,
+    "doi_url": "https://doi.org/10.1093/nar/gkae1075",
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://www.bindingdb.org/",
+      "download": null,
+      "documentacao": "https://www.bindingdb.org/rwd/bind/info.jsp",
+      "tutorial": null,
+      "suporte": null,
+      "codigo": null,
+      "publicacao": "https://doi.org/10.1093/nar/gkae1075"
+    }
+  },
+  "85": {
+    "resumo": "O DrugBank combina, em fichas anotadas, informações químicas de fármacos aprovados, experimentais e nutracêuticos com dados farmacológicos: alvos, enzimas, transportadores, interações, doses, vias de administração e propriedades ADME. As estruturas e anotações são usadas em descoberta de fármacos, repositcionamento, mineração de dados biomédicos e construção de conhecimento sobre polifarmacologia; o acesso acadêmico é gratuito e há download e API para assinantes.",
+    "recursos": [
+      "Fichas de fármacos aprovados e experimentais",
+      "Anotação de alvos, enzimas e transportadores",
+      "Dados de interações e farmacocinética",
+      "Estruturas químicas e identificadores normalizados",
+      "Busca integrada e conteúdo para mineração"
+    ],
+    "plataformas": [
+      "Web"
+    ],
+    "licenca": "Gratuito para uso acadêmico; licença comercial para redistribuição e uso empresarial",
+    "publicacao": null,
+    "doi_url": null,
+    "url_oficial_corrigida": null,
+    "links": {
+      "site": "https://go.drugbank.com/",
+      "download": null,
+      "documentacao": null,
+      "tutorial": null,
+      "suporte": null,
+      "codigo": null,
+      "publicacao": null
+    }
+  },
+  "_meta": {
+    "descricao": "Enriquecimento das páginas dedicadas, pesquisado nas páginas oficiais dos softwares.",
+    "verificado_em": "2026-11-02",
+    "campos": {
+      "resumo": "Descrição baseada no texto oficial, em pt-BR",
+      "recursos": "Recursos/métodos citados pelo site oficial",
+      "plataformas": "Sistemas operacionais informados pelo site oficial",
+      "url_oficial_corrigida": "Substitui o website do catálogo quando o URL antigo estava morto ou errado",
+      "links": "site, download, documentacao, tutorial, suporte, codigo, publicacao (null = sem página oficial verificada)"
+    }
+  }
+}

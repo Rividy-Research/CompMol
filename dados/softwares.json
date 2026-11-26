@@ -1,0 +1,1645 @@
+{
+  "_meta": {
+    "descricao": "Dados base do catálogo. Cada entrada gera um card na home e uma página em softwares/.",
+    "campos": "id, name, area, applicability[], price, description, tags[], license, website"
+  },
+  "softwares": [
+    {
+      "id": 1,
+      "name": "Gaussian",
+      "area": "quimica-quantica",
+      "applicability": [
+        "desktop",
+        "hpc"
+      ],
+      "price": "paid",
+      "description": "Pacote completo de química quântica para cálculos de estrutura eletrônica, amplamente usado em pesquisa acadêmica e industrial.",
+      "tags": [
+        "DFT",
+        "Hartree-Fock",
+        "CCSD",
+        "Estrutura Eletrônica"
+      ],
+      "license": "Comercial (Pago)",
+      "website": "https://gaussian.com"
+    },
+    {
+      "id": 2,
+      "name": "ORCA",
+      "area": "quimica-quantica",
+      "applicability": [
+        "desktop",
+        "hpc"
+      ],
+      "price": "academic",
+      "description": "Programa de química quântica moderno e eficiente, especializado em química computacional de moléculas e materiais.",
+      "tags": [
+        "DFT",
+        "Molecular Properties",
+        "Spectroscopy"
+      ],
+      "license": "Grátis Acadêmico / Pago Comercial",
+      "website": "https://www.faccts.de/orca/"
+    },
+    {
+      "id": 3,
+      "name": "Psi4",
+      "area": "quimica-quantica",
+      "applicability": [
+        "desktop",
+        "hpc",
+        "cli"
+      ],
+      "price": "free",
+      "description": "Pacote de química quântica open source com foco em métodos de estrutura eletrônica ab initio e DFT.",
+      "tags": [
+        "Open Source",
+        "Ab Initio",
+        "Python API"
+      ],
+      "license": "GNU LGPL",
+      "website": "https://psicode.org"
+    },
+    {
+      "id": 4,
+      "name": "GAMESS",
+      "area": "quimica-quantica",
+      "applicability": [
+        "desktop",
+        "hpc"
+      ],
+      "price": "academic",
+      "description": "General Atomic and Molecular Electronic Structure System, usado para cálculos de estrutura eletrônica ab initio.",
+      "tags": [
+        "Ab Initio",
+        "DFT",
+        "Semiempirical"
+      ],
+      "license": "Grátis Acadêmico",
+      "website": "https://www.msg.chem.iastate.edu/gamess"
+    },
+    {
+      "id": 5,
+      "name": "Q-Chem",
+      "area": "quimica-quantica",
+      "applicability": [
+        "desktop",
+        "hpc"
+      ],
+      "price": "paid",
+      "description": "Pacote de química quântica comercial de alta performance para cálculos de moléculas e materiais.",
+      "tags": [
+        "DFT",
+        "CC",
+        "Solvation",
+        "Excited States"
+      ],
+      "license": "Comercial",
+      "website": "https://q-chem.com"
+    },
+    {
+      "id": 6,
+      "name": "VASP",
+      "area": "dft-solidos",
+      "applicability": [
+        "hpc"
+      ],
+      "price": "paid",
+      "description": "Vienna Ab initio Simulation Package para cálculos de DFT de sólidos, superfícies e materiais cristalinos.",
+      "tags": [
+        "DFT",
+        "Sólidos",
+        "Superfícies",
+        "Materiais"
+      ],
+      "license": "Comercial",
+      "website": "https://www.vasp.at"
+    },
+    {
+      "id": 7,
+      "name": "Quantum ESPRESSO",
+      "area": "dft-solidos",
+      "applicability": [
+        "hpc",
+        "cli"
+      ],
+      "price": "free",
+      "description": "Suíte open source de códigos para simulações de estrutura eletrônica de materiais usando DFT e planos de onda.",
+      "tags": [
+        "Open Source",
+        "DFT",
+        "Planos de Onda",
+        "Materiais"
+      ],
+      "license": "GNU GPL",
+      "website": "https://www.quantum-espresso.org"
+    },
+    {
+      "id": 8,
+      "name": "CP2K",
+      "area": "dft-solidos",
+      "applicability": [
+        "hpc",
+        "desktop"
+      ],
+      "price": "free",
+      "description": "Programa para simulações de estado sólido, líquido e molecular usando DFT e métodos de força.",
+      "tags": [
+        "DFT",
+        "Mixed Quantum-Classical",
+        "Materiais"
+      ],
+      "license": "GNU GPL",
+      "website": "https://www.cp2k.org"
+    },
+    {
+      "id": 9,
+      "name": "SIESTA",
+      "area": "dft-solidos",
+      "applicability": [
+        "hpc"
+      ],
+      "price": "free",
+      "description": "Spanish Initiative for Electronic Simulations with Thousands of Atoms, método DFT com orbitals de base local.",
+      "tags": [
+        "DFT",
+        "Orbitais Locais",
+        "Materiais"
+      ],
+      "license": "GNU GPL v3",
+      "website": "https://siesta-project.org/siesta"
+    },
+    {
+      "id": 10,
+      "name": "CASTEP",
+      "area": "dft-solidos",
+      "applicability": [
+        "hpc"
+      ],
+      "price": "academic",
+      "description": "Código de DFT para simulações de estrutura eletrônica de materiais periódicos usando planos de onda.",
+      "tags": [
+        "DFT",
+        "Planos de Onda",
+        "Sólidos Periódicos"
+      ],
+      "license": "Gratuito para acadêmicos (STFC) / Comercial via BIOVIA",
+      "website": "https://www.castep.org"
+    },
+    {
+      "id": 11,
+      "name": "GROMACS",
+      "area": "dinamica-molecular",
+      "applicability": [
+        "desktop",
+        "hpc",
+        "cli"
+      ],
+      "price": "free",
+      "description": "Pacote de dinâmica molecular de alta performance para simulações de proteínas, lipídios e moléculas.",
+      "tags": [
+        "MD",
+        "Proteínas",
+        "Biomoléculas",
+        "Open Source"
+      ],
+      "license": "GNU LGPL",
+      "website": "https://www.gromacs.org"
+    },
+    {
+      "id": 12,
+      "name": "AMBER",
+      "area": "dinamica-molecular",
+      "applicability": [
+        "desktop",
+        "hpc"
+      ],
+      "price": "academic",
+      "description": "Suite de simulação de dinâmica molecular de biomoléculas com campos de força bem estabelecidos.",
+      "tags": [
+        "MD",
+        "Proteínas",
+        "Campos de Força"
+      ],
+      "license": "Grátis Acadêmico / Pago Comercial",
+      "website": "https://ambermd.org"
+    },
+    {
+      "id": 13,
+      "name": "NAMD",
+      "area": "dinamica-molecular",
+      "applicability": [
+        "desktop",
+        "hpc"
+      ],
+      "price": "free",
+      "description": "Programa de dinâmica molecular paralelo para simulações de grandes sistemas biomoleculares.",
+      "tags": [
+        "MD",
+        "Paralelo",
+        "Biomoléculas",
+        "NAMD"
+      ],
+      "license": "Grátis",
+      "website": "https://www.ks.uiuc.edu/Research/namd"
+    },
+    {
+      "id": 14,
+      "name": "LAMMPS",
+      "area": "dinamica-molecular",
+      "applicability": [
+        "hpc",
+        "cli"
+      ],
+      "price": "free",
+      "description": "Large-scale Atomic/Molecular Massively Parallel Simulator para simulações de materiais e partículas.",
+      "tags": [
+        "MD",
+        "Materiais",
+        "Parallel",
+        "Open Source"
+      ],
+      "license": "GNU GPL",
+      "website": "https://www.lammps.org"
+    },
+    {
+      "id": 15,
+      "name": "OpenMM",
+      "area": "dinamica-molecular",
+      "applicability": [
+        "python",
+        "desktop"
+      ],
+      "price": "free",
+      "description": "Biblioteca Python para simulações de dinâmica molecular com aceleração por GPU.",
+      "tags": [
+        "Python",
+        "GPU",
+        "Biblioteca MD"
+      ],
+      "license": "GNU LGPL",
+      "website": "https://openmm.org"
+    },
+    {
+      "id": 16,
+      "name": "RDKit",
+      "area": "quimioinformatica",
+      "applicability": [
+        "python",
+        "desktop",
+        "cli"
+      ],
+      "price": "free",
+      "description": "Biblioteca open source de quimioinformática para processamento de moléculas, fingerprinting e similaridade.",
+      "tags": [
+        "Python",
+        "SMILES",
+        "Fingerprinting",
+        "Quimioinformática"
+      ],
+      "license": "BSD",
+      "website": "https://www.rdkit.org"
+    },
+    {
+      "id": 17,
+      "name": "Open Babel",
+      "area": "quimioinformatica",
+      "applicability": [
+        "desktop",
+        "cli"
+      ],
+      "price": "free",
+      "description": "Ferramenta de linha de comando e biblioteca para conversão de formatos químicos e manipulação de estruturas moleculares.",
+      "tags": [
+        "CLI",
+        "Conversão de Formato",
+        "Open Source"
+      ],
+      "license": "GNU GPL",
+      "website": "https://openbabel.org"
+    },
+    {
+      "id": 18,
+      "name": "ChemDraw",
+      "area": "quimioinformatica",
+      "applicability": [
+        "desktop",
+        "web"
+      ],
+      "price": "paid",
+      "description": "Software comercial para desenho de estruturas químicas e reações, amplamente usado em publicações acadêmicas.",
+      "tags": [
+        "Desenho Químico",
+        "Reações",
+        "Publicações"
+      ],
+      "license": "Comercial",
+      "website": "https://revvitysignals.com/products/research/chemdraw"
+    },
+    {
+      "id": 19,
+      "name": "MarvinSketch",
+      "area": "quimioinformatica",
+      "applicability": [
+        "desktop",
+        "web"
+      ],
+      "price": "academic",
+      "description": "Ferramenta de desenho de estruturas químicas com versão gratuita para uso acadêmico.",
+      "tags": [
+        "Desenho",
+        "Quimioinformática",
+        "Web"
+      ],
+      "license": "Comercial (gratuito para acadêmicos)",
+      "website": "https://www.certara.com/marvin/"
+    },
+    {
+      "id": 20,
+      "name": "AutoDock Vina",
+      "area": "docking",
+      "applicability": [
+        "desktop",
+        "cli"
+      ],
+      "price": "free",
+      "description": "Programa de docking molecular para predição de ligação de ligantes a proteínas e descoberta de fármacos.",
+      "tags": [
+        "Docking",
+        "Descoberta de Fármacos",
+        "Open Source"
+      ],
+      "license": "Apache 2.0",
+      "website": "https://vina.scripps.edu"
+    },
+    {
+      "id": 21,
+      "name": "Schrödinger Suite",
+      "area": "docking",
+      "applicability": [
+        "desktop",
+        "web"
+      ],
+      "price": "paid",
+      "description": "Suíte comercial completa para descoberta de fármacos, modelagem molecular e simulações avançadas.",
+      "tags": [
+        "Fármacos",
+        "Modelagem",
+        "Comercial"
+      ],
+      "license": "Comercial",
+      "website": "https://www.schrodinger.com"
+    },
+    {
+      "id": 22,
+      "name": "Discovery Studio",
+      "area": "docking",
+      "applicability": [
+        "desktop"
+      ],
+      "price": "paid",
+      "description": "Plataforma comercial para simulações moleculares e descoberta de fármacos com interface gráfica avançada.",
+      "tags": [
+        "Simulação Molecular",
+        "Fármacos",
+        "Interface Gráfica"
+      ],
+      "license": "Comercial",
+      "website": "https://www.3ds.com/products/biovia/discovery-studio"
+    },
+    {
+      "id": 23,
+      "name": "PyMOL",
+      "area": "visualizacao",
+      "applicability": [
+        "desktop"
+      ],
+      "price": "academic",
+      "description": "Sistema de visualização de estruturas moleculares 3D, amplamente usado para proteínas e moléculas pequenas.",
+      "tags": [
+        "Visualização 3D",
+        "Proteínas",
+        "Rendering"
+      ],
+      "license": "Open Source (Educação) / Pago",
+      "website": "https://pymol.org"
+    },
+    {
+      "id": 24,
+      "name": "VMD",
+      "area": "visualizacao",
+      "applicability": [
+        "desktop"
+      ],
+      "price": "free",
+      "description": "Visual Molecular Dynamics para visualização e animação de simulações de dinâmica molecular e biomoléculas.",
+      "tags": [
+        "Visualização",
+        "MD",
+        "Animação",
+        "Biomoléculas"
+      ],
+      "license": "Grátis",
+      "website": "https://www.ks.uiuc.edu/Research/vmd"
+    },
+    {
+      "id": 25,
+      "name": "ChimeraX",
+      "area": "visualizacao",
+      "applicability": [
+        "desktop"
+      ],
+      "price": "academic",
+      "description": "Programa de visualização de estruturas moleculares para pesquisa, com suporte a grandes estruturas.",
+      "tags": [
+        "Visualização",
+        "Proteínas",
+        "Estruturas Grandes"
+      ],
+      "license": "Grátis Acadêmico",
+      "website": "https://www.rbvi.ucsf.edu/chimeraX"
+    },
+    {
+      "id": 26,
+      "name": "Rosetta",
+      "area": "bioquimica",
+      "applicability": [
+        "desktop",
+        "hpc"
+      ],
+      "price": "academic",
+      "description": "Suíte de software para predição de estrutura e design de proteínas e macromoléculas.",
+      "tags": [
+        "Proteínas",
+        "Design de Proteínas",
+        "Dobramento"
+      ],
+      "license": "Grátis Acadêmico",
+      "website": "https://www.rosettacommons.org"
+    },
+    {
+      "id": 27,
+      "name": "Molpro",
+      "area": "quimica-quantica",
+      "applicability": [
+        "hpc"
+      ],
+      "price": "paid",
+      "description": "Pacote de química quântica ab initio focado em métodos de alta precisão para moléculas pequenas e médias.",
+      "tags": [
+        "Ab Initio",
+        "CCSD(T)",
+        "Alta Precisão"
+      ],
+      "license": "Comercial",
+      "website": "https://www.molpro.net"
+    },
+    {
+      "id": 28,
+      "name": "Materials Studio",
+      "area": "dft-solidos",
+      "applicability": [
+        "desktop"
+      ],
+      "price": "paid",
+      "description": "Suíte comercial para simulação de materiais, catálise e nanotecnologia com interface gráfica integrada.",
+      "tags": [
+        "Materiais",
+        "Catálise",
+        "Nanotecnologia"
+      ],
+      "license": "Comercial",
+      "website": "https://www.3ds.com/products/biovia/materials-studio"
+    },
+    {
+      "id": 29,
+      "name": "NWChem",
+      "area": "quimica-quantica",
+      "applicability": [
+        "hpc",
+        "cli"
+      ],
+      "price": "free",
+      "description": "Código de química computacional open source para simulações de escala molecular e de materiais.",
+      "tags": [
+        "Open Source",
+        "HPC",
+        "Química Quântica"
+      ],
+      "license": "Educational Community License (ECL) 2.0",
+      "website": "https://nwchemgit.github.io"
+    },
+    {
+      "id": 30,
+      "name": "Dalton",
+      "area": "quimica-quantica",
+      "applicability": [
+        "hpc",
+        "cli"
+      ],
+      "price": "free",
+      "description": "Programa de química quântica ab initio para propriedades moleculares e espectroscopia.",
+      "tags": [
+        "Ab Initio",
+        "Propriedades Moleculares",
+        "Espectroscopia"
+      ],
+      "license": "GNU LGPL v2.1",
+      "website": "https://gitlab.com/dalton/dalton"
+    },
+    {
+      "id": 31,
+      "name": "PySCF",
+      "area": "quimica-quantica",
+      "applicability": [
+        "python",
+        "cli",
+        "hpc"
+      ],
+      "price": "free",
+      "description": "Pacote aberto de química quântica escrito em Python, para moléculas e sólidos periódicos.",
+      "tags": [
+        "Python",
+        "DFT",
+        "CCSD(T)",
+        "CASSCF",
+        "Open Source"
+      ],
+      "license": "Apache-2.0",
+      "website": "https://pyscf.org/"
+    },
+    {
+      "id": 32,
+      "name": "xtb",
+      "area": "quimica-quantica",
+      "applicability": [
+        "cli",
+        "hpc",
+        "desktop"
+      ],
+      "price": "free",
+      "description": "Programa semiempirico de extended tight-binding (GFN-xTB) e campo de força GFN-FF do grupo Grimme.",
+      "tags": [
+        "GFN-xTB",
+        "Semiempírico",
+        "GFN-FF",
+        "Solvatação implícita",
+        "DFT-D4"
+      ],
+      "license": "LGPL-3.0-or-later",
+      "website": "https://github.com/grimme-lab/xtb"
+    },
+    {
+      "id": 33,
+      "name": "TURBOMOLE",
+      "area": "quimica-quantica",
+      "applicability": [
+        "desktop",
+        "cli",
+        "hpc"
+      ],
+      "price": "paid",
+      "description": "Pacote ab initio comercial para moléculas, clusters e sistemas periódicos, desenvolvido pela TURBOMOLE GmbH.",
+      "tags": [
+        "DFT",
+        "Coupled Cluster",
+        "TDDFT",
+        "COSMO",
+        "RI"
+      ],
+      "license": "Comercial; licenças perpétuas para academias, organizações sem fins lucrativos e indústria, e licença educacional gratuita para estudantes",
+      "website": "https://www.turbomole.org/"
+    },
+    {
+      "id": 34,
+      "name": "ADF (Amsterdam Modeling Suite)",
+      "area": "quimica-quantica",
+      "applicability": [
+        "desktop",
+        "cli",
+        "hpc"
+      ],
+      "price": "paid",
+      "description": "Suíte comercial da SCM cujo núcleo é o ADF, código DFT molecular com base de orbitais atômicos.",
+      "tags": [
+        "DFT",
+        "Orbitais Locais",
+        "DFTB",
+        "ReaxFF",
+        "BAND"
+      ],
+      "license": "Comercial; licenças acadêmicas anuais pagas e avaliação gratuita",
+      "website": "https://www.scm.com/"
+    },
+    {
+      "id": 35,
+      "name": "MRCC",
+      "area": "quimica-quantica",
+      "applicability": [
+        "cli",
+        "hpc"
+      ],
+      "price": "academic",
+      "description": "Suíte ab initio e DFT de alta acurácia do grupo de M. Kállay, conhecida pelos métodos CC e CI de alto nível.",
+      "tags": [
+        "Coupled Cluster",
+        "Multirreferência",
+        "CCSD(T)",
+        "Relativístico",
+        "Correlação Local"
+      ],
+      "license": "Gratuito para uso acadêmico mediante registro com e-mail institucional e aceite do acordo de licença; uso comercial sob termos próprios",
+      "website": "https://www.mrcc.hu/"
+    },
+    {
+      "id": 36,
+      "name": "TeraChem",
+      "area": "quimica-quantica",
+      "applicability": [
+        "cli",
+        "hpc",
+        "desktop"
+      ],
+      "price": "paid",
+      "description": "Pacote de estrutura eletrônica e dinâmica ab initio projetado para GPUs NVIDIA, desenvolvido pelo grupo Martínez.",
+      "tags": [
+        "GPU",
+        "CUDA",
+        "Dinâmica ab initio",
+        "TDDFT",
+        "DFT"
+      ],
+      "license": "Proprietário, licença anual por máquina (valores acadêmicos e industriais publicados na página de preços)",
+      "website": "http://www.petachem.com/"
+    },
+    {
+      "id": 37,
+      "name": "MOPAC",
+      "area": "quimica-quantica",
+      "applicability": [
+        "cli",
+        "python",
+        "desktop"
+      ],
+      "price": "free",
+      "description": "Pacote semiempírico histórico (AM1, PM6, PM7), hoje distribuído como projeto open source.",
+      "tags": [
+        "Semiempírico",
+        "PM7",
+        "AM1",
+        "COSMO",
+        "MOZYME"
+      ],
+      "license": "Apache-2.0 (versão open source atual, mantida com o MolSSI)",
+      "website": "https://openmopac.net/"
+    },
+    {
+      "id": 38,
+      "name": "ABINIT",
+      "area": "dft-solidos",
+      "applicability": [
+        "cli",
+        "hpc",
+        "python"
+      ],
+      "price": "free",
+      "description": "Suíte de DFT com pseudopotenciais/PAW e ondas planas para moléculas, nanoestruturas e sólidos.",
+      "tags": [
+        "DFT",
+        "Ondas Planas",
+        "PAW",
+        "DFPT",
+        "GW",
+        "DFT+U"
+      ],
+      "license": "GNU GPL v3",
+      "website": "https://www.abinit.org/"
+    },
+    {
+      "id": 39,
+      "name": "WIEN2k",
+      "area": "dft-solidos",
+      "applicability": [
+        "cli",
+        "hpc"
+      ],
+      "price": "paid",
+      "description": "Pacote all-electron de estrutura eletrônica de sólidos pelo método FP-(L)APW mais orbitais locais.",
+      "tags": [
+        "FP-LAPW",
+        "All-electron",
+        "DFT",
+        "Sólidos",
+        "Estrutura de Bandas"
+      ],
+      "license": "Software não gratuito, disponível por taxa única de licença de grupo (valores distintos para academia, laboratório governamental e indústria), com código-fonte e atualizações",
+      "website": "http://susi.theochem.tuwien.ac.at/"
+    },
+    {
+      "id": 40,
+      "name": "Elk",
+      "area": "dft-solidos",
+      "applicability": [
+        "cli",
+        "hpc"
+      ],
+      "price": "free",
+      "description": "Código FP-LAPW all-electron de estrutura eletrônica de sólidos, distribuído livremente sob a GPL.",
+      "tags": [
+        "FP-LAPW",
+        "All-electron",
+        "TDDFT",
+        "LDA+U",
+        "Magnetismo",
+        "DFPT"
+      ],
+      "license": "GNU GPL v3 ou posterior",
+      "website": "https://elk.sourceforge.io/"
+    },
+    {
+      "id": 41,
+      "name": "Octopus",
+      "area": "dft-solidos",
+      "applicability": [
+        "cli",
+        "hpc"
+      ],
+      "price": "free",
+      "description": "Pacote de DFT e TDDFT em malha no espaço real para sistemas finitos e periódicos sob campos dependentes do tempo.",
+      "tags": [
+        "TDDFT",
+        "Espaço Real",
+        "Tempo Real",
+        "GW",
+        "Floquet",
+        "Ondas Planas"
+      ],
+      "license": "GNU GPL v3 com exceções para bibliotecas externas",
+      "website": "https://www.octopus-code.org/"
+    },
+    {
+      "id": 42,
+      "name": "OpenMX",
+      "area": "dft-solidos",
+      "applicability": [
+        "cli",
+        "hpc"
+      ],
+      "price": "free",
+      "description": "Pacote open source de cálculos de primeira princípio com pseudopotenciais de conservação de norma e bases pseudo-atômicas.",
+      "tags": [
+        "DFT",
+        "Bases Locais",
+        "NEGF",
+        "DFT+U",
+        "O(N)",
+        "NEB"
+      ],
+      "license": "GNU GPL v3",
+      "website": "https://www.openmx-square.org/"
+    },
+    {
+      "id": 43,
+      "name": "GPAW",
+      "area": "dft-solidos",
+      "applicability": [
+        "python",
+        "cli",
+        "hpc"
+      ],
+      "price": "free",
+      "description": "Código Python de DFT baseado no método projector-augmented wave e no ambiente de simulação ASE.",
+      "tags": [
+        "PAW",
+        "DFT",
+        "Python",
+        "ASE",
+        "RPA",
+        "TDDFT"
+      ],
+      "license": "GNU GPL v3 ou posterior",
+      "website": "https://gpaw.readthedocs.io/"
+    },
+    {
+      "id": 44,
+      "name": "Wannier90",
+      "area": "dft-solidos",
+      "applicability": [
+        "cli",
+        "hpc"
+      ],
+      "price": "free",
+      "description": "Programa aberto para gerar funções de Wannier maximamente localizadas e interpolar propriedades eletrônicas.",
+      "tags": [
+        "MLWF",
+        "Funções de Wannier",
+        "Berry Phase",
+        "Transporte",
+        "Pós-processamento"
+      ],
+      "license": "GNU LGPL v2.1 ou posterior (versões até 3.1.0 sob GNU GPL v2)",
+      "website": "https://wannier.org/"
+    },
+    {
+      "id": 45,
+      "name": "Yambo",
+      "area": "dft-solidos",
+      "applicability": [
+        "cli",
+        "hpc"
+      ],
+      "price": "free",
+      "description": "Código de ondas planas para estados excitados de sólidos em many-body perturbation theory (GW, BSE) e TDDFT.",
+      "tags": [
+        "GW",
+        "BSE",
+        "Éxcitons",
+        "MBPT",
+        "TDDFT",
+        "Elétron-Fônon"
+      ],
+      "license": "Código aberto sob GNU GPL",
+      "website": "https://www.yambo-code.eu/"
+    },
+    {
+      "id": 46,
+      "name": "ASE",
+      "area": "dft-solidos",
+      "applicability": [
+        "python",
+        "cli"
+      ],
+      "price": "free",
+      "description": "Ambiente Python para configurar, executar, visualizar e analisar simulações atomísticas com múltiplos calculadores.",
+      "tags": [
+        "Python",
+        "DFT",
+        "Potenciais Interatômicos",
+        "NEB",
+        "Fônons"
+      ],
+      "license": "GNU LGPL v2.1 ou posterior",
+      "website": "https://ase-lib.org/"
+    },
+    {
+      "id": 47,
+      "name": "pymatgen",
+      "area": "dft-solidos",
+      "applicability": [
+        "python",
+        "cli"
+      ],
+      "price": "free",
+      "description": "Biblioteca Python para análise de materiais: estruturas cristalinas, diagramas de fase, defects e interface com o Materials Project.",
+      "tags": [
+        "Python",
+        "Cristais",
+        "Phase Diagram",
+        "VASP",
+        "Materials Project"
+      ],
+      "license": "MIT",
+      "website": "https://pymatgen.org/"
+    },
+    {
+      "id": 48,
+      "name": "HOOMD-blue",
+      "area": "dinamica-molecular",
+      "applicability": [
+        "desktop",
+        "hpc",
+        "python"
+      ],
+      "price": "free",
+      "description": "Pacote Python de dinâmica molecular e Monte Carlo de partículas rígidas executado em CPU e GPU.",
+      "tags": [
+        "MD",
+        "GPU",
+        "Monte Carlo",
+        "Matéria Mole",
+        "Python"
+      ],
+      "license": "BSD-3-Clause",
+      "website": "https://github.com/glotzerlab/hoomd-blue"
+    },
+    {
+      "id": 49,
+      "name": "DL_POLY",
+      "area": "dinamica-molecular",
+      "applicability": [
+        "cli",
+        "hpc"
+      ],
+      "price": "academic",
+      "description": "Código Fortran/MPI de dinâmica molecular clássica paralela desenvolvido no Daresbury Laboratory.",
+      "tags": [
+        "MD",
+        "MPI",
+        "Fortran",
+        "Paralelismo",
+        "Sólidos"
+      ],
+      "license": "Gratuito para uso acadêmico e em pesquisa, distribuído como código-fonte pelo STFC Daresbury Laboratory mediante cadastro",
+      "website": "https://dl-sdg.github.io/"
+    },
+    {
+      "id": 50,
+      "name": "CHARMM",
+      "area": "dinamica-molecular",
+      "applicability": [
+        "cli",
+        "hpc",
+        "desktop"
+      ],
+      "price": "academic",
+      "description": "Programa de simulação molecular para sistemas de muitas partículas, com foco em biomoléculas e métodos multinível.",
+      "tags": [
+        "MD",
+        "QM/MM",
+        "Amostragem Aprimorada",
+        "Proteínas",
+        "GPU"
+      ],
+      "license": "Versão acadêmica gratuita para instituições de ensino, governo e sem fins lucrativos; uso comercial pela versão CHARMm licenciada",
+      "website": "https://academiccharmm.org/"
+    },
+    {
+      "id": 51,
+      "name": "Tinker",
+      "area": "dinamica-molecular",
+      "applicability": [
+        "cli",
+        "hpc",
+        "desktop"
+      ],
+      "price": "academic",
+      "description": "Pacote de mecânica molecular e dinâmica com múltiplos campos de força, incluindo os polarizáveis AMOEBA e HIPPO.",
+      "tags": [
+        "Campos de Força",
+        "AMOEBA",
+        "Polarizável",
+        "Proteínas",
+        "Fortran"
+      ],
+      "license": "Gratuito para grupos acadêmicos de pesquisa, laboratórios governamentais e organizações sem fins lucrativos; uso comercial exige licença",
+      "website": "https://dasher.wustl.edu/tinker/"
+    },
+    {
+      "id": 52,
+      "name": "MDAnalysis",
+      "area": "dinamica-molecular",
+      "applicability": [
+        "python"
+      ],
+      "price": "free",
+      "description": "Biblioteca Python para analisar trajetórias de simulações de dinâmica molecular em vários formatos.",
+      "tags": [
+        "Análise de Trajetórias",
+        "Python",
+        "NumPy",
+        "Seleção de Átomos"
+      ],
+      "license": "GNU LGPL v3 ou posterior (alguns componentes LGPL v2.1+)",
+      "website": "https://www.mdanalysis.org/"
+    },
+    {
+      "id": 53,
+      "name": "MDTraj",
+      "area": "dinamica-molecular",
+      "applicability": [
+        "python",
+        "cli"
+      ],
+      "price": "free",
+      "description": "Ferramentas Python para ler, escrever e analisar trajetórias de dinâmica molecular.",
+      "tags": [
+        "Análise de Trajetórias",
+        "Python",
+        "RMSD",
+        "Estrutura Secundária"
+      ],
+      "license": "GNU LGPL v2.1 ou posterior",
+      "website": "https://github.com/mdtraj/mdtraj"
+    },
+    {
+      "id": 54,
+      "name": "Packmol",
+      "area": "dinamica-molecular",
+      "applicability": [
+        "cli",
+        "python"
+      ],
+      "price": "free",
+      "description": "Programa que gera configurações iniciais para dinâmica molecular empacotando moléculas em regiões do espaço.",
+      "tags": [
+        "Configuração Inicial",
+        "Empacotamento",
+        "Bicada Lipídica",
+        "Preparação"
+      ],
+      "license": "MIT",
+      "website": "https://m3g.github.io/packmol/"
+    },
+    {
+      "id": 55,
+      "name": "ACPYPE",
+      "area": "dinamica-molecular",
+      "applicability": [
+        "python",
+        "cli"
+      ],
+      "price": "free",
+      "description": "Interface Python do Antechamber para gerar topologias de ligantes e convertê-las entre pacotes de MD.",
+      "tags": [
+        "Antechamber",
+        "GAFF",
+        "Topologia",
+        "Conversão de Formato",
+        "Parametrização"
+      ],
+      "license": "GNU GPL v3",
+      "website": "https://github.com/alanwilter/acpype"
+    },
+    {
+      "id": 56,
+      "name": "HADDOCK3",
+      "area": "docking",
+      "applicability": [
+        "python",
+        "cli",
+        "hpc"
+      ],
+      "price": "free",
+      "description": "Suíte modular de modelagem integrativa de complexos biomoleculares guiada por restrições ambíguas de interação.",
+      "tags": [
+        "Docking",
+        "Modelagem Integrativa",
+        "Complexos Proteicos",
+        "Restrições Experimentais"
+      ],
+      "license": "Apache-2.0",
+      "website": "https://www.bonvinlab.org/software/haddock3/"
+    },
+    {
+      "id": 57,
+      "name": "GOLD",
+      "area": "docking",
+      "applicability": [
+        "desktop",
+        "hpc"
+      ],
+      "price": "paid",
+      "description": "Programa de docking proteína-ligante da CCDC baseado em algoritmo genético.",
+      "tags": [
+        "Docking",
+        "Algoritmo Genético",
+        "Scoring",
+        "Triagem Virtual",
+        "CCDC"
+      ],
+      "license": "Comercial, incluído nas licenças CSD-Discovery e CSD-Enterprise; licenças acadêmicas pagas com desconto",
+      "website": "https://www.ccdc.cam.ac.uk/solutions/software/gold/"
+    },
+    {
+      "id": 58,
+      "name": "rDock",
+      "area": "docking",
+      "applicability": [
+        "cli",
+        "hpc"
+      ],
+      "price": "free",
+      "description": "Plataforma open source de docking rápida para triagem virtual de alto rendimento.",
+      "tags": [
+        "Docking",
+        "HTVS",
+        "Open Source",
+        "Ácidos Nucleicos"
+      ],
+      "license": "GNU LGPL v3",
+      "website": "https://rdock.github.io/"
+    },
+    {
+      "id": 59,
+      "name": "AutoDock-GPU",
+      "area": "docking",
+      "applicability": [
+        "cli",
+        "hpc"
+      ],
+      "price": "free",
+      "description": "Versão do AutoDock4 otimizada para GPUs, voltada a triagem virtual de alto rendimento.",
+      "tags": [
+        "GPU",
+        "AutoDock4",
+        "CUDA",
+        "HIP",
+        "Triagem virtual"
+      ],
+      "license": "GPL-2.0",
+      "website": "https://autodock.scripps.edu/"
+    },
+    {
+      "id": 60,
+      "name": "Smina",
+      "area": "docking",
+      "applicability": [
+        "cli"
+      ],
+      "price": "free",
+      "description": "Fork do AutoDock Vina com função de pontuação ampliada e opções extras de docking.",
+      "tags": [
+        "Vina",
+        "Docking",
+        "CLI",
+        "Força de campo CHARMM",
+        "Open Source"
+      ],
+      "license": "GPLv2",
+      "website": "https://sourceforge.net/projects/smina/"
+    },
+    {
+      "id": 61,
+      "name": "GNINA",
+      "area": "docking",
+      "applicability": [
+        "cli",
+        "hpc"
+      ],
+      "price": "free",
+      "description": "Suíte de docking com pontuação por redes neurais convolucionais, compatível com o Vina.",
+      "tags": [
+        "Deep Learning",
+        "CNN",
+        "Docking",
+        "CUDA",
+        "Open Source"
+      ],
+      "license": "Apache-2.0 (código) e GPL-2.0 (componentes derivados do AutoDock)",
+      "website": "https://github.com/gnina/gnina"
+    },
+    {
+      "id": 62,
+      "name": "AlphaFold",
+      "area": "bioquimica",
+      "applicability": [
+        "cli",
+        "hpc"
+      ],
+      "price": "free",
+      "description": "Sistema de predição de estrutura proteica por aprendizado profundo desenvolvido pela DeepMind.",
+      "tags": [
+        "Predição de estrutura",
+        "Deep Learning",
+        "Proteínas",
+        "AlphaFold DB",
+        "GPU"
+      ],
+      "license": "Código sob Apache-2.0; parâmetros do AlphaFold 2 sob CC BY 4.0; AlphaFold 3 sob termos próprios da Google DeepMind; servidor web apenas para uso não comercial",
+      "website": "https://deepmind.google/science/alphafold/"
+    },
+    {
+      "id": 63,
+      "name": "MODELLER",
+      "area": "bioquimica",
+      "applicability": [
+        "desktop",
+        "cli"
+      ],
+      "price": "academic",
+      "description": "Programa clássico de modelagem por homologia por satisfação de restrições espaciais.",
+      "tags": [
+        "Modelagem por homologia",
+        "Restrições espaciais",
+        "Loops",
+        "Complexos",
+        "Python"
+      ],
+      "license": "Gratuito para uso acadêmico; uso comercial mediante licença",
+      "website": "https://salilab.org/modeller/"
+    },
+    {
+      "id": 64,
+      "name": "SWISS-MODEL",
+      "area": "bioquimica",
+      "applicability": [
+        "web"
+      ],
+      "price": "free",
+      "description": "Servidor web de modelagem por homologia mantido pelo SIB/Expasy, com banco de moldes.",
+      "tags": [
+        "Modelagem por homologia",
+        "Servidor web",
+        "Moldes",
+        "SWISS-MODEL Repository"
+      ],
+      "license": "Gratuito (servidor mantido pelo SIB Swiss Institute of Bioinformatics)",
+      "website": "https://swissmodel.expasy.org/"
+    },
+    {
+      "id": 65,
+      "name": "ESMFold",
+      "area": "bioquimica",
+      "applicability": [
+        "python",
+        "cli"
+      ],
+      "price": "free",
+      "description": "Predição de estrutura proteica por modelo de linguagem de proteínas (ESM-2), sem alinhamento.",
+      "tags": [
+        "Modelo de linguagem",
+        "Predição de estrutura",
+        "Deep Learning",
+        "GPU"
+      ],
+      "license": "MIT (código e pesos abertos)",
+      "website": "https://github.com/facebookresearch/esm"
+    },
+    {
+      "id": 66,
+      "name": "FreeSASA",
+      "area": "bioquimica",
+      "applicability": [
+        "cli",
+        "python"
+      ],
+      "price": "free",
+      "description": "Biblioteca em C e utilitário de linha de comando para áreas acessíveis a solvente.",
+      "tags": [
+        "SASA",
+        "Biofísica",
+        "C",
+        "Python",
+        "Trajetórias"
+      ],
+      "license": "MIT",
+      "website": "https://freesasa.github.io/"
+    },
+    {
+      "id": 67,
+      "name": "PLIP",
+      "area": "bioquimica",
+      "applicability": [
+        "web",
+        "cli",
+        "python"
+      ],
+      "price": "free",
+      "description": "Detector automático de interações não covalentes em complexos proteína-ligante.",
+      "tags": [
+        "Interações moleculares",
+        "Ponte de hidrogênio",
+        "Análise de docking",
+        "Python"
+      ],
+      "license": "GPL-2.0",
+      "website": "https://plip-tool.biotec.tu-dresden.de/plip-web/plip/index"
+    },
+    {
+      "id": 68,
+      "name": "Biopython",
+      "area": "bioquimica",
+      "applicability": [
+        "python"
+      ],
+      "price": "free",
+      "description": "Conjunto de módulos Python para biologia computacional: sequências, estruturas e bancos de dados.",
+      "tags": [
+        "Python",
+        "Genômica",
+        "PDB",
+        "Alinhamento",
+        "Bioinformática"
+      ],
+      "license": "Biopython License Agreement (livre, compatível com BSD-3 para parte dos módulos)",
+      "website": "https://biopython.org/"
+    },
+    {
+      "id": 69,
+      "name": "Ketcher",
+      "area": "quimioinformatica",
+      "applicability": [
+        "web"
+      ],
+      "price": "free",
+      "description": "Editor de estruturas químicas em JavaScript para embutir em páginas e aplicações web.",
+      "tags": [
+        "Editor 2D",
+        "SMILES",
+        "JavaScript",
+        "Web",
+        "Open Source"
+      ],
+      "license": "Apache-2.0",
+      "website": "https://lifescience.opensource.epam.com/ketcher/index.html"
+    },
+    {
+      "id": 70,
+      "name": "DeepChem",
+      "area": "quimioinformatica",
+      "applicability": [
+        "python"
+      ],
+      "price": "free",
+      "description": "Biblioteca Python de aprendizado de máquina para moléculas, materiais e biologia.",
+      "tags": [
+        "Machine Learning",
+        "QSAR",
+        "Grafos moleculares",
+        "Python",
+        "Featurizers"
+      ],
+      "license": "MIT",
+      "website": "https://deepchem.io/"
+    },
+    {
+      "id": 71,
+      "name": "CDK (Chemistry Development Kit)",
+      "area": "quimioinformatica",
+      "applicability": [
+        "cli"
+      ],
+      "price": "free",
+      "description": "Biblioteca Java para leitura, manipulação, descrição e desenho de moléculas.",
+      "tags": [
+        "Java",
+        "SMILES",
+        "Descritores",
+        "Subestrutura",
+        "RSS"
+      ],
+      "license": "LGPL-2.1-or-later",
+      "website": "https://cdk.github.io/"
+    },
+    {
+      "id": 72,
+      "name": "Jmol / JSmol",
+      "area": "visualizacao",
+      "applicability": [
+        "desktop",
+        "web"
+      ],
+      "price": "free",
+      "description": "Visualizador molecular de código aberto, em Java (Jmol) e em JavaScript (JSmol).",
+      "tags": [
+        "Visualização",
+        "Java",
+        "JavaScript",
+        "Embedding",
+        "PDB"
+      ],
+      "license": "LGPL",
+      "website": "https://jmol.sourceforge.net/"
+    },
+    {
+      "id": 73,
+      "name": "3Dmol.js",
+      "area": "visualizacao",
+      "applicability": [
+        "web"
+      ],
+      "price": "free",
+      "description": "Biblioteca JavaScript de visualização molecular acelerada por WebGL, para páginas web.",
+      "tags": [
+        "WebGL",
+        "JavaScript",
+        "Visualização",
+        "Embedding",
+        "Trajetórias"
+      ],
+      "license": "BSD-3-Clause",
+      "website": "https://3dmol.csb.pitt.edu/"
+    },
+    {
+      "id": 74,
+      "name": "NGLview",
+      "area": "visualizacao",
+      "applicability": [
+        "web",
+        "python"
+      ],
+      "price": "free",
+      "description": "Widget interativo de visualização molecular para notebooks Jupyter, baseado na engine NGL.",
+      "tags": [
+        "Jupyter",
+        "Widget",
+        "WebGL",
+        "Python",
+        "Visualização"
+      ],
+      "license": "MIT",
+      "website": "https://github.com/nglviewer/nglview"
+    },
+    {
+      "id": 75,
+      "name": "OVITO",
+      "area": "visualizacao",
+      "applicability": [
+        "desktop",
+        "python"
+      ],
+      "price": "freemium",
+      "description": "Programa de visualização e análise de dados de simulações atomísticas.",
+      "tags": [
+        "Dinâmica Molecular",
+        "Análise",
+        "OpenGL",
+        "Python",
+        "Renderização"
+      ],
+      "license": "OVITO Basic gratuito; OVITO Pro comercial (licença por assinatura)",
+      "website": "https://www.ovito.org/"
+    },
+    {
+      "id": 76,
+      "name": "PubChem",
+      "area": "bases-dados",
+      "applicability": [
+        "web"
+      ],
+      "price": "free",
+      "description": "Repositório público do NIH com compostos, substâncias, bioensaios e propriedades calculadas.",
+      "tags": [
+        "Banco de dados",
+        "Bioensayo",
+        "SMILES",
+        "API",
+        "NCBI"
+      ],
+      "license": "Conteúdo do domínio público (governo dos EUA); uso sujeito às políticas do NCBI",
+      "website": "https://pubchem.ncbi.nlm.nih.gov/"
+    },
+    {
+      "id": 77,
+      "name": "ChEMBL",
+      "area": "bases-dados",
+      "applicability": [
+        "web"
+      ],
+      "price": "free",
+      "description": "Banco curado de atividades bioquímicas de fármacos e moléculas bioativas, mantido pelo EMBL-EBI.",
+      "tags": [
+        "Banco de dados",
+        "SAR",
+        "Atividade",
+        "Alvos",
+        "QSAR"
+      ],
+      "license": "CC BY-SA 3.0",
+      "website": "https://www.ebi.ac.uk/chembl/"
+    },
+    {
+      "id": 78,
+      "name": "ZINC20",
+      "area": "bases-dados",
+      "applicability": [
+        "web"
+      ],
+      "price": "free",
+      "description": "Biblioteca ultragrande de compostos prontos para docking e triagem virtual.",
+      "tags": [
+        "Banco de dados",
+        "Docking",
+        "Triagem virtual",
+        "Compra",
+        "3D"
+      ],
+      "license": "Gratuito para acesso e uso",
+      "website": "https://zinc20.docking.org/"
+    },
+    {
+      "id": 79,
+      "name": "RCSB Protein Data Bank",
+      "area": "bases-dados",
+      "applicability": [
+        "web"
+      ],
+      "price": "free",
+      "description": "Repositório internacional de estruturas 3D de biomoléculas determinadas experimentalmente.",
+      "tags": [
+        "Banco de dados",
+        "PDB",
+        "Cristalografia",
+        "RMN",
+        "Criomicroscopia"
+      ],
+      "license": "Dados em domínio público/CC0; software sob licenças abertas (MIT/Apache-2.0)",
+      "website": "https://www.rcsb.org/"
+    },
+    {
+      "id": 80,
+      "name": "Materials Project",
+      "area": "bases-dados",
+      "applicability": [
+        "web",
+        "python"
+      ],
+      "price": "free",
+      "description": "Banco aberto de propriedades de materiais calculadas por DFT, com API em Python.",
+      "tags": [
+        "Banco de dados",
+        "DFT",
+        "Materiais",
+        "API",
+        "pymatgen"
+      ],
+      "license": "CC BY 4.0 (dados)",
+      "website": "https://materialsproject.org/"
+    },
+    {
+      "id": 81,
+      "name": "NOMAD",
+      "area": "bases-dados",
+      "applicability": [
+        "web"
+      ],
+      "price": "free",
+      "description": "Repositório FAIR de dados de simulações em ciência dos materiais e química.",
+      "tags": [
+        "Banco de dados",
+        "FAIR",
+        "DFT",
+        "Metadados",
+        "Parse"
+      ],
+      "license": "Plataforma open source; dados sob a licença escolhida pelo autor",
+      "website": "https://nomad-lab.eu/"
+    },
+    {
+      "id": 82,
+      "name": "Crystallography Open Database",
+      "area": "bases-dados",
+      "applicability": [
+        "web"
+      ],
+      "price": "free",
+      "description": "Coletivo aberto de estruturas cristalográficas moleculares e inorgânicas em domínio público.",
+      "tags": [
+        "Banco de dados",
+        "Cristalografia",
+        "CIF",
+        "Domínio público",
+        "Pó"
+      ],
+      "license": "CC0 (domínio público)",
+      "website": "https://www.crystallography.net/cod/"
+    },
+    {
+      "id": 83,
+      "name": "Cambridge Structural Database",
+      "area": "bases-dados",
+      "applicability": [
+        "web"
+      ],
+      "price": "academic",
+      "description": "Base paga da CCDC com estruturas de moléculas orgânicas e organometálicas, e software de análise.",
+      "tags": [
+        "Banco de dados",
+        "Cristalografia",
+        "CCDC",
+        "Conformação",
+        "Análise de empirismo"
+      ],
+      "license": "Comercial; licenças institucionais e acadêmicas pela CCDC",
+      "website": "https://www.ccdc.cam.ac.uk/"
+    },
+    {
+      "id": 84,
+      "name": "BindingDB",
+      "area": "bases-dados",
+      "applicability": [
+        "web"
+      ],
+      "price": "free",
+      "description": "Base de dados de afinidades de ligação proteína-ligante medida experimentalmente.",
+      "tags": [
+        "Banco de dados",
+        "Ki",
+        "IC50",
+        "SAR",
+        "Docking"
+      ],
+      "license": "CC BY 3.0 (registros derivados de outras fontes seguem a licença original, como CC BY-SA do ChEMBL)",
+      "website": "https://www.bindingdb.org/"
+    },
+    {
+      "id": 85,
+      "name": "DrugBank",
+      "area": "bases-dados",
+      "applicability": [
+        "web"
+      ],
+      "price": "academic",
+      "description": "Recurso integrado de fármacos, seus alvos e dados químicos e farmacológicos.",
+      "tags": [
+        "Banco de dados",
+        "Fármacos",
+        "Alvos",
+        "Farmacologia",
+        "Interações"
+      ],
+      "license": "Gratuito para uso acadêmico; licença comercial para redistribuição e uso empresarial",
+      "website": "https://go.drugbank.com/"
+    }
+  ]
+}
